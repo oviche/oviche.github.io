@@ -145,8 +145,14 @@ description: The post shows the details about the capabilities of ERMAC android 
 
      - These permissions are set to the array called **permissionArray** and requested as appears in the below screenshot.
         
-       ![img]({{ '/assets/images/ermac_16.png' | relative_url }}){: .center-image }*(**Enabling a draw overlay for Xiaomi**)*       
-
-
-
+       ![img]({{ '/assets/images/ermac_16.png' | relative_url }}){: .center-image }*(**Enabling a draw overlay for Xiaomi**)*   
+       
+     - Again, the accessibility service will auto-click on the **ALLOW** button for the pop-ups of the requested permissions, by looking for the view ids of that  **ALLOW** button as appear below.   
+       
+       ![img]({{ '/assets/images/ermac_17.png' | relative_url }}){: .center-image }*(**Possible view ids for ALLOW button**)* 
+     
+     - Since a clickable view with an id that matches one of the previously mentioned view ids, has been found. Then, this view is auto-clicked, as appears in the below screenshot.
+       
+       ![img]({{ '/assets/images/ermac_18.png' | relative_url }}){: .center-image }*(**Auto-clicking on ALLOW button**)*
+     
 
