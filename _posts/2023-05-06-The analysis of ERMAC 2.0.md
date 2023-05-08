@@ -113,10 +113,11 @@ description: The post shows the details about the capabilities of ERMAC android 
     - After that, it clicks on the slider button as appears in the below code and sets **autoClickPerm** to an empty string indicating that no more overlay permission clicks are needed.
    
       ![img]({{ '/assets/images/ermac_13.png' | relative_url }}){: .center-image }*(**Clicking the slider button**)*  
-   
-    - For Xiaomi devices, 
+      
     
   ## Display pop-up windows while running in the background permission
+    - For the Xiaomi devices, this permission is needed to allow apps that run from the background to show pop-up windows, which is almost equivalent to drawing overlay permission.
+    -   
 
   ## Other permissions
  
