@@ -90,28 +90,28 @@ description: The post shows the details about the capabilities of ERMAC android 
 
 - For the purpose that the malware performing its functionalities, the following permissions are needed to be granted.
 
-## Draw overlay permission
+  ## Draw overlay permission
 
-- In order to draw over other applications screens, The draw overlay permission needed to be enabled. 
-<br/>
-- For Samsung devices, The following code is intended to show the screen that requests this permission. Also, it sets key **autoClickPerm** to **"1"** in the shared preference, to signal the accessibility service to perform auto-click on the slider button. 
+    - In order to draw over other applications screens, The draw overlay permission needed to be enabled. 
+   <br/>
+    - For Samsung devices, The following code is intended to show the screen that requests this permission. Also, it sets key **autoClickPerm** to **"1"** in the shared preference, to signal the accessibility service to perform auto-click on the slider button. 
   
-   ![img]({{ '/assets/images/ermac_10.png' | relative_url }}){: .center-image }*(**Request Overlay Permission**)*  
+      ![img]({{ '/assets/images/ermac_10.png' | relative_url }}){: .center-image }*(**Request Overlay Permission**)*  
 
-- As a proof of concept, I imitate the previous code considering that the application name My Application, which appears in the below screenshot, as the virus application name.
+    - As a proof of concept, I imitate the previous code considering that the application name My Application, which appears in the below screenshot, as the virus application name.
 
-   ![img]({{ '/assets/images/ermac_11.png' | relative_url }}){: .center-image }*(**Overlay Request Screens**)*
+      ![img]({{ '/assets/images/ermac_11.png' | relative_url }}){: .center-image }*(**Overlay Request Screens**)*
 
-- Now comes the role of the accessibility service to auto-click on the above virus application name from the list of applications.
+    - Now comes the role of the accessibility service to auto-click on the above virus application name from the list of applications.
 
-   ![img]({{ '/assets/images/ermac_12.png' | relative_url }}){: .center-image }*(**Select the virus application**)*  
+      ![img]({{ '/assets/images/ermac_12.png' | relative_url }}){: .center-image }*(**Select the virus application**)*  
 
-- After that, it clicks on the slider button as appears in the below code and sets **autoClickPerm** to an empty string indicating that no more overlay permission clicks are needed.
+    - After that, it clicks on the slider button as appears in the below code and sets **autoClickPerm** to an empty string indicating that no more overlay permission clicks are needed.
    
-   ![img]({{ '/assets/images/ermac_13.png' | relative_url }}){: .center-image }*(**Clicking the slider button**)*  
+      ![img]({{ '/assets/images/ermac_13.png' | relative_url }}){: .center-image }*(**Clicking the slider button**)*  
 
 
-## Display pop-up windows while running in the background permission
+  ## Display pop-up windows while running in the background permission
 
-## Other permissions
+  ## Other permissions
  
