@@ -111,14 +111,14 @@ description: The post shows the details about the capabilities of ERMAC android 
       ![img]({{ '/assets/images/ermac_12.png' | relative_url }}){: .center-image }*(**Select the virus application**)*  
 
     - After that, it clicks on the slider button as appears in the below code and sets **autoClickPerm** to an empty string indicating that no more overlay permission clicks are needed.
-   
+    
       ![img]({{ '/assets/images/ermac_13.png' | relative_url }}){: .center-image }*(**Clicking the slider button**)*  
       
     
   ## Display pop-up windows while running in the background permission
     - For the Xiaomi devices, this permission is needed to allow apps that run from the background to show pop-up windows, which is almost equivalent to the draw overlay permission.
     -  The following code open-up a window for requesting this permission regarding the virus application. Additionally, it sets **autoClickPerm2** to **"1"**, to signal the accessibility service to do auto-clicking to grant this permission.
-    
+          
       ![img]({{ '/assets/images/ermac_14.png' | relative_url }}){: .center-image }*(**Request a draw overlay for Xiaomi**)*      
 
   ## Other permissions
