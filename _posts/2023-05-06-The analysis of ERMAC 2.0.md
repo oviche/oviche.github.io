@@ -127,11 +127,26 @@ description: The post shows the details about the capabilities of ERMAC android 
        ![img]({{ '/assets/images/ermac_15.png' | relative_url }}){: .center-image }*(**Enabling a draw overlay for Xiaomi**)*
 
 
-
-
-
-
-
-
   ## Other permissions
- 
+     - In addition to the previous permissions, The malware is trying to grant the following permissions: 
+       - `android.permission.REQUEST_IGNORE_BATTERY_OPTIMIZATIONS`  
+       - `android.permission.RECEIVE_BOOT_COMPLETED`
+       - `android.permission.ACCESS_NETWORK_STATE`	 
+       - `android.permission.WAKE_LOCK`
+       - `android.permission.INTERNET`
+       - `android.permission.READ_PHONE_STATE`
+       - `android.permission.CALL_PHONE`	  
+       - `android.permission.READ_CONTACTS`
+       - `android.permission.GET_ACCOUNTS`
+       - `android.permission.RECEIVE_SMS`
+       - `android.permission.READ_SMS`
+       - `android.permission.SEND_SMS`
+       - `android.permission.READ_PHONE_NUMBERS` 
+
+     - These permissions are set to the array called **permissionArray** and requested as appears in the below screenshot.
+        
+       ![img]({{ '/assets/images/ermac_16.png' | relative_url }}){: .center-image }*(**Enabling a draw overlay for Xiaomi**)*       
+
+
+
+
