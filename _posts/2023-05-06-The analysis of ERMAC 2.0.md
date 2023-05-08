@@ -48,7 +48,7 @@ description: The post shows the details about the capabilities of ERMAC android 
     - `Build.DEVICE` contains string **"generic"**.
     - `Build.PRODUCT` equals string **"google_sdk"**.
    
- ![img]({{ '/assets/images/ermac_4.png' | relative_url }}){: .center-image }*(**Emulation detection**)*
+  ![img]({{ '/assets/images/ermac_4.png' | relative_url }}){: .center-image }*(**Emulation detection**)*
    
 - Therefore, The victim device is an **interesting** if it's not an emulator beside being located out of the previously mentioned countries. 
 
@@ -66,6 +66,7 @@ description: The post shows the details about the capabilities of ERMAC android 
   - Set key **initialization** with value **good**.
   - Set key **events** which hold the logs, with empty string.
   - Set key **datakeylogger** which later will hold keylogging data, with empty string.      
+   
    
    ![img]({{ '/assets/images/ermac_6.png' | relative_url }}){: .center-image }*(**Bot's initialization**)*
  <br/>
