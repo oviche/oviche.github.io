@@ -49,7 +49,7 @@ description: The post shows the details about the capabilities of ERMAC android 
     - `Build.PRODUCT` equals string **"google_sdk"**.
   
   
-  
+  <br/>
   ![img]({{ '/assets/images/ermac_4.png' | relative_url }}){: .center-image }*(**Emulation detection**)*
    
 - Therefore, The victim device is an **interesting** if it's not an emulator beside being located out of the previously mentioned countries. 
