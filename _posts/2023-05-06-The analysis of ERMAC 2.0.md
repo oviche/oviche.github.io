@@ -124,7 +124,7 @@ description: The post shows the details about the capabilities of ERMAC android 
 
     -  Briefly, similar to what happens regarding other devices, the accessibility service will check if the key** autoClickPerm2** is initialized to **"1"**, then it will do auto-clicking to enable the permission.
       
-      ![img]({{ '/assets/images/ermac_15.png' | relative_url }}){: .center-image }*(**Enabling a draw overlay for Xiaomi**)*
+       ![img]({{ '/assets/images/ermac_15.png' | relative_url }}){: .center-image }*(**Enabling a draw overlay for Xiaomi**)*
 
 
 
