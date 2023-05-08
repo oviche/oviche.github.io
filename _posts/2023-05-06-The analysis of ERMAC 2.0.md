@@ -94,7 +94,7 @@ description: The post shows the details about the capabilities of ERMAC android 
 
     - In order to draw over other applications screens, The draw overlay permission needed to be enabled. 
   
-    - For Samsung devices, The following code is intended to show the screen that requests this permission. Also, it sets key **autoClickPerm** to **"1"** in the shared preference, to signal the accessibility service to perform auto-click on the slider button. 
+    - For other devices than Xiaomi, The following code is intended to show the screen that requests this permission. Also, it sets key **autoClickPerm** to **"1"** in the shared preference, to signal the accessibility service to perform auto-click on the slider button. 
   
       ![img]({{ '/assets/images/ermac_10.png' | relative_url }}){: .center-image }*(**Request Overlay Permission**)*  
 
@@ -109,8 +109,9 @@ description: The post shows the details about the capabilities of ERMAC android 
     - After that, it clicks on the slider button as appears in the below code and sets **autoClickPerm** to an empty string indicating that no more overlay permission clicks are needed.
    
       ![img]({{ '/assets/images/ermac_13.png' | relative_url }}){: .center-image }*(**Clicking the slider button**)*  
-
-
+   
+    - For Xiaomi devices, 
+    
   ## Display pop-up windows while running in the background permission
 
   ## Other permissions
