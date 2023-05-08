@@ -48,7 +48,7 @@ description: The post shows the details about the capabilities of ERMAC android 
     - `Build.DEVICE` contains string **"generic"**.
     - `Build.PRODUCT` equals string **"google_sdk"**.
   
- ![img]({{ '/assets/images/ermac_4.png' | relative_url }}){: .center-image }*(**Emulation detection**)*
+  ![img]({{ '/assets/images/ermac_4.png' | relative_url }}){: .center-image }*(**Emulation detection**)*
    
 - Therefore, The victim device is an **interesting** if it's not an emulator beside being located out of the previously mentioned countries. 
 
@@ -58,7 +58,7 @@ description: The post shows the details about the capabilities of ERMAC android 
 - If the victim device is interesting, the malware will start initializing certain keys of shared preference called **settings**.
 - First, it generated bot id that matches the regex **[a-z0-9]{17}** then save it under key named **idbot** in shared preferences as appear in the below screenshot.
   
-  ![img]({{ '/assets/images/ermac_5.png' | relative_url }}){: .center-image }*(**Bot ID generation**)*
+![img]({{ '/assets/images/ermac_5.png' | relative_url }}){: .center-image }*(**Bot ID generation**)*
 
 - After that, it initializes the shared preference with the following as appears in the below screenshot:
    
@@ -66,9 +66,8 @@ description: The post shows the details about the capabilities of ERMAC android 
   - Set key **initialization** with value **good**.
   - Set key **events** which hold the logs, with empty string.
   - Set key **datakeylogger** which later will hold keylogging data, with empty string.      
-   
-   
-   ![img]({{ '/assets/images/ermac_6.png' | relative_url }}){: .center-image }*(**Bot's initialization**)*
+      
+![img]({{ '/assets/images/ermac_6.png' | relative_url }}){: .center-image }*(**Bot's initialization**)*
  <br/>
 
 # Enable the accessibility service
