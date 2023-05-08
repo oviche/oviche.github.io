@@ -147,7 +147,7 @@ description: The post shows the details about the capabilities of ERMAC android 
         
        ![img]({{ '/assets/images/ermac_16.png' | relative_url }}){: .center-image }*(**Enabling a draw overlay for Xiaomi**)*   
        
-     - Again, the accessibility service will auto-click on the **ALLOW** button for the pop-ups of the requested permissions, by looking for the view ids of that  **ALLOW** button as appear below.   
+     - Again, the accessibility service will auto-click on the **ALLOW** button for the pop-ups of the requested permissions, by looking for the below view ids for that **ALLOW** button.    
        
        ![img]({{ '/assets/images/ermac_17.png' | relative_url }}){: .center-image }*(**Possible view ids for ALLOW button**)* 
      
