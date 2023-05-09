@@ -166,8 +166,8 @@ description: The post shows the details about the capabilities of ERMAC android 
 
 
 # The Traffic sending 
+- When the bot communicates with the C2 server to send or receive traffic, the following two steps always occur:
   ## Domain generation algorithm (DGA)
-
   ## Traffic encryption
 
 # Finding a working C2 IP
