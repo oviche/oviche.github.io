@@ -168,6 +168,10 @@ description: The post shows the details about the capabilities of ERMAC android 
 # The Traffic sending 
 - When the bot communicates with the C2 server to send or receive traffic, the following two steps always occur:
   ## Domain generation algorithm (DGA)
+  - Everytime, the bot try communicate with C2 it generate a domain with the following pattern **"urlAdminPanel/[a-z0-9]{1,20}.php"**, as appear in the following screenshot.
+  
+  ![img]({{ '/assets/images/ermac_20.png' | relative_url }}){: .center-image }*(**Generating a domain name**)*
+  
   ## Traffic encryption
 
 # Finding a working C2 IP
