@@ -157,9 +157,15 @@ description: The post shows the details about the capabilities of ERMAC android 
      
      
 # Pinging the C2 server
-- here
+- So that the bot makes sure that the default IP is still up, it tries to ping it by sending a JSON object with the following key values, which also appear in the below screenshot.
+   - The key **command** is set to **checkAP**.
+   - The key **id** is set to the generated **botID**.
+   - The key **ticks** is set to the **working time** of certain service.
 
-# Traffic sending 
+   ![img]({{ '/assets/images/ermac_19.png' | relative_url }}){: .center-image }*(**Sending checkAP command**)*
+
+
+# The Traffic sending 
   ## Domain generation algorithm (DGA)
 
   ## Traffic encryption
