@@ -155,4 +155,23 @@ description: The post shows the details about the capabilities of ERMAC android 
        
        ![img]({{ '/assets/images/ermac_18.png' | relative_url }}){: .center-image }*(**Auto-clicking on ALLOW button**)*
      
+     
+# Pinging the C2 server
+
+# Traffic sending
+
+  ## Domain generation algorithm (DGA)
+
+  ## Traffic encryption
+
+# Finding a working C2 IP
+
+# The Bot Registration
+
+# The Bot commands
+
+# The Bot settings
+
+# Additional capabilities
+
 
