@@ -170,7 +170,7 @@ description: The post shows the details about the capabilities of ERMAC android 
   ## Generating random domains
   - Everytime, the bot try communicate with C2 it generate a domain with the following pattern **"urlAdminPanel/[a-z0-9]{1,20}.php"**, as appear in the following screenshot.
     
-    ![img]({{ '/assets/images/ermac_20.png' | relative_url }}){: .center-image }*(**Domain generation algorithm**)*
+  ![img]({{ '/assets/images/ermac_20.png' | relative_url }}){: .center-image }*(**Domain generation algorithm**)*
   
   ## Encrypting the traffic
   - here we go
