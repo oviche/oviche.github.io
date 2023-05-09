@@ -162,8 +162,7 @@ description: The post shows the details about the capabilities of ERMAC android 
    - The key **id** is set to the generated **botID**.
    - The key **ticks** is set to the **working time** of certain service.
    
-   
-   ![img]({{ '/assets/images/ermac_19.png' | relative_url }}){: .center-image }*(**Sending checkAP command**)*
+    ![img]({{ '/assets/images/ermac_19.png' | relative_url }}){: .center-image }*(**Sending checkAP command**)*
 
 
 # The Traffic sending 
