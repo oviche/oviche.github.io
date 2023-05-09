@@ -157,9 +157,10 @@ description: The post shows the details about the capabilities of ERMAC android 
      
      
 # Pinging the C2 server
-
+- here
 # Traffic sending
-
+ -here
+ 
   ## Domain generation algorithm (DGA)
 
   ## Traffic encryption
