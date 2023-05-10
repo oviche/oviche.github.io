@@ -184,11 +184,11 @@ description: The post shows the details about the capabilities of ERMAC android 
 
 -This is done by extracting the value of key **urls** in the shared preference which is called **settings**, then this value is split to form an array of URLs as appears in the below screenshot.  
 
-![img]({{ '/assets/images/ermac_22.png' | relative_url }}){: .center-image }*(**Parsing urls**)*
+![img]({{ '/assets/images/ermac_22.png' | relative_url }}){: .center-image }*(**Parsing URLS**)*
 
 - After that, it pings the URL by sending a **checkAP** command to check whether it's active or not. If an active URL is found, subsequently, it sets the key **urlAdminPanel** for the default URL in the shared preference with the active URL, as appears in the below screenshot.
 
-![img]({{ '/assets/images/ermac_23.png' | relative_url }}){: .center-image }*(**Parsing urls**)*
+![img]({{ '/assets/images/ermac_23.png' | relative_url }}){: .center-image }*(**searching for an active URL **)*
 
 
 
