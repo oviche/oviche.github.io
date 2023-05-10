@@ -178,7 +178,19 @@ description: The post shows the details about the capabilities of ERMAC android 
   ![img]({{ '/assets/images/ermac_21.png' | relative_url }}){: .center-image }*(**The encryption algorithm**)*
 
 
-# Finding a working C2 IP
+# Finding an active C2 URL
+
+- In case the response from pinging the C2 server ( equivalent to sending a checkAP command ) is empty it means that this Url is down. The bot will start looking for another active URL from a list of URLs that is a part of the bot settings.
+
+-This is done by extracting the value of key **urls** in the shared preference which is called **settings**, then this value is split to form an array of URLs as appears in the below screenshot.  
+
+![img]({{ '/assets/images/ermac_22.png' | relative_url }}){: .center-image }*(**Parsing urls**)*
+
+- After that, it pings the URL by sending a **checkAP** command to check whether it's active or not. If an active URL is found, subsequently, it sets the key **urlAdminPanel** for the default URL in the shared preference with the active URL, as appears in the below screenshot.
+
+![img]({{ '/assets/images/ermac_23.png' | relative_url }}){: .center-image }*(**Parsing urls**)*
+
+
 
 # The Bot Registration
 
