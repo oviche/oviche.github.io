@@ -192,6 +192,7 @@ description: The post shows the details about the capabilities of ERMAC android 
 
 
 # The Bot Registration
+ - here
 
 # The Bot settings
 
