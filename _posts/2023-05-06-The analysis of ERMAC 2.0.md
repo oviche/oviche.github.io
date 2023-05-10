@@ -170,7 +170,13 @@ description: The post shows the details about the capabilities of ERMAC android 
   ![img]({{ '/assets/images/ermac_20.png' | relative_url }}){: .center-image }*(**Domain generation algorithm**)*
   
   ## Encrypting the traffic
-  - here we go
+  - Before sending any commands or logs, The bot encrypts the traffic with the AES algorithm with the following parameters, as appears in the below screenshot.
+    - The `mode` is `AES/CBC/PKCS5Paddin` 
+    - The `IV parameter` equals `0123456789abcdef`
+    - The `secret key` equals `1A1zP1eP5QGefi2DMPTfTL5SLmv7Divf`
+  <p></p>
+  ![img]({{ '/assets/images/ermac_21.png' | relative_url }}){: .center-image }*(**The encryption algorithm**)*
+
 
 # Finding a working C2 IP
 
