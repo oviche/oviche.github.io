@@ -170,7 +170,7 @@ description: The post shows the details about the capabilities of ERMAC android 
   ![img]({{ '/assets/images/ermac_20.png' | relative_url }}){: .center-image }*(**Domain generation algorithm**)*
   
   ## Encrypting the traffic
-  - Before sending any commands or logs, The bot encrypts the traffic with the AES algorithm with the following parameters, as appears in the below screenshot.
+  - Before sending any commands or logs, The bot encrypts the traffic with the AES algorithm with the following parameters followed by base-64 encoding,, as appears in the below screenshot.
     - The `mode` is `AES/CBC/PKCS5Padding` 
     - The `IV parameter` equals `0123456789abcdef`
     - The `secret key` equals `1A1zP1eP5QGefi2DMPTfTL5SLmv7Divf`
