@@ -192,7 +192,12 @@ description: The post shows the details about the capabilities of ERMAC android 
 
 
 # The Bot Registration
- - here
+ - When the bot gets a response of **~no~** from pinging the C2 indicating that the bot is not registered. Then the bot registration function will get executed as appear below.  
+
+![img]({{ '/assets/images/ermac_23.png' | relative_url }}){: .center-image }*(**Searching for an active URL**)*
+
+- 
+
 
 # The Bot settings
 
