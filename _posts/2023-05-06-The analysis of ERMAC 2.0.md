@@ -182,7 +182,7 @@ description: The post shows the details about the capabilities of ERMAC android 
 
 - In case the response from pinging the C2 server ( equivalent to sending a checkAP command ) is empty it means that this Url is down. The bot will start looking for another active URL from a list of URLs that is a part of the bot settings.
 
--This is done by extracting the value of key **urls** in the shared preference which is called **settings**, then this value is split to form an array of URLs as appears in the below screenshot.  
+- This is done by extracting the value of key **urls** in the shared preference which is called **settings**, then this value is split to form an array of URLs as appears in the below screenshot.  
 
 ![img]({{ '/assets/images/ermac_22.png' | relative_url }}){: .center-image }*(**Parsing URLS**)*
 
