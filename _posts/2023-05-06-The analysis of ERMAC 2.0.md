@@ -192,7 +192,7 @@ description: The post shows the details about the capabilities of ERMAC android 
 
 
 # The Bot Registration
- - When the bot gets a response of **~no~** from pinging the C2 indicating that the bot is not registered. Then the bot registration function will get executed as appear below.  
+- When the bot gets a response of **~no~** from pinging the C2 indicating that the bot is not registered. Then the bot registration function will get executed as appear below.  
 
   ![img]({{ '/assets/images/ermac_24.png' | relative_url }}){: .center-image }*(**Registering the bot**)*
 
@@ -235,7 +235,12 @@ description: The post shows the details about the capabilities of ERMAC android 
   - The key **set_accounts** holds the value that states whether `android.permission.GET_ACCOUNTS`is granted or not.
   <p></p>
   ![img]({{ '/assets/images/ermac_29.png' | relative_url }}){: .center-image }*(**Collecting device information snippet [5]**)*
-  
+
+- Whenever the bot registration is completed, indicated by receiving a response that contains **"ok"**, It sets the key **checkUpdateInjection** with value **"1"** in the shared preference. This signal the bot to communicate with the C2 server to install updated HTML injections which will be covered in detail under the upcoming bot command section. 
+
+![img]({{ '/assets/images/ermac_30.png' | relative_url }}){: .center-image }*(**Signaling the bot to install updated HTML injections**)*
+ 
+
 # The Bot settings
 
 # The Bot commands
