@@ -196,8 +196,17 @@ description: The post shows the details about the capabilities of ERMAC android 
 
 ![img]({{ '/assets/images/ermac_24.png' | relative_url }}){: .center-image }*(**Registering the bot**)*
 
-- 
-
+- In order to register the bot, a **Registration** command with the following device information in the form of a JSON object is sent to the C2 server:
+  - Key **id** holds a value of botID
+  - Key **country** holds a value of country name of locale.
+  - Key **countryCode** hold an iso string equivalent to **MCC** code.
+  - Key **tag** hold string **Tag1**
+  - Key **isDualSim** holds true when the phone has dual sim or false if not
+  - Key **operator** holds the name of operator for sim number 1.
+  
+   ![img]({{ '/assets/images/ermac_25.png' | relative_url }}){: .center-image }*(**Collecting device information snippet [1]**)*
+  
+  - here
 
 # The Bot settings
 
