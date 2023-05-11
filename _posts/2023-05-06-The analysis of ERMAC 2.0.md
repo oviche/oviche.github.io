@@ -194,7 +194,7 @@ description: The post shows the details about the capabilities of ERMAC android 
 # The Bot Registration
  - When the bot gets a response of **~no~** from pinging the C2 indicating that the bot is not registered. Then the bot registration function will get executed as appear below.  
 
-![img]({{ '/assets/images/ermac_24.png' | relative_url }}){: .center-image }*(**Registering the bot**)*
+  ![img]({{ '/assets/images/ermac_24.png' | relative_url }}){: .center-image }*(**Registering the bot**)*
 
 - In order to register the bot, a **Registration** command with the following device information in the form of a JSON object is sent to the C2 server:
   - The key **id** holds a value of botID
