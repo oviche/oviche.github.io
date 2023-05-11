@@ -238,7 +238,7 @@ description: The post shows the details about the capabilities of ERMAC android 
 
 - Whenever the bot registration is completed, indicated by receiving a response that contains **"ok"**, It sets the key **checkUpdateInjection** with value **"1"** in the shared preference. This signal the bot to communicate with the C2 server to install updated HTML injections which will be covered in detail under the upcoming bot command section. 
 
-![img]({{ '/assets/images/ermac_30.png' | relative_url }}){: .center-image }*(**Signaling the bot to install updated HTML injections**)*
+  ![img]({{ '/assets/images/ermac_30.png' | relative_url }}){: .center-image }*(**Signaling the bot to install updated HTML injections**)*
  
 
 # The Bot settings
