@@ -197,17 +197,26 @@ description: The post shows the details about the capabilities of ERMAC android 
 ![img]({{ '/assets/images/ermac_24.png' | relative_url }}){: .center-image }*(**Registering the bot**)*
 
 - In order to register the bot, a **Registration** command with the following device information in the form of a JSON object is sent to the C2 server:
-  - Key **id** holds a value of botID
-  - Key **country** holds a value of country name of locale.
-  - Key **countryCode** hold an iso string equivalent to **MCC** code.
-  - Key **tag** hold string **Tag1**
-  - Key **isDualSim** holds true when the phone has dual sim or false if not
-  - Key **operator** holds the name of operator for sim number 1.
+  - The key **id** holds a value of botID
+  - The key **country** holds a value of country name of locale.
+  - The key **countryCode** hold an iso string equivalent to **MCC** code.
+  - The key **tag** hold string **Tag1**
+  - The key **isDualSim** holds true when the phone has dual sim or false if not
+  - The key **operator** holds the name of operator for sim#1.
    <p></p>
    ![img]({{ '/assets/images/ermac_25.png' | relative_url }}){: .center-image }*(**Collecting device information snippet [1]**)*
   
-  - here
-
+  - The key **phone_number** holds a value of phone number for sim#1.
+  - The key **operator1** holds the name of operator for sim#2.
+  - The key **phone_number1** holds a value of phone number for sim#2.
+  - The key **android** holds a value of `Build.VERSION.RELEASE` which is android version.
+  - The key **model** holds an information about the model and manufacturer of the device.
+  - The key **batteryLevel** holds the integer percentage of total battery capacity.
+  - The key **imei** holds International Mobile Equipment Identity (aka [IMEI](https://en.wikipedia.org/wiki/International_Mobile_Equipment_Identity))
+  <p></p>
+   ![img]({{ '/assets/images/ermac_26.png' | relative_url }}){: .center-image }*(**Collecting device information snippet [2]**)*
+  
+  
 # The Bot settings
 
 # The Bot commands
