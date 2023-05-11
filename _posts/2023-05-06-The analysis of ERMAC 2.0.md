@@ -230,6 +230,11 @@ description: The post shows the details about the capabilities of ERMAC android 
   <p></p>
   ![img]({{ '/assets/images/ermac_28.png' | relative_url }}){: .center-image }*(**Collecting device information snippet [4]**)*
   
+  - The key **set_hide_sms_list** holds the value that states whether `android.permission.RECEIVE_SMS`is granted or not.
+  - The key **set_windows_fake** holds a value that states whether all of the needed permissions are enabled or not.
+  - The key **set_accounts** holds the value that states whether `android.permission.GET_ACCOUNTS`is granted or not.
+  <p></p>
+  ![img]({{ '/assets/images/ermac_29.png' | relative_url }}){: .center-image }*(**Collecting device information snippet [5]**)*
   
 # The Bot settings
 
