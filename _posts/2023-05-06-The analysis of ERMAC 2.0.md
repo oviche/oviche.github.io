@@ -203,7 +203,7 @@ description: The post shows the details about the capabilities of ERMAC android 
   - Key **tag** hold string **Tag1**
   - Key **isDualSim** holds true when the phone has dual sim or false if not
   - Key **operator** holds the name of operator for sim number 1.
-  
+   <p></p>
    ![img]({{ '/assets/images/ermac_25.png' | relative_url }}){: .center-image }*(**Collecting device information snippet [1]**)*
   
   - here
