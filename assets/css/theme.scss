@@ -81,7 +81,7 @@ blockquote {
 }
 
 a {
-  color: #007bff;
+  color: $accent-color;
 }
 
 //********************************************************
@@ -129,7 +129,7 @@ ul.share-buttons {
     }
     a {
       text-decoration: none;
-      color:#007bff;
+      //color:$accent-color;
     }
     -webkit-transition: -webkit-transform .4s;
     -moz-transition: -moz-transform .4s;
