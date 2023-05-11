@@ -201,7 +201,7 @@ description: The post shows the details about the capabilities of ERMAC android 
   - The key **country** holds a value of country name of locale.
   - The key **countryCode** hold an iso string equivalent to **MCC** code.
   - The key **tag** hold string **Tag1**
-  - The key **isDualSim** holds true when the phone has dual sim or false if not
+  - The key **isDualSim** holds true when the phone has dual sim or false if not.
   - The key **operator** holds the name of operator for sim#1.
    <p></p>
    ![img]({{ '/assets/images/ermac_25.png' | relative_url }}){: .center-image }*(**Collecting device information snippet [1]**)*
@@ -215,6 +215,14 @@ description: The post shows the details about the capabilities of ERMAC android 
   - The key **imei** holds International Mobile Equipment Identity (aka [IMEI](https://en.wikipedia.org/wiki/International_Mobile_Equipment_Identity))
   <p></p>
    ![img]({{ '/assets/images/ermac_26.png' | relative_url }}){: .center-image }*(**Collecting device information snippet [2]**)*
+  
+  - The key **accessibility** holds true if the accessibility service enabled or false if it's not.
+  - The key **protect** holds the state of google play protection whether enabled or disabled.
+  - The key **admin** holds the state of whether the device admin component enabled or not.
+  - The key **screen** contains the boolean value that refers to a state of whether the screen display on or off.
+    <p></p>
+   ![img]({{ '/assets/images/ermac_27.png' | relative_url }}){: .center-image }*(**Collecting device information snippet [3]**)*
+  
   
   
 # The Bot settings
