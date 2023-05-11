@@ -99,7 +99,7 @@ ul.social-media {
     height: 45px;
     @include transition(color 0.2s);
     display: inline-block;
-    //color: #007bff;
+    color: #007bff;
     &:hover {
       color: $accent-color;
     }
