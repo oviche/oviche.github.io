@@ -220,8 +220,8 @@ description: The post shows the details about the capabilities of ERMAC android 
   - The key **protect** holds the state of google play protection whether enabled or disabled.
   - The key **admin** holds the state of whether the device admin component enabled or not.
   - The key **screen** contains the boolean value that refers to a state of whether the screen display on or off.
-    <p></p>
-   ![img]({{ '/assets/images/ermac_27.png' | relative_url }}){: .center-image }*(**Collecting device information snippet [3]**)*
+  <p></p>
+  ![img]({{ '/assets/images/ermac_27.png' | relative_url }}){: .center-image }*(**Collecting device information snippet [3]**)*
   
   
   
