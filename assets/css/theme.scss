@@ -81,7 +81,7 @@ blockquote {
 }
 
 a {
-  color: $accent-color;
+  color: #007bff;
 }
 
 //********************************************************
@@ -99,7 +99,7 @@ ul.social-media {
     height: 45px;
     @include transition(color 0.2s);
     display: inline-block;
-    //color: $accent-color;
+    //color: #007bff;
     &:hover {
       color: $accent-color;
     }
@@ -129,6 +129,7 @@ ul.share-buttons {
     }
     a {
       text-decoration: none;
+     // color:#007bff;
     }
     -webkit-transition: -webkit-transform .4s;
     -moz-transition: -moz-transform .4s;
