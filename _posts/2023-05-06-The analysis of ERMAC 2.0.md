@@ -219,10 +219,16 @@ description: The post shows the details about the capabilities of ERMAC android 
   - The key **accessibility** holds true if the accessibility service enabled or false if it's not.
   - The key **protect** holds the state of google play protection whether enabled or disabled.
   - The key **admin** holds the state of whether the device admin component enabled or not.
-  - The key **screen** contains the boolean value that refers to a state of whether the screen display on or off.
+  - The key **screen** contains the value that refers to a state of the screen display whether on or off.
   <p></p>
   ![img]({{ '/assets/images/ermac_27.png' | relative_url }}){: .center-image }*(**Collecting device information snippet [3]**)*
   
+  - The key **isKeyguardLocked** holds the value that states whether screen is locked or not.
+  - The key **is_dozemode** holds the value to show whether the virus application is in the power allow list or not.
+  - The key **sms** holds the value that states whether `android.permission.READ_SMS` is granted or not.
+  - The key **set_contact_list** holds the value that states whether `android.permission.READ_CONTACTS` is granted or not.
+  <p></p>
+  ![img]({{ '/assets/images/ermac_28.png' | relative_url }}){: .center-image }*(**Collecting device information snippet [4]**)*
   
   
 # The Bot settings
