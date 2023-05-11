@@ -236,7 +236,7 @@ description: The post shows the details about the capabilities of ERMAC android 
   <p></p>
   ![img]({{ '/assets/images/ermac_29.png' | relative_url }}){: .center-image }*(**Collecting device information snippet [5]**)*
 
-- Whenever the bot registration is completed, indicated by receiving a response that contains **"ok"**, It sets the key **checkUpdateInjection** with value **"1"** in the shared preference. This signal the bot to communicate with the C2 server to install updated HTML injections which will be covered in detail under the upcoming bot command section. 
+- Whenever the bot registration is completed, indicated by receiving a response that contains **"ok"**, It sets the key **checkUpdateInjection** with value **"1"** in the shared preference. This signal the bot to communicate with the C2 server to install updated HTML injections which will be covered in detail under the upcoming **"The bot commands"** section. 
 
   ![img]({{ '/assets/images/ermac_30.png' | relative_url }}){: .center-image }*(**Signaling the bot to install updated HTML injections**)*
  
