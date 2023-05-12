@@ -246,8 +246,8 @@ description: The post shows the details about the capabilities of ERMAC android 
  
   ## urls
   - The key **urls** in shared preference, holds a semicolon-delimited string containing alternative URL(s) for C2. These URL(s) are parsed from the JSONObject that represents the response of sending the **checkAP** command as appears in the below screenshot.
-  
-   ![img]({{ '/assets/images/ermac_31.png' | relative_url }}){: .center-image }*(**Setting alternative URL(s) for C2**)*
+  <p></p>
+  ![img]({{ '/assets/images/ermac_31.png' | relative_url }}){: .center-image }*(**Setting alternative URL(s) for C2**)*
  
  
   ## lockDevice
