@@ -242,9 +242,11 @@ description: The post shows the details about the capabilities of ERMAC android 
  
 
 # The Bot settings
-- If the response from pinging the C2 server contains **~settings~**, then The following keys in the shared preference which represent the bot settings are get updated from the C2 server.    
+- If the response from pinging the C2 server is non-empty and contains the key **action** with a value **~settings~**, then The following keys in the shared preference, which represent the bot's settings get updated from the C2 server.    
+ 
   ## urls
-   - here
+  - 
+  
   ## lockDevice
   - hello1
   ## hiddenSMS
