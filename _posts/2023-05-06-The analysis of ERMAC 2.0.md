@@ -261,7 +261,7 @@ description: The post shows the details about the capabilities of ERMAC android 
   
   - The following line, located inside the infinite loop of the service code is responsible for locking the screen.
   <p></p>
-  ![img]({{ '/assets/images/ermac_34.png' | relative_url }}){: .center-image }*(**Start the service that locking the screen**)*
+  ![img]({{ '/assets/images/ermac_34.png' | relative_url }}){: .center-image }*(**locking the screen**)*
   
 
 
