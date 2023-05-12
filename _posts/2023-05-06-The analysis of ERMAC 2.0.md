@@ -245,8 +245,11 @@ description: The post shows the details about the capabilities of ERMAC android 
 - If the response from pinging the C2 server is non-empty and contains the key **action** with a value **~settings~**, then The following keys in the shared preference, which represent the bot's settings get updated from the C2 server.    
  
   ## urls
-  - 
+  - The key **urls** in shared preference, holds a semicolon-delimited string containing alternative URL(s) for C2. These URL(s) are parsed from the JSONObject that represents the response of sending the **checkAP** command as appears in the below screenshot.
   
+   ![img]({{ '/assets/images/ermac_31.png' | relative_url }}){: .center-image }*(**Setting alternative URL(s) for C2**)*
+ 
+ 
   ## lockDevice
   - hello1
   ## hiddenSMS
