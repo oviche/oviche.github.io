@@ -242,7 +242,25 @@ description: The post shows the details about the capabilities of ERMAC android 
  
 
 # The Bot settings
+- The following keys in the shared preference represent the bot's settings that can be updated from the C2 server.   
 
+ ## urls
+ - 
+ ## lockDevice
+ - 
+ ## hiddenSMS
+ - 
+ ## offSound
+ - 
+ ## keylogger
+ -
+ ## clearPush
+ -
+ ## readPush
+ -
+ ## activeInjection
+ -
+ 
 # The Bot commands
 
 # Additional capabilities
