@@ -244,22 +244,22 @@ description: The post shows the details about the capabilities of ERMAC android 
 # The Bot settings
 - The following keys in the shared preference represent the bot's settings that can be updated from the C2 server.   
 
- ## urls
- - hello
- ## lockDevice
- - hello1
- ## hiddenSMS
- - hello2
- ## offSound
- - hello3
- ## keylogger
- - hello4
- ## clearPush
- - hello5
- ## readPush
- - hello6
- ## activeInjection
- - hello7
+  ## urls
+  - hello
+  ## lockDevice
+  - hello1
+  ## hiddenSMS
+  - hello2
+  ## offSound
+  - hello3
+  ## keylogger
+  - hello4
+  ## clearPush
+  - hello5
+  ## readPush
+  - hello6
+  ## activeInjection
+  - hello7
  
 # The Bot commands
 
