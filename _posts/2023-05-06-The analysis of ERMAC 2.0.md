@@ -280,12 +280,15 @@ description: The post shows the details about the capabilities of ERMAC android 
   
   - If this key has the value of **"1"**, then it instructs the bot to mute the sounds streams as appears below.
   <p></p>
-  ![img]({{ '/assets/images/ermac_38.png' | relative_url }}){: .center-image }*(**muting the sound streams**)*
-  
-  
+  ![img]({{ '/assets/images/ermac_38.png' | relative_url }}){: .center-image }*(**Muting the sound streams**)*
+   
   
   ## keylogger
-  - hello4
+  - This key is set with a value of **keylogger**, which is part of the response of pinging the C2 server, as appears in the below screenshot.
+  <p></p>
+  ![img]({{ '/assets/images/ermac_39.png' | relative_url }}){: .center-image }*(**Setting keylogger key**)*
+  -
+  
   ## clearPush
   - hello5
   ## readPush
