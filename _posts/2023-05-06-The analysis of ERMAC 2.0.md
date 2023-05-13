@@ -266,7 +266,8 @@ description: The post shows the details about the capabilities of ERMAC android 
 
 
   ## hiddenSMS
-  - This key within the shared preference, is set with the value of the key **hideSMS**, which is part of the response of pinging the C2 server, as appears below.   <p></p>
+  - This key within the shared preference, is set with the value of the key **hideSMS**, which is part of the response of pinging the C2 server, as appears below.   
+  <p></p>
   ![img]({{ '/assets/images/ermac_35.png' | relative_url }}){: .center-image }*(**setting HiddenSMS key**)*
   
   -
