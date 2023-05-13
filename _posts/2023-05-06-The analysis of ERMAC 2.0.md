@@ -280,7 +280,7 @@ description: The post shows the details about the capabilities of ERMAC android 
   
   - If this key has the value of **"1"**, then it instructs the bot to mute the sounds streams as appears below.
   <p></p>
-  ![img]({{ '/assets/images/ermac_38.png' | relative_url }}){: .center-image }*(**Muting the sound streams**)*
+   ![img]({{ '/assets/images/ermac_38.png' | relative_url }}){: .center-image }*(**Muting the sound streams**)*
    
   
   ## keylogger
