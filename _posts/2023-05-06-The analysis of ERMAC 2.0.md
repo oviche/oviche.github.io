@@ -305,11 +305,17 @@ description: The post shows the details about the capabilities of ERMAC android 
   - On condition that this key is equal **"1"**, The list of pushed notifications is getting cleared by the accessibility service by auto-clicking on the **Clear** button.
   <p></p>
   ![img]({{ '/assets/images/ermac_43.png' | relative_url }}){: .center-image }*(**Auto-clicking the clear button**)*
-  
-  
-   
+     
   ## readPush
-  - hello6
+  - This key is set with a value of **readPush** which is part of the response of pinging the C2 server, as appears in the below screenshot.
+  <p></p>
+  ![img]({{ '/assets/images/ermac_44.png' | relative_url }}){: .center-image }*(**Setting readPush key**)*
+  
+  - If the value of this key is equal to **"1"**, then, any pushed notification will get stolen and sent to the C2 server as appears in the below screenshot.
+  <p></p>
+  ![img]({{ '/assets/images/ermac_45.png' | relative_url }}){: .center-image }*(**Stealing the notifications**)*
+  
+ 
   ## activeInjection
   - hello7
  
