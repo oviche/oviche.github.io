@@ -268,11 +268,11 @@ description: The post shows the details about the capabilities of ERMAC android 
   ## hiddenSMS
   - This key within the shared preference, is set with the value of the key **hideSMS**, which is part of the response of pinging the C2 server, as appears in the below screenshot.   
   <p></p>
-  ![img]({{ '/assets/images/ermac_35.png' | relative_url }}){: .center-image }*(**setting HiddenSMS key**)*
+   ![img]({{ '/assets/images/ermac_35.png' | relative_url }}){: .center-image }*(**setting HiddenSMS key**)*
   
   - As appear in the below code, when the value of this key is equal to **"1"**, the needed permission is granted and the default SMS manager not equals the virus package name. Then, the bot requests the user to enable a virus application as the default SMS manager to hide the SMS(es). Also, it sets **autoClickSms** to **"1"** to signal the accessibility service to auto-click the enable button.
   <p></p>
-  ![img]({{ '/assets/images/ermac_36.png' | relative_url }}){: .center-image }*(**Change the default SMS manager**)*
+   ![img]({{ '/assets/images/ermac_36.png' | relative_url }}){: .center-image }*(**Change the default SMS manager**)*
   
   ## offSound
   - hello3
