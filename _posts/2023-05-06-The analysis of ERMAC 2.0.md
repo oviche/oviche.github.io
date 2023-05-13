@@ -287,7 +287,15 @@ description: The post shows the details about the capabilities of ERMAC android 
   - This key is set with a value of **keylogger**, which is part of the response of pinging the C2 server, as appears in the below screenshot.
   <p></p>
   ![img]({{ '/assets/images/ermac_39.png' | relative_url }}){: .center-image }*(**Setting keylogger key**)*
-  -
+  
+  - When this key is set to **"1"**, the keylogging functionality is enabled for the various events for logging date, type of event, and text of events which appears below.
+  <p></p>
+  ![img]({{ '/assets/images/ermac_40.png' | relative_url }}){: .center-image }*(**keylogging user actions**)*
+
+  - Then, these logged data are appended to the value of key **datakeylogger** which sent to C2 server later.
+  <p></p>
+  ![img]({{ '/assets/images/ermac_41.png' | relative_url }}){: .center-image }*(**Save the logged actions**)*
+  
   
   ## clearPush
   - hello5
