@@ -254,18 +254,17 @@ description: The post shows the details about the capabilities of ERMAC android 
   - This key in the shared preference, is set by the C2 server, as appears below. its value instructs the bot to lock the device screen or not.
    <p></p>
      
-      ![img]({{ '/assets/images/ermac_32.png' | relative_url }}){: .center-image }*(**Setting the LockDevice key**)*
+     ![img]({{ '/assets/images/ermac_32.png' | relative_url }}){: .center-image }*(**Setting the LockDevice key**)*
   
   - If the key **lockDevice** is set to **"1"**, then a new service gets executed which is responsible for locking the device screen.
    <p></p>
    
-      ![img]({{ '/assets/images/ermac_33.png' | relative_url }}){: .center-image }*(**Starting the service that locking the screen**)*
+     ![img]({{ '/assets/images/ermac_33.png' | relative_url }}){: .center-image }*(**Starting the service that locking the screen**)*
   
   - The following line, located inside the infinite loop of the service code is responsible for locking the screen.
     
-      ![img]({{ '/assets/images/ermac_34.png' | relative_url }}){: .center-image }*(**locking the screen**)*
+     ![img]({{ '/assets/images/ermac_34.png' | relative_url }}){: .center-image }*(**locking the screen**)*
   
-
 
   ## hiddenSMS
   - This key within the shared preference, is set with the value of the key **hideSMS**, which is part of the response of pinging the C2 server, as appears in the below screenshot.   
