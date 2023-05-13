@@ -284,7 +284,7 @@ description: The post shows the details about the capabilities of ERMAC android 
    
   
   ## keylogger
-  - This key is set with a value of **keylogger**, which is part of the response of pinging the C2 server, as appears in the below screenshot.
+  - This key is set with a value of **keylogger** which is part of the response of pinging the C2 server, as appears in the below screenshot.
   <p></p>
   ![img]({{ '/assets/images/ermac_39.png' | relative_url }}){: .center-image }*(**Setting keylogger key**)*
   
@@ -298,7 +298,16 @@ description: The post shows the details about the capabilities of ERMAC android 
   
   
   ## clearPush
-  - hello5
+  - This key is set with a value of **clearPush** which is part of the response of pinging the C2 server, as appears in the below screenshot.
+  <p></p>
+  ![img]({{ '/assets/images/ermac_42.png' | relative_url }}){: .center-image }*(**Setting clearPush key**)*
+  
+  - On condition that this key is equal **"1"**, The list of pushed notifications is getting cleared by the accessibility service by auto-clicking on the **Clear** button.
+  <p></p>
+  ![img]({{ '/assets/images/ermac_43.png' | relative_url }}){: .center-image }*(**Auto-clicking the clear button**)*
+  
+  
+   
   ## readPush
   - hello6
   ## activeInjection
