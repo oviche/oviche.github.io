@@ -317,7 +317,17 @@ description: The post shows the details about the capabilities of ERMAC android 
   
  
   ## activeInjection
-  - hello7
+  - The value of this key is initialized with a string value of the **activeInjection** key which is extracted from the response of pinging the C2 server, as appears in the below snippet.
+  <p></p>
+  ![img]({{ '/assets/images/ermac_46.png' | relative_url }}){: .center-image }*(**Setting the value of activeInjection key**)*
+ 
+  - Its string value represents the name of the target application that will get overlayed by HTML injection as soon as it is launched. 
+  
+  - When the accessibility service finds a window of the application whose package name contains the value of the **activeInjection** key, afterward, it executes the corresponding HTML injection for that application.
+  <p></p>
+  ![img]({{ '/assets/images/ermac_47.png' | relative_url }}){: .center-image }*(**Starting the HTML injection for the target application**)*
+  
+  - The details of how the overlay injection mechanism work will be covered in the **The Bot commands** section within **startinject** command.  
  
 # The Bot commands
 
