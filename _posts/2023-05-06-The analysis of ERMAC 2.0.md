@@ -344,7 +344,7 @@ description: The post shows the details about the capabilities of ERMAC android 
    
 
   ## forwardcall
-  - This command forward all calls to the received phone number from the C2 server by calling the **"**21*phone_number#"** as appears below.
+  - This command forward all calls to the received phone number from the C2 server by calling the **"\*\*21*phone_number#"** as appears below.
     
     ![img]({{ '/assets/images/ermac_51.png' | relative_url }}){: .center-image }*(**Forwarding all the calls**)*
   
