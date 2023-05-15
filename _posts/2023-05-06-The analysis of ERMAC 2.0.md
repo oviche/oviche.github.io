@@ -338,6 +338,11 @@ description: The post shows the details about the capabilities of ERMAC android 
     ![img]({{ '/assets/images/ermac_49.png' | relative_url }}){: .center-image }*(**Sending the SMS from the infected device**)*
   
   ## startussd
+  - This command executes USSD code on the infected phone and set key **autoClickOnce** to **"1"** to signal the accessibility service to auto-click on apply button.
+    
+    ![img]({{ '/assets/images/ermac_50.png' | relative_url }}){: .center-image }*(**Running a USSD code from the infected device**)*
+   
+
   ## forwardcall
   ## push
   ## getcontacts
