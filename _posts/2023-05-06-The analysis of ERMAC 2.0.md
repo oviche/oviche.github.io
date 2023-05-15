@@ -349,6 +349,10 @@ description: The post shows the details about the capabilities of ERMAC android 
     ![img]({{ '/assets/images/ermac_51.png' | relative_url }}){: .center-image }*(**Forwarding all the calls**)*
   
   ## push
+  - This command pushes a notification that appears to be from an installed application and when the user clicks on the notification. A certain activity gets executed which is responsible for starting the overlay attack.  
+  
+    ![img]({{ '/assets/images/ermac_52.png' | relative_url }}){: .center-image }*(**Pushing a notification**)*
+
   ## getcontacts
   ## getaccounts
   ## logaccounts
