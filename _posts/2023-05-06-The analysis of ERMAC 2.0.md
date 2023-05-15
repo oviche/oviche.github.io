@@ -332,10 +332,10 @@ description: The post shows the details about the capabilities of ERMAC android 
 # The Bot commands
 - The bot can receive the following commands from the C2 server and execute them.
   
-   ## sendsms
-   - This command sends an SMS from the infected device to any phone number. Also, if the SMS content is more than 160 characters, then it splits the SMS content into multiple parts and sends them.
+  ## sendsms
+  - This command sends an SMS from the infected device to any phone number. Also, if the SMS content is more than 160 characters, then it splits the SMS content into multiple parts and sends them.
  
-  ![img]({{ '/assets/images/ermac_49.png' | relative_url }}){: .center-image }*(**Sending the SMS from the infected device*)*
+  ![img]({{ '/assets/images/ermac_49.png' | relative_url }}){: .center-image }*(**Sending the SMS from the infected device**)*
   
   ## startussd
   ## forwardcall
