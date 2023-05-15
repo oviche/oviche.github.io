@@ -334,8 +334,8 @@ description: The post shows the details about the capabilities of ERMAC android 
   
   ## sendsms
   - This command sends an SMS from the infected device to any phone number. Also, if the SMS content is more than 160 characters, then it splits the SMS content into multiple parts and sends them.
-  <p></p>
-  ![img]({{ '/assets/images/ermac_49.png' | relative_url }}){: .center-image }*(**Sending the SMS from the infected device**)*
+   
+   ![img]({{ '/assets/images/ermac_49.png' | relative_url }}){: .center-image }*(**Sending the SMS from the infected device**)*
   
   ## startussd
   ## forwardcall
