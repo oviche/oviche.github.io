@@ -321,13 +321,14 @@ description: The post shows the details about the capabilities of ERMAC android 
   <p></p>
   ![img]({{ '/assets/images/ermac_46.png' | relative_url }}){: .center-image }*(**Setting the value of activeInjection key**)*
  
-  - Its string value represents the name of the target application that will get overlayed by HTML injection as soon as it is launched. 
-  
-  - When the accessibility service finds a window of the application whose package name contains the value of the **activeInjection** key, afterward, it executes the corresponding HTML injection for that application.
+  - Its string value represents the package name of the target application that will get overlayed by HTML injection when launched. Once the accessibility service finds an application whose package name matches the value of this key, then it runs a coroutine that performs the overlay attacks by executing a function called **executeFakeApp**.
+
   <p></p>
-  ![img]({{ '/assets/images/ermac_47.png' | relative_url }}){: .center-image }*(**Starting the HTML injection for the target application**)*
+  ![img]({{ '/assets/images/ermac_47.png' | relative_url }}){: .center-image }*(**Finding a target application for overlay attack**)*
   
-  - The details of how the overlay injection mechanism work will be covered in the **The Bot commands** section within **startinject** command.  
+  ![img]({{ '/assets/images/ermac_48.png' | relative_url }}){: .center-image }*(**Executing an overlay attack**)*
+  
+  - The details of how the overlay attack mechanism work will be covered in the **The Bot commands** section within **startinject** command.  
  
 # The Bot commands
 
