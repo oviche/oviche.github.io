@@ -369,6 +369,10 @@ description: The post shows the details about the capabilities of ERMAC android 
   - This command does the same behavior as the previous one.
   
   ## getinstallapps
+  - This command gets the package names of all non-system installed applications' and then sends them to the C2 server.
+    
+    ![img]({{ '/assets/images/ermac_55.png' | relative_url }}){: .center-image }*(**Retrieving the installed application**)*
+  
   ## getsms
   ## startinject
   ## openurl
