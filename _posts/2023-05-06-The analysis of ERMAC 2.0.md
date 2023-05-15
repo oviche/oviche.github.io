@@ -354,8 +354,20 @@ description: The post shows the details about the capabilities of ERMAC android 
     ![img]({{ '/assets/images/ermac_52.png' | relative_url }}){: .center-image }*(**Pushing a notification**)*
 
   ## getcontacts
+  - This command steals the contact's records including the name and phone number and sends them to the C2 server as appear below.
+    
+     ![img]({{ '/assets/images/ermac_53.png' | relative_url }}){: .center-image }*(**Stealing contacts records**)*
+  
+  - Additionally, it steals all of the registered accounts' names and types and sends them to the C2 server. This behavior will be discussed in detail in the next command because both share the same function.
+ 
   ## getaccounts
+  -  This command retrieves all of the registered accounts' names and types and sends them to the C2 server as appear below.
+     
+     ![img]({{ '/assets/images/ermac_54.png' | relative_url }}){: .center-image }*(**Stealing the registered accounts**)*
+ 
   ## logaccounts
+  - This command does the same behavior as the previous one.
+  
   ## getinstallapps
   ## getsms
   ## startinject
