@@ -374,6 +374,10 @@ description: The post shows the details about the capabilities of ERMAC android 
     ![img]({{ '/assets/images/ermac_55.png' | relative_url }}){: .center-image }*(**Retrieving the installed application**)*
   
   ## getsms
+  - This command steals all the SMS(es), retrieving the SMS(es) body, service_center, date, type, and sender number. After that, these stolen data are sent to the C2 server.
+    
+    ![img]({{ '/assets/images/ermac_56.png' | relative_url }}){: .center-image }*(**Stealing SMS(es)**)*
+  
   ## startinject
   ## openurl
   ## startauthenticator2
