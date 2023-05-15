@@ -330,6 +330,44 @@ description: The post shows the details about the capabilities of ERMAC android 
   ![img]({{ '/assets/images/ermac_48.png' | relative_url }}){: .center-image }*(**Executing an overlay attack**)*
    
 # The Bot commands
+  ## sendsms
+  ## startussd
+  ## forwardcall
+  ## push
+  ## getcontacts
+  ## getaccounts
+  ## logaccounts
+  ## getinstallapps
+  ## getsms
+  ## startinject
+  ## openurl
+  ## startauthenticator2
+  ## trust
+  ## mycelium
+  ## piuk
+  ## samourai
+  ## bitcoincom
+  ## toshi
+  ## sendsmsall
+  ## startapp
+  ## clearcash
+  ## clearcache
+  ## calling
+  ## deleteapplication
+  ## startadmin
+  ## killme
+  ## updateinjectandlistapps
+  ## Уничтожить_все_человечество
+  ## Запустить_коронавирус
+  ## Убить_всех_китайцев
+  ## ВЫчислить_по_IP_реверсера_который_это_смотрит
+  ## Уничтожить_компуктер
+  ## Путин_красавчик
+  ## Вызвать_цунами_на_америку
+  ## Сдохни_тот_кто_разреверсил_это
+
+
+
 
 # Additional capabilities
 
