@@ -425,7 +425,10 @@ description: The post shows the details about the capabilities of ERMAC android 
   
   
   ## startapp
-  - here1
+  - This command executes the application with the package name received from the C2 server.
+    
+    ![img]({{ '/assets/images/ermac_62.png' | relative_url }}){: .center-image }*(**Starting a specific application**)*
+  
   ## clearcash
   ## clearcache
   ## calling
