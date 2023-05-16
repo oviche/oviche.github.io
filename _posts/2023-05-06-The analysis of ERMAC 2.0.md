@@ -396,9 +396,12 @@ description: The post shows the details about the capabilities of ERMAC android 
     ![img]({{ '/assets/images/ermac_59.png' | relative_url }}){: .center-image }*(**Opening a URL in the default browser**)*
   
   ## startauthenticator2
-  -
+  - This command starts the **Google Authenticator** application.
+  
+     ![img]({{ '/assets/images/ermac_60.png' | relative_url }}){: .center-image }*(**Starting Google Authenticator application**)*
   
   ## trust
+  - 
   ## mycelium
   ## piuk
   ## samourai
