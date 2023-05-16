@@ -430,12 +430,32 @@ description: The post shows the details about the capabilities of ERMAC android 
     ![img]({{ '/assets/images/ermac_62.png' | relative_url }}){: .center-image }*(**Starting a specific application**)*
   
   ## clearcash
+  - This command doesn't do anything.
+  
   ## clearcache
+  - This command opens up the application settings for the received package name then it sets key **autoClickCache** in shared preference to **"1"** to signal the accessibility service to apply auto-clicks to clear the application data that includes the cache.
+   
+   ![img]({{ '/assets/images/ermac_63.png' | relative_url }}){: .center-image }*(**Opening a specific application settings window**)*
+  
+  
+  
   ## calling
+  - This command makes a phone call to a specific received number from C2. 
+   
+     ![img]({{ '/assets/images/ermac_64.png' | relative_url }}){: .center-image }*(**Making a phone call**)*
+  
+  - Also, the C2 can send whether to lock the device screen while making the phone call by setting key **lockDevice** to **"1"** which will signal a specific service to lock the screens.
+    
+     ![img]({{ '/assets/images/ermac_65.png' | relative_url }}){: .center-image }*(**Making a phone call**)*
+
+  
   ## deleteapplication
   ## startadmin
   ## killme
+  
+  
   ## updateinjectandlistapps
+  
   ## Уничтожить_все_человечество
   ## Запустить_коронавирус
   ## Убить_всех_китайцев
