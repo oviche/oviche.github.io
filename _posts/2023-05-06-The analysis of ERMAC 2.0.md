@@ -381,7 +381,7 @@ description: The post shows the details about the capabilities of ERMAC android 
   ## startinject
   - This command starts an overlay attack for a targeted application by opening up a window over other applications' windows.
  
-  - That occurs by executing **executeFakeApp** function, which in turn executes a start to the activity with shared preference **"app_inject"** with the value of the package name of the target application.
+  - That occurs by executing the **executeFakeApp** function, which in turn starts the activity and sets key **"app_inject"** of shared preference with the value of the package name of the target application.
   
     ![img]({{ '/assets/images/ermac_57.png' | relative_url }}){: .center-image }*(**The body of executeFakeApp function**)*
  
