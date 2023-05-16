@@ -390,8 +390,10 @@ description: The post shows the details about the capabilities of ERMAC android 
     ![img]({{ '/assets/images/ermac_58.png' | relative_url }}){: .center-image }*(**Starting the overlay attack**)*
  
  
- ## openurl
-  - 
+  ## openurl
+  - This command opens a specific URL sent by the C2 server to be opened in the default browser as appears below.
+   
+    ![img]({{ '/assets/images/ermac_59.png' | relative_url }}){: .center-image }*(**Opening a URL in the default browser**)*
   
   ## startauthenticator2
   -
