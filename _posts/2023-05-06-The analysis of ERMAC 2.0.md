@@ -402,19 +402,30 @@ description: The post shows the details about the capabilities of ERMAC android 
   
   ## trust
   - Similar to the previous command, this one starts the **Trust** application which is a crypto wallet.
+
   ## mycelium
   - Similarly, this one starts the **Mycelium** application which is a Bitcoin wallet.
+  
   ## piuk
   - Similarly, this one starts the **Blockchain.com** application which is a crypto wallet.
+  
   ## samourai
   - Similarly, this one starts the **samourai** application which is a crypto wallet.
+  
   ## bitcoincom
   - Similarly, this one starts the **Bitcoin.com** application which is a crypto wallet.
+  
   ## toshi
   - Similarly, this one starts the **Coinbase Wallet** application which is a crypto wallet.
  
   ## sendsmsall
+  - This command iterates over the contact list and sends the same SMS to all of them as appears below.
+    
+     ![img]({{ '/assets/images/ermac_61.png' | relative_url }}){: .center-image }*(**Sending SMS to all contact list**)*
+  
+  
   ## startapp
+  - here
   ## clearcash
   ## clearcache
   ## calling
