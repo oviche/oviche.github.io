@@ -379,8 +379,22 @@ description: The post shows the details about the capabilities of ERMAC android 
     ![img]({{ '/assets/images/ermac_56.png' | relative_url }}){: .center-image }*(**Stealing SMS(es)**)*
   
   ## startinject
-  ## openurl
+  - This command starts an overlay attack for a targeted application by opening up a window over other applications' windows.
+  - That occurs by executing **executeFakeApp** function, which in turn executes a start to the activity with shared preference **"app_inject"** with the value of the package name of the target application.
+  
+    ![img]({{ '/assets/images/ermac_57.png' | relative_url }}){: .center-image }*(**The body of executeFakeApp function**)*
+ 
+  - The executed activity will get the package name of the targeted application. Then it retrieves and decodes base-64 encoded HTML extracted from the shared preference. Finally, it fixes HTML language based on the locale's language and loads it to the web view to appear to the user.
+    
+    ![img]({{ '/assets/images/ermac_58.png' | relative_url }}){: .center-image }*(**Starting the overlay attack**)*
+ 
+ 
+ ## openurl
+  - 
+  
   ## startauthenticator2
+  -
+  
   ## trust
   ## mycelium
   ## piuk
