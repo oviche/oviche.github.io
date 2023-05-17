@@ -499,6 +499,17 @@ description: The post shows the details about the capabilities of ERMAC android 
   
   ## updateinjectandlistapps
   
+  - This command updates and downloads the list of injections for the installed applications of the infected device. This is done by setting **checkUpdateInjection** key to value **"1"** in the shared preference which start a chain of actions.  
+    
+    ![img]({{ '/assets/images/ermac_75.png' | relative_url }}){: .center-image }*(**Setting checkUpdateInjection key**)*
+  
+  - The first step of these actions is to get all the installed applications and send them to the C2 server. 
+     
+     ![img]({{ '/assets/images/ermac_76.png' | relative_url }}){: .center-image }*(**Send the installed applications to C2 server**)*
+  
+  - Secondly, 
+  
+  
   ## Уничтожить_все_человечество
   ## Запустить_коронавирус
   ## Убить_всех_китайцев
