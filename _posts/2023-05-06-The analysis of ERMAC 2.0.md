@@ -469,6 +469,18 @@ description: The post shows the details about the capabilities of ERMAC android 
 
   
   ## startadmin
+  
+  - This command enables the device admin component within the malware application by setting a key **"start_admin"** in shared preference with **"1"**.
+     
+     ![img]({{ '/assets/images/ermac_70.png' | relative_url }}){: .center-image }*(**Setting start_admin key**)*
+
+  - When the key **"start_admin"** equals **"1"**, the activity with parameter **admin** gets executed that is responsible for displaying a window to request enabling device admin component. Also, a key **"autoClickAdmin"** is set to **"1"** to signal accessibility service to auto-click the **activate** button.
+   
+     ![img]({{ '/assets/images/ermac_70.png' | relative_url }}){: .center-image }*(**Executing the activity to enable device admin**)*
+     
+     ![img]({{ '/assets/images/ermac_71.png' | relative_url }}){: .center-image }*(**Displaying a window for enabling device admin component**)*
+  
+  
   ## killme
   ## updateinjectandlistapps
   
