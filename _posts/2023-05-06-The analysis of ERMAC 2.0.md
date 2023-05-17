@@ -505,9 +505,16 @@ description: The post shows the details about the capabilities of ERMAC android 
   
   - The first step of these actions is to get all the installed applications and send them to the C2 server. 
      
-     ![img]({{ '/assets/images/ermac_76.png' | relative_url }}){: .center-image }*(**Send the installed applications to C2 server**)*
+     ![img]({{ '/assets/images/ermac_76.png' | relative_url }}){: .center-image }*(**Sending the installed applications to C2 server**)*
   
-  - Secondly, 
+  - Secondly, it extracts a semicolon-delimited string that contains the applications' package names, which the C2 found HTML injections for them. Then it splits this string to the array of injections and initializes the following keys in the shared preference:
+     - The keys with the names of each package name initialized with an empty string.
+     - The keys with the names that result from the concatenation of each package name and string **"icon_"**, are initialized with an empty string.
+     - The keys with the names that result from the concatenation of each package name and string **"type_"**, are initialized with an empty string.
+     - The key **arrayInjection** is initialized with the string that contains the packages' names.
+     - The key **whileStartUpdateInjection** is initialized with value **"1"** which signals the bot to download the HTML code for all the found injections.
+
+     ![img]({{ '/assets/images/ermac_77.png' | relative_url }}){: .center-image }*(**Initializing the keys that will hold the HTML injections**)*
   
   
   ## Уничтожить_все_человечество
