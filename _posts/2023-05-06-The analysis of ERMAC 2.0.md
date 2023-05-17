@@ -444,16 +444,32 @@ description: The post shows the details about the capabilities of ERMAC android 
    
      ![img]({{ '/assets/images/ermac_64.png' | relative_url }}){: .center-image }*(**Making a phone call**)*
   
-  - Also, the C2 can send whether to lock the device screen while making the phone call by setting key **lockDevice** to **"1"** which will signal a specific service to lock the screens.
+  - Also, the C2 can send whether to lock the device screen while making the phone call by setting key **lockDevice** to **"1"** which will signal a specific service to lock the screen.
     
      ![img]({{ '/assets/images/ermac_65.png' | relative_url }}){: .center-image }*(**Making a phone call**)*
 
   
   ## deleteapplication
+  - This command uninstalls the application with the package name received from the C2 server. First, it sets the key **killApplication** in the shared preference with a package name of the application to delete.  
+     
+     ![img]({{ '/assets/images/ermac_66.png' | relative_url }}){: .center-image }*(**Setting killApplication key**)*
+  
+  - Secondly, if the device admin component is enabled, then it will have enough privileges to uninstall the application without needing any user intervention.
+     
+     ![img]({{ '/assets/images/ermac_67.png' | relative_url }}){: .center-image }*(**Uninstalling the intended application**)*
+  
+  - However, if the device admin is not enabled then the bot will open up a window to request the user to delete the application. 
+  
+     ![img]({{ '/assets/images/ermac_68.png' | relative_url }}){: .center-image }*(**Request to delete the application**)*
+
+  - Finally, the accessibility service will perform auto-clicking on the **ok** button to approve the uninstallation, as appears below.
+      
+     ![img]({{ '/assets/images/ermac_69.png' | relative_url }}){: .center-image }*(**Approving the uninstallation request**)*
+
+
+  
   ## startadmin
   ## killme
-  
-  
   ## updateinjectandlistapps
   
   ## Уничтожить_все_человечество
