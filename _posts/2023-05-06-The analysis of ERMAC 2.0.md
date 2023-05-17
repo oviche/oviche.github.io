@@ -513,7 +513,7 @@ description: The post shows the details about the capabilities of ERMAC android 
      - The keys with the names that result from the concatenation of each package name and string **"type_"**, are initialized with an empty string.
      - The key **arrayInjection** is initialized with the string that contains the packages' names.
      - The key **whileStartUpdateInjection** is initialized with value **"1"** which signals the bot to download the HTML code for all the found injections.
-
+     <p></p>
      ![img]({{ '/assets/images/ermac_77.png' | relative_url }}){: .center-image }*(**Initializing the keys that will hold the HTML injections**)*
   
   
@@ -529,6 +529,6 @@ description: The post shows the details about the capabilities of ERMAC android 
 
 
 
-# Additional capabilities
+# Updating the bot parameters
 
 
