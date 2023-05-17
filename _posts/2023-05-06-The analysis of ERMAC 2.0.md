@@ -507,7 +507,7 @@ description: The post shows the details about the capabilities of ERMAC android 
      
      ![img]({{ '/assets/images/ermac_76.png' | relative_url }}){: .center-image }*(**Sending the installed applications to C2 server**)*
   
-  - Secondly, it extracts a semicolon-delimited string that contains the applications' package names, which the C2 found HTML injections for them. Then it splits this string to the array of injections and initializes the following keys in the shared preference:
+  - For the second step, it extracts a semicolon-delimited string that contains the applications' package names, which the C2 found HTML injections for them. Then it splits this string to the array of injections and initializes the following keys in the shared preference:
      - The keys with the names of each package name initialized with an empty string.
      
      - The keys with the names that result from the concatenation of each package name and string **"icon_"**, are initialized with an empty string.
@@ -520,6 +520,26 @@ description: The post shows the details about the capabilities of ERMAC android 
      <p></p>
      ![img]({{ '/assets/images/ermac_77.png' | relative_url }}){: .center-image }*(**Initializing the keys that will hold the HTML injections**)*
   
+  - When the key **"whileStartUpdateInjection"** equals **"1"**, the value of key **arrayInjection** that previously described is split-up to form an array of package names.
+    
+    ![img]({{ '/assets/images/ermac_78.png' | relative_url }}){: .center-image }*(**Splitting the value of "arrayInjection" key**)*
+  
+  - After that, it will start downloading the injection payload for every package name of the array package names by calling the function **downloadInjection**.
+    
+    ![img]({{ '/assets/images/ermac_79.png' | relative_url }}){: .center-image }*(**Downloading the injections**)*
+  
+  - The **downloadInjection** function sends a request to download injection for a specific package name by forwarding a command **downloadInjection** along with the package name and bot ID.
+  
+    ![img]({{ '/assets/images/ermac_80.png' | relative_url }}){: .center-image }*(**Sending a "downloadInjection" command to C2 server**)*
+  
+  - Finally, after receiving the response from the C2 server, the following keys in shared preference are set with injection-related values that are extracted from the response:
+     - The keys with the names of each package name are set to base-64 encoded HTML payload.
+   
+     - The keys with the names that result from the concatenation of each package name and string **"icon_"**, are set to icon data for specific application.
+   
+     - The keys with the names that result from the concatenation of each package name and string **"type_"**, are set to type of the injection.
+    <p></p> 
+    ![img]({{ '/assets/images/ermac_81.png' | relative_url }}){: .center-image }*(**Saving the injections-related data**)*
   
   ## Уничтожить_все_человечество
   ## Запустить_коронавирус
