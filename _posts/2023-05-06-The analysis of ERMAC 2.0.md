@@ -508,6 +508,7 @@ description: The post shows the details about the capabilities of ERMAC android 
      ![img]({{ '/assets/images/ermac_76.png' | relative_url }}){: .center-image }*(**Sending the installed applications to C2 server**)*
   
   - For the second step, it extracts a semicolon-delimited string that contains the applications' package names, which the C2 found HTML injections for them. Then it splits this string to the array of injections and initializes the following keys in the shared preference:
+     
      - The keys with the names of each package name initialized with an empty string.
      
      - The keys with the names that result from the concatenation of each package name and string **"icon_"**, are initialized with an empty string.
@@ -533,6 +534,7 @@ description: The post shows the details about the capabilities of ERMAC android 
     ![img]({{ '/assets/images/ermac_80.png' | relative_url }}){: .center-image }*(**Sending a "downloadInjection" command to C2 server**)*
   
   - Finally, after receiving the response from the C2 server, the following keys in shared preference are set with injection-related values that are extracted from the response:
+    
      - The keys with the names of each package name are set to base-64 encoded HTML payload.
    
      - The keys with the names that result from the concatenation of each package name and string **"icon_"**, are set to icon data for specific application.
