@@ -432,6 +432,7 @@ description: The post shows the details about the capabilities of ERMAC android 
   ## clearcash
   - This command doesn't do anything.
   
+ 
   ## clearcache
   - This command opens up the application settings for the received package name then it sets key **autoClickCache** in shared preference to **"1"** to signal the accessibility service to apply auto-clicks to clear the application data that includes the cache.
    
@@ -474,7 +475,7 @@ description: The post shows the details about the capabilities of ERMAC android 
      
      ![img]({{ '/assets/images/ermac_70.png' | relative_url }}){: .center-image }*(**Setting start_admin key**)*
 
-  - When the key **"start_admin"** equals **"1"**, the activity with parameter **admin** gets executed that is responsible for displaying a window to request enabling device admin component. Also, a key **"autoClickAdmin"** is set to **"1"** to signal accessibility service to auto-click the **activate** button.
+  - When the key **"start_admin"** equals **"1"**, the activity with parameter **"admin"** gets executed that is responsible for displaying a window to request enabling device admin component. Also, a key **"autoClickAdmin"** is set to **"1"** to signal accessibility service to auto-click the **activate** button.
    
      ![img]({{ '/assets/images/ermac_71.png' | relative_url }}){: .center-image }*(**Executing the activity to enable device admin**)*
      
