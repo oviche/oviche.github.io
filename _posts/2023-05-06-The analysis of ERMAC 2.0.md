@@ -544,15 +544,28 @@ description: The post shows the details about the capabilities of ERMAC android 
     ![img]({{ '/assets/images/ermac_81.png' | relative_url }}){: .center-image }*(**Saving the injections-related data**)*
   
   ## Уничтожить_все_человечество
+  - This command translation means in English **"Destroy All Mankind"** does nothing and it can be considered a joke. 
+
   ## Запустить_коронавирус
+  - This command translation means in English **"Launch Coronavirus"** and does nothing like the previous one.
+ 
   ## Убить_всех_китайцев
+  - This command translation means in English **"Kill all Chinese"** and does nothing like the previous one.
+  
   ## ВЫчислить_по_IP_реверсера_который_это_смотрит
+  - This command translation means in English **"Calculate by IP of the reverser that this is looking at"** and does nothing like the previous one.
+  
   ## Уничтожить_компуктер
+  - This command translation means in English **"Destroy Computer"** and does nothing like the previous one.
+  
   ## Путин_красавчик
+  - This command translation means in English **"Putin Handsome"** and does nothing like the previous one.
+  
   ## Вызвать_цунами_на_америку
+  - This command translation means in English **"call a tsunami on america"** and does nothing like the previous one.
+  
   ## Сдохни_тот_кто_разреверсил_это
-
-
+  - This command translation means in English **"Die Whoever Reversed This"** and does nothing like the previous one.
 
 
 # Updating the bot parameters
