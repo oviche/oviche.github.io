@@ -579,4 +579,7 @@ description: The post shows the details about the capabilities of ERMAC android 
    ![img]({{ '/assets/images/ermac_83.png' | relative_url }}){: .center-image }*(**Sending the bot parameters' information**)*
 
 
+# Stealing the crypto wallets and authenticators backup phrases
+
+# Replacing crypto addresses with another one
 
