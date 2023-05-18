@@ -559,11 +559,11 @@ description: The post shows the details about the capabilities of ERMAC android 
 
 - For every 120 seconds, The bot sends the updated bot parameters and the infected device information to the C2 server by calling the **updateBotParams** function.
  
-  ![img]({{ '/assets/images/ermac_82.png' | relative_url }}){: .center-image }*(**Updating bot parameters every 120 seconds**)*
+   ![img]({{ '/assets/images/ermac_82.png' | relative_url }}){: .center-image }*(**Updating bot parameters every 120 seconds**)*
 
 - This function sends a command **updateBotParams** along with the same pieces of information that are sent during the bot's registration as explained previously. 
    
-  ![img]({{ '/assets/images/ermac_83.png' | relative_url }}){: .center-image }*(**Sending the bot parameters' information.**)*
+   ![img]({{ '/assets/images/ermac_83.png' | relative_url }}){: .center-image }*(**Sending the bot parameters' information**)*
 
 
 
