@@ -579,7 +579,21 @@ description: The post shows the details about the capabilities of ERMAC android 
    ![img]({{ '/assets/images/ermac_83.png' | relative_url }}){: .center-image }*(**Sending the bot parameters' information**)*
 
 
+
+# Crypto wallet address replacement
+
+- When the event of a view text change occurs, The accessibility service will check if the text contains an Ethereum wallet address pattern. In case of a match(es) is found, it will replace these matched Ethereum addresses with **0x3Cf7d4A8D30035Af83058371f0C6D4369B5024Ca** which is owned by threat actors. Also, it replaces the clipboard with their wallet address.
+ 
+  ![img]({{ '/assets/images/ermac_84.png' | relative_url }}){: .center-image }*(**Replacing Ethereum addresses with one owned by threat actors**)*
+ 
+- Similarly, the Bitcoin address(es) are replaced with the attackers' Bitcoin wallet address **bc1ql34xd8ynty3myfkwaf8jqeth0p4fxkxg673vlf**.
+
+  ![img]({{ '/assets/images/ermac_85.png' | relative_url }}){: .center-image }*(**Replacing Bitcoin addresses with one owned by threat actors**)*
+  
+  ![img]({{ '/assets/images/ermac_86.png' | relative_url }}){: .center-image }*(**Replacing Bitcoin addresses with one owned by threat actors**)*
+
+
 # Stealing the crypto wallets and authenticators backup phrases
 
-# Replacing crypto addresses with another one
+
 
