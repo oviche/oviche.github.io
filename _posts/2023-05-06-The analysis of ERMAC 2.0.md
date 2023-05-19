@@ -588,9 +588,9 @@ description: The post shows the details about the capabilities of ERMAC android 
  
 - Similarly, the Bitcoin address(es) are replaced with the attackers' Bitcoin wallet address **bc1ql34xd8ynty3myfkwaf8jqeth0p4fxkxg673vlf**.
 
-  ![img]({{ '/assets/images/ermac_85.png' | relative_url }}){: .center-image }*(**Replacing Bitcoin addresses with one owned by threat actors**)*
+  ![img]({{ '/assets/images/ermac_85.png' | relative_url }}){: .center-image }*(**Replacing Bitcoin addresses with one owned by threat actors snippet[1]**)*
   
-  ![img]({{ '/assets/images/ermac_86.png' | relative_url }}){: .center-image }*(**Replacing Bitcoin addresses with one owned by threat actors**)*
+  ![img]({{ '/assets/images/ermac_86.png' | relative_url }}){: .center-image }*(**Replacing Bitcoin addresses with one owned by threat actors snippet[2]**)*
 
 
 # Stealing the crypto wallets and authenticators backup phrases
