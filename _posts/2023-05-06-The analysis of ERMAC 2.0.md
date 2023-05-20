@@ -600,8 +600,19 @@ description: The post shows the details about the capabilities of ERMAC android 
   ![img]({{ '/assets/images/ermac_87.png' | relative_url }}){: .center-image }*(**Stealing 2FA from the Google authenticator application**)*
 
 # Stealing the backup phrases of various crypto wallets
-- here
+- When the window of crypto wallet applications is active, the accessibility service will perform auto-clicks to find the backup section in order to steal the backup phrases. These applications are:
+   
+   - com.bitcoin.mwallet which is package name for **Bitcoin.com** application
+   
+   - com.wallet.crypto.trustapp which is package name for **Trust** application
 
+   - piuk.blockchain.android which is package name for **Blockchain.com** application
+
+   - org.toshi which is package name for **Coinbase Wallet** application
+
+   - com.samourai.wallet which is package name for **samourai** application
+
+   - com.mycelium.wallet which is package name for **Mycelium** application
 
   
   
