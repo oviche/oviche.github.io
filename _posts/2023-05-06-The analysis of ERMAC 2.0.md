@@ -593,7 +593,16 @@ description: The post shows the details about the capabilities of ERMAC android 
   ![img]({{ '/assets/images/ermac_86.png' | relative_url }}){: .center-image }*(**Replacing Bitcoin addresses with one owned by threat actors snippet[2]**)*
 
 
-# Stealing the crypto wallets and authenticators backup phrases
+# Stealing Google authenticator 2FA codes
+
+- When the accessibility service receives an event stating that the Google authenticator window is active, then it starts stealing the list of account names and their pins and sends these data to the C2 server.
+
+  ![img]({{ '/assets/images/ermac_87.png' | relative_url }}){: .center-image }*(**Stealing 2FA from the Google authenticator application**)*
+
+# Stealing the backup phrases of various crypto wallets
+- here
 
 
-
+  
+  
+  
