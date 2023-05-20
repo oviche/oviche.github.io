@@ -602,17 +602,17 @@ description: The post shows the details about the capabilities of ERMAC android 
 # Stealing the backup phrases of various crypto wallets
 - When the window of crypto wallet applications is active, the accessibility service will perform auto-clicks to find the backup section in order to steal the backup phrases. These applications are:
    
-   - com.bitcoin.mwallet which is package name for **Bitcoin.com** application
+   - **Bitcoin.com** application whose package name is **com.bitcoin.mwallet**.
    
-   - com.wallet.crypto.trustapp which is package name for **Trust** application
+   - **Trust** application whose package name **com.wallet.crypto.trustapp**.
 
-   - piuk.blockchain.android which is package name for **Blockchain.com** application
+   - **Blockchain.com** application whose package name is **piuk.blockchain.android**.
 
-   - org.toshi which is package name for **Coinbase Wallet** application
+   - **Coinbase Wallet** application whose package name is **org.toshi**.
 
-   - com.samourai.wallet which is package name for **samourai** application
+   - **Samourai** application whose package name is **com.samourai.wallet**. 
 
-   - com.mycelium.wallet which is package name for **Mycelium** application
+   - **Mycelium** application whose package name is **com.mycelium.wallet**. 
 
   
   
