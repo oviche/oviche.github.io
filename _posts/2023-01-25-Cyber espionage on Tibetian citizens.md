@@ -83,12 +83,11 @@ description: The post shows the details of a malware attack that was developed b
   
     
   - The core functionality of this file is to do the following:
-    
-     1. Create the process **C:\Windows\system32\rundll32.exe shell32.dll,Control_RunDLL** in suspended mode.
+    1. Create the process **C:\Windows\system32\rundll32.exe shell32.dll,Control_RunDLL** in suspended mode.
       
-      ![img]({{ '/assets/images/espionage_tibet_image/lowzero_9.png' | relative_url }}){: .center-image }*(**Creating the process in suspended mode**)*
-     
-     2. Inject a shellcode at the suspended process entry point using an ``WriteProcessMemory`` API as appear in below screenshots.
+       ![img]({{ '/assets/images/espionage_tibet_image/lowzero_9.png' | relative_url }}){: .center-image }*(**Creating the process in suspended mode**)*
+ 
+    2. Inject a shellcode at the suspended process entry point using an ``WriteProcessMemory`` API as appear in below screenshots.
        
        ![img]({{ '/assets/images/espionage_tibet_image/lowzero_10.png' | relative_url }}){: .center-image }*(**The process injection by WriteProcessMemory**)*
      
