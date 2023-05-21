@@ -51,6 +51,8 @@ description: The post shows the details of a malware attack that was developed b
 
 # Description of functionality
 
+- This section will cover a detailed analysis of the components of the attack kill chain that's mentioned previously.
+ 
   ## RTF document
   
   - The RTF document holds two embedded objects **ghb4nrwmp.wmf** and **Equation.2\x00\x124Vx\x90\x124VxvT2** as shown below.
@@ -81,10 +83,12 @@ description: The post shows the details of a malware attack that was developed b
   
     
    ## Injected shellcode
-    - here
+  
+  - here
   
   
    ## Backdoor DLL file
-    - here
+  
+  - here
 
 
