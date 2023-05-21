@@ -14,14 +14,14 @@ description: The post shows the details of a malware attack that was developed b
 
 - The following diagram shows the flow of attack from the initial access to communication with the C2 server.
   
-  ![img]({{ '/assets/images/espionage_tibet_image/lowzero_1' | relative_url }}){: .center-image }(**Kill-chain diagram**)
+  ![img]({{ '/assets/images/espionage_tibet_image/lowzero_1.png' | relative_url }}){: .center-image }(**Kill-chain diagram**)
   
   ## Delivery
  - The malware is delivered as an RTF document, maybe through phishing mail, that contains an application form written in the chinese-tibetian language as it appears below.
   
-  ![img]({{ '/assets/images/espionage_tibet_image/lowzero_2' | relative_url }}){: .center-image }(**RTF document page [1]**)
+  ![img]({{ '/assets/images/espionage_tibet_image/lowzero_2.png' | relative_url }}){: .center-image }(**RTF document page [1]**)
  
-  ![img]({{ '/assets/images/espionage_tibet_image/lowzero_3' | relative_url }}){: .center-image }(**RTF document page [2]**)
+  ![img]({{ '/assets/images/espionage_tibet_image/lowzero_3.png' | relative_url }}){: .center-image }(**RTF document page [2]**)
 
  - This may indicate that this attack is targeting Tibetan people.
 
