@@ -195,17 +195,13 @@ div.post-content{
   a{
 
 color: #007bff; 
- &:hover {
-  color: red;
-         }	  
 
 	}
 
-//a > strong {
-//color: #007bff; 
+a:hover {
+  color: red;
+}
 
-//	}	
-	
 	
 	
 }
