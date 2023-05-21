@@ -314,17 +314,17 @@ This yara rule for detecting the common toolset used in building **ghb4nrwmp.wmf
 
 >detecting_toolset.yar
 {:.filename}
-{% highlight bash %}
+{% highlight ruby linenos %}
 import "pe"
 rule detecting_toolset{   
-   meta:
-     description= "this rule detect the toolsets that used to build both ghb4nrwmp.wmf and backdoor.dll"
+  meta:
+   description= "this rule detect the toolsets that used to build both ghb4nrwmp.wmf and backdoor.dll"
    
-   strings: 	
+  strings: 	
      $pe = "PE"
      $rich= "Rich"     
    
-   condition:
+  condition:
      $pe and $rich and 
      pe.rich_signature.toolid(225, 20806) and
 	   pe.rich_signature.toolid(223, 20806) and
