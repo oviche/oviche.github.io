@@ -286,7 +286,7 @@ This rule can be used to detect the RTF file that can lead to that open/create t
 
 >detect_evil_rtf.yar
 {:.filename}
-{% highlight python %}
+{% highlight java %}
  import "vt"
  import "cuckoo"
  rule detect_evil_rtf {
@@ -314,8 +314,7 @@ This yara rule for detecting the common toolset used in building **ghb4nrwmp.wmf
 
 >detecting_toolset.yar
 {:.filename}
-{% highlight yara %}
- 
+{% highlight java %}
  import "pe"
  rule detecting_toolset{   
    meta:
