@@ -125,5 +125,42 @@ description: The post shows the details of a malware attack that was developed b
     
     ![img]({{ '/assets/images/espionage_tibet_image/lowzero_20.png' | relative_url }}){: .center-image }*(**The address of export function F in disassembler**)*
  
-
+  ## The Backdoor DLL file
+ 
+  - The core functionality of this backdoor lies at export function **F**.
   
+  - First part of the F function is decrypting and parsing the data of the first parameter and below is the parsed data. 
+     
+    ![img]({{ '/assets/images/espionage_tibet_image/lowzero_21.png' | relative_url }}){: .center-image }*(**The structure of the decrypted parameter for the F function**)*
+   
+
+  - Then it initializes some global variables with the fields of parsed data as appeared below.
+
+     ![img]({{ '/assets/images/espionage_tibet_image/lowzero_22.png' | relative_url }}){: .center-image }*(**Initializing a global variable with mutex value**)*
+
+     ![img]({{ '/assets/images/espionage_tibet_image/lowzero_23.png' | relative_url }}){: .center-image }*(**Initializing the global variables with other parsed fields**)*
+
+
+  - After that, it collects the following information (fingerprinting) from the host then encrypt and sends it to the C2 server.
+  
+      1. **System information** like architecture information and type of the processor, the number of processors in the system, the page size, and other system-related information.
+      
+      2. **operating system version information** that contains major and minor version numbers, a build number, a platform identifier, and descriptive text about the operating system
+      
+      3. **Host-name**.
+      
+      4. **Machine IP addresses**.
+      
+      5. **name and the PID** of the process that hosts the backdoor in its address space.
+      
+      6. **mutex name**.
+      
+      7. **machine username**.
+
+   ![img]({{ '/assets/images/espionage_tibet_image/lowzero_24.png' | relative_url }}){: .center-image }*(**Collecting the host information**)*
+
+
+
+
+
+
