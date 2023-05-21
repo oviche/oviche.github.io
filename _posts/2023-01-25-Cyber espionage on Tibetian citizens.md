@@ -286,7 +286,7 @@ This rule can be used to detect the RTF file that can lead to that open/create t
 
 >detect_evil_rtf.yar
 {:.filename}
-{% highlight bash %}
+{% highlight ruby %}
 import "vt"
 import "cuckoo"
  rule detect_evil_rtf {
