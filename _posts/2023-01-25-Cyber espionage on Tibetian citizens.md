@@ -267,7 +267,7 @@ description: The post shows the details of a malware attack that was developed b
 
 # Scripts and yara rules
 
-1. The following python script used to decode the **ghb4nrwmp.wmf** and the decoded bytes into file.
+- The following python script used to decode the **ghb4nrwmp.wmf** and the decoded bytes into file.
    
   >python
   {:.filename}
@@ -282,9 +282,9 @@ description: The post shows the details of a malware attack that was developed b
     writeFile.close()
   {% endhighlight %}
 
-2. This rule can be used to detect the rtf file that can lead to that open/create the detected mutex or communicate with  the detected c2 server IP.
+- This rule can be used to detect the rtf file that can lead to that open/create the detected mutex or communicate with  the detected c2 server IP.
 
-3. This yara rule for detecting the common toolset used in building **ghb4nrwmp.wmf** and **backdoor.dll**.
+- This yara rule for detecting the common toolset used in building **ghb4nrwmp.wmf** and **backdoor.dll**.
 
 
 
