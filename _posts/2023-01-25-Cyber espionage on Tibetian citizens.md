@@ -93,8 +93,13 @@ description: The post shows the details of a malware attack that was developed b
      
        ![img]({{ '/assets/images/espionage_tibet_image/lowzero_11.png' | relative_url }}){: .center-image }*(**The injected code at rundll32 entrypoint**)*      
       
+    3. Another process injection occur at newly allocated address 0xBA0000 in the suspended process as appear below.  
+     
+       ![img]({{ '/assets/images/espionage_tibet_image/lowzero_12.png' | relative_url }}){: .center-image }*(**Another process injection by WriteProcessMemory**)*
+     
+       ![img]({{ '/assets/images/espionage_tibet_image/lowzero_13.png' | relative_url }}){: .center-image }*(**Injected code at address 0xBA0000 of suspended process**)*      
       
-      
-      
-      
+    4.  Finally, it Resumes the suspended process to execute the shellcode.
+     
+        ![img]({{ '/assets/images/espionage_tibet_image/lowzero_14.png' | relative_url }}){: .center-image }*(**Resuming the suspended process**)*    
       
