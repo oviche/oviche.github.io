@@ -194,6 +194,10 @@ div.post-meta {
 div.post-content{
  li > a{
 color: #007bff; 
+ &:hover {
+      color: red;
+    }	 
+	 
 	}
 
 a > strong {
