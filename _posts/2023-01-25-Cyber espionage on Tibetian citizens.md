@@ -268,20 +268,19 @@ description: The post shows the details of a malware attack that was developed b
 # Scripts and yara rules
 
 1. The following python script used to decode the **ghb4nrwmp.wmf** and the decoded bytes into file.
- 
->python
-{:.filename}
-{% highlight Python %}
-readFile = open("ghb4nrwmp.wmf","rb")
-dataBytes = readFile.read()
-readFile.close()
-writeFile = open("decoded_executable","wb")
-for Byte in dataBytes:
-   b = Byte ^ 0xfc
-   writeFile.write(b.to_bytes(1,'big')) 
 
-writeFile.close()
-{% endhighlight %}
+  >python
+  {:.filename}
+  {% highlight java %}
+  readFile = open("ghb4nrwmp.wmf","rb")
+  dataBytes = readFile.read()
+  readFile.close()
+  writeFile = open("decoded_executable","wb")
+  for Byte in dataBytes:
+    b = Byte ^ 0xfc
+    writeFile.write(b.to_bytes(1,'big')) 
+  writeFile.close()
+ {% endhighlight %}
 
 2. This rule can be used to detect the rtf file that can lead to that open/create the detected mutex or communicate with  the detected c2 server IP.
 
