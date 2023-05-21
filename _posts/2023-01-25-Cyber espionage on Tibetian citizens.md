@@ -103,3 +103,27 @@ description: The post shows the details of a malware attack that was developed b
      
         ![img]({{ '/assets/images/espionage_tibet_image/lowzero_14.png' | relative_url }}){: .center-image }*(**Resuming the suspended process**)*    
       
+  
+  ## The Injected shellcode
+  - Now let’s go deeper to spotlight the main objective of the injected shellcode inside the rundll32 process.
+  
+  - Firstly, when the process resumed the shellcode written at the entry point will be executed whose main goal is to jump to injected code at address 0xBA0000 as appear below.
+    
+    ![img]({{ '/assets/images/espionage_tibet_image/lowzero_15.png' | relative_url }}){: .center-image }*(**The EntryPoint shellcode**)*   
+
+  - The shellcode at address 0xBA0000 main goal is to load the dll that is embedded in the shellcode and exists at address 0xBA0C40 as appears below.
+    
+    ![img]({{ '/assets/images/espionage_tibet_image/lowzero_16.png' | relative_url }}){: .center-image }*(**The Dos stub of DLL in memory**)*  
+  
+  - By dumping the memory at this address and fixing the dos header, I could recognize that the following calls are for the **DllMain** and the exported function **F** which passed encoded/encrypted/compressed data as appeared in below screenshots.
+    
+    ![img]({{ '/assets/images/espionage_tibet_image/lowzero_17.png' | relative_url }}){: .center-image }*(**The call to DllMain in debugger**)*
+   
+    ![img]({{ '/assets/images/espionage_tibet_image/lowzero_18.png' | relative_url }}){: .left-image }*(**The address of DllMain in disassembler**)*
+    
+    
+    
+    
+ 
+
+  
