@@ -284,9 +284,9 @@ The following python script used to decode the **ghb4nrwmp.wmf** and the decoded
 
 This rule can be used to detect the RTF file that can lead to that open/create the detected mutex or communicate with  the detected c2 server IP.
 
->detect_evil_rtf
+>detect_evil_rtf.yar
 {:.filename}
-{% highlight yara %}
+{% highlight python %}
  import "vt"
  import "cuckoo"
  rule detect_evil_rtf {
@@ -312,17 +312,28 @@ This rule can be used to detect the RTF file that can lead to that open/create t
 
 This yara rule for detecting the common toolset used in building **ghb4nrwmp.wmf** and **backdoor.dll**.
 
->python
+>detecting_toolset.yar
 {:.filename}
 {% highlight yara %}
- readFile = open("ghb4nrwmp.wmf","rb")
- dataBytes = readFile.read()
- readFile.close()
- writeFile = open("decoded_executable","wb")
- for Byte in dataBytes:
-  b = Byte ^ 0xfc
-              writeFile.write(b.to_bytes(1,'big')) 
- writeFile.close()
+ 
+ import "pe"
+ rule detecting_toolset{   
+   meta:
+     description= "this rule detect the toolsets that used to build both ghb4nrwmp.wmf and backdoor.dll"
+   
+   strings: 	
+	   $pe = "PE"
+     $rich= "Rich"     
+   condition:
+  	 $pe and $rich and 
+     pe.rich_signature.toolid(225, 20806) and
+	   pe.rich_signature.toolid(223, 20806) and
+     pe.rich_signature.toolid(223, 20806) and
+	   pe.rich_signature.toolid(147, 30729) and
+     pe.rich_signature.toolid(1,0)        and
+	   pe.rich_signature.toolid(228, 21005) and
+	   pe.rich_signature.toolid(222, 21005)
+       }
 {% endhighlight %}
 
 
