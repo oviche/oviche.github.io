@@ -116,11 +116,14 @@ description: The post shows the details of a malware attack that was developed b
     ![img]({{ '/assets/images/espionage_tibet_image/lowzero_16.png' | relative_url }}){: .center-image }*(**The Dos stub of DLL in memory**)*  
   
   - By dumping the memory at this address and fixing the dos header, I could recognize that the following calls are for the **DllMain** and the exported function **F** which passed encoded/encrypted/compressed data as appeared in below screenshots.
-        
-    |![img]({{ '/assets/images/espionage_tibet_image/lowzero_17.png' | relative_url }}){: .center-image }*(**The call to DllMain in debugger**)*  | ![img]({{ '/assets/images/espionage_tibet_image/lowzero_18.png' | relative_url }}){: .center-image }*(**The address of DllMain in disassembler**)*|
-    |------------ | -------------|
     
+    ![img]({{ '/assets/images/espionage_tibet_image/lowzero_17.png' | relative_url }}){: .center-image }*(**The call to DllMain function in debugger**)* 
     
+    ![img]({{ '/assets/images/espionage_tibet_image/lowzero_18.png' | relative_url }}){: .center-image }*(**The address of DllMain function in disassembler**)*
+       
+    ![img]({{ '/assets/images/espionage_tibet_image/lowzero_19.png' | relative_url }}){: .center-image }*(**The call to export function F in debugger**)*
+    
+    ![img]({{ '/assets/images/espionage_tibet_image/lowzero_20.png' | relative_url }}){: .center-image }*(**The address of export function F in disassembler**)*
  
 
   
