@@ -193,10 +193,12 @@ div.post-meta {
 
 div.post-content{
   a{
+
 color: #007bff; 
-// &:hover {
-  //    color: red;
-   // }	  
+ &:hover {
+  color: red;
+         }	  
+
 	}
 
 //a > strong {
