@@ -7,3 +7,5 @@ description: The post shows the details of a malware attack that was developed b
 ---
 
 # Intro
+
+- This post will mainly include the details of my analysis of the stages of the attack, malware classification, tool tracking, and indicators of compromise.  
