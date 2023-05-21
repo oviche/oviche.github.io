@@ -170,36 +170,36 @@ description: The post shows the details of a malware attack that was developed b
     
     1. **Command ID: 2000**
        - This command decrypts the command data and assigns it to a global variable called **decrypted_command_data** as appears below.
-        
+        <p></p>
        ![img]({{ '/assets/images/espionage_tibet_image/lowzero_26.png' | relative_url }}){: .center-image }*(**Decrypting the command data**)*
    
     2. **Command ID: 2001**
        - Clear the variable which holds the decrypted command data as appears below.
-       
+       <p></p>
        ![img]({{ '/assets/images/espionage_tibet_image/lowzero_27.png' | relative_url }}){: .center-image }*(**Clearing the decrypted_command_data variable**)*
 
     3. **Command ID: 2002**
        - This command assigns the new value to the variable that is related to a certain time duration. 
-       
+       <p></p>
        ![img]({{ '/assets/images/espionage_tibet_image/lowzero_28.png' | relative_url }}){: .center-image }*(**Setting a time duration variable**)*
 
     4. **Command ID: 2003**
        - This command kills the running process that hosts the backdoor in memory as appears below.
-
+        <p></p>
        ![img]({{ '/assets/images/espionage_tibet_image/lowzero_29.png' | relative_url }}){: .center-image }*(**Killing the process**)*
 
     5. **Command ID: 2004**
        - This command set a global variable called **stop_connection_flag** that if set to zero, will result in a close connection and stop the backdoor execution as appear below.
-       
+       <p></p>
        ![img]({{ '/assets/images/espionage_tibet_image/lowzero_30.png' | relative_url }}){: .center-image }*(**Setting the stop_connection_flag to zero**)*     
 
     6. **Command ID: 2005**
        - This command is responsible to load modules to the memory and save addresses of the exported functions with an ordinal value that equals 1 and 2 as appeared below.
-       
+       <p></p>
        ![img]({{ '/assets/images/espionage_tibet_image/lowzero_31.png' | relative_url }}){: .center-image }*(**Loading modules and save exported functions**)* 
        
     7. **Command ID: 2006**
        - This command is responsible for getting the export function with an ordinal number equals to 3 from the last loaded module and executing it as appears below.   
-       
-       ![img]({{ '/assets/images/espionage_tibet_image/lowzero_32.png' | relative_url }}){: .center-image }*(**Getting and executing the exported function with ordinal 3***)* 
+       <p></p>
+       ![img]({{ '/assets/images/espionage_tibet_image/lowzero_32.png' | relative_url }}){: .center-image }*(**Getting and executing the exported function with ordinal 3**)* 
        
