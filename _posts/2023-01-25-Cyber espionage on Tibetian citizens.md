@@ -239,9 +239,9 @@ description: The post shows the details of a malware attack that was developed b
 
   ![img]({{ '/assets/images/espionage_tibet_image/lowzero_37.png' | relative_url }}){: .center-image }*(**Scheme to track the tool**)*
 
-- I thought to build two initial yara rules, the first one; which named **detect_evil_rtf** in below [**section**](#Scripts-and-yara-rules) in the line with number 2, to search for similar malicious RTF that lead to open/create the detected mutex or communicate with the detected C2 server IP.
+- I thought to build two initial yara rules, the first one; which named **detect_evil_rtf** under the section "**Scripts and yara rules**", to search for similar malicious RTF that lead to open/create the detected mutex or communicate with the detected C2 server IP.
  
-- Another yara rule is used to track the files that are similar to the two binaries in the kill-chain; which is named **detecting_toolset** in below [**section**](#Scripts-and-yara-rules) in line with number 3. I find that both binaries used almost the same toolset for the compilation as both files have the same **ProductId** and **BuildId** which appear in both rich headers as appear below.
+- Another yara rule is used to track the files that are similar to the two binaries in the kill-chain; which is named **detecting_toolset** under the section "**Scripts and yara-rules**". I find that both binaries used almost the same toolset for the compilation as both files have the same **ProductId** and **BuildId** which appear in both rich headers as appear below.
     
   ![img]({{ '/assets/images/espionage_tibet_image/lowzero_38.png' | relative_url }}){: .center-image }*(**Rich header for ghb4nrwmp.wmf**)*
 
@@ -314,7 +314,7 @@ This yara rule for detecting the common toolset used in building **ghb4nrwmp.wmf
 
 >detecting_toolset.yar
 {:.filename}
-{% highlight ruby linenos %}
+{% highlight ruby %}
 import "pe"
 rule detecting_toolset{   
   meta:
@@ -327,12 +327,12 @@ rule detecting_toolset{
   condition:
      $pe and $rich and 
      pe.rich_signature.toolid(225, 20806) and
-	   pe.rich_signature.toolid(223, 20806) and
      pe.rich_signature.toolid(223, 20806) and
-	   pe.rich_signature.toolid(147, 30729) and
+     pe.rich_signature.toolid(223, 20806) and
+     pe.rich_signature.toolid(147, 30729) and
      pe.rich_signature.toolid(1,0)        and
-	   pe.rich_signature.toolid(228, 21005) and
-	   pe.rich_signature.toolid(222, 21005)
+     pe.rich_signature.toolid(228, 21005) and
+     pe.rich_signature.toolid(222, 21005)
        }
 {% endhighlight %}
 
