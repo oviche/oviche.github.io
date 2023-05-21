@@ -286,9 +286,9 @@ This rule can be used to detect the RTF file that can lead to that open/create t
 
 >detect_evil_rtf.yar
 {:.filename}
-{% highlight java %}
- import "vt"
- import "cuckoo"
+{% highlight bash %}
+import "vt"
+import "cuckoo"
  rule detect_evil_rtf {
    meta:
      description= "try to find the malicious  rtf that is executed"
@@ -314,17 +314,18 @@ This yara rule for detecting the common toolset used in building **ghb4nrwmp.wmf
 
 >detecting_toolset.yar
 {:.filename}
-{% highlight java %}
- import "pe"
- rule detecting_toolset{   
+{% highlight bash %}
+import "pe"
+rule detecting_toolset{   
    meta:
      description= "this rule detect the toolsets that used to build both ghb4nrwmp.wmf and backdoor.dll"
    
    strings: 	
-	   $pe = "PE"
+     $pe = "PE"
      $rich= "Rich"     
+   
    condition:
-  	 $pe and $rich and 
+     $pe and $rich and 
      pe.rich_signature.toolid(225, 20806) and
 	   pe.rich_signature.toolid(223, 20806) and
      pe.rich_signature.toolid(223, 20806) and
