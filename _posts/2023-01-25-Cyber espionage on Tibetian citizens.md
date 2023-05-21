@@ -82,13 +82,18 @@ description: The post shows the details of a malware attack that was developed b
      ![img]({{ '/assets/images/espionage_tibet_image/lowzero_8.png' | relative_url }}){: .center-image }*(**The corrupted magic value**)*
   
     
-   ## Injected shellcode
-  
-  - here
-  
-  
-   ## Backdoor DLL file
-  
-  - here
-
-
+  - The core functionality of this file is to do the following:
+    1. Create the process **C:\Windows\system32\rundll32.exe shell32.dll,Control_RunDLL** in suspended mode.
+      
+      ![img]({{ '/assets/images/espionage_tibet_image/lowzero_9.png' | relative_url }}){: .center-image }*(**Creating the process in suspended mode**)*
+    
+    2. Inject a shellcode at the suspended process entry point using an ``WriteProcessMemory`` API as appear in below screenshots.
+      
+      |![img]({{ '/assets/images/espionage_tibet_image/lowzero_10.png' | relative_url }}){: .center-image }*(**Process injection by WriteProcessMemory**)* | ![img]({{ '/assets/images/espionage_tibet_image/lowzero_11.png' | relative_url }}){: .center-image }*(**Injected code at rundll32 entrypoint**)*|
+      |------------ | -------------|
+      || |
+      
+      
+      
+      
+      
