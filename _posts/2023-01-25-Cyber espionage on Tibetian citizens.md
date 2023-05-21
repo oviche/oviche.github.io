@@ -267,23 +267,62 @@ description: The post shows the details of a malware attack that was developed b
 
 # Scripts and yara rules
 
-- The following python script used to decode the **ghb4nrwmp.wmf** and the decoded bytes into file.
-            >python
-            {:.filename}
-            {% highlight python %}
-            readFile = open("ghb4nrwmp.wmf","rb")
-            dataBytes = readFile.read()
-            readFile.close()
-            writeFile = open("decoded_executable","wb")
-            for Byte in dataBytes:
-              b = Byte ^ 0xfc
+The following python script used to decode the **ghb4nrwmp.wmf** and the decoded bytes into file.
+
+>python
+{:.filename}
+{% highlight python %}
+ readFile = open("ghb4nrwmp.wmf","rb")
+ dataBytes = readFile.read()
+ readFile.close()
+ writeFile = open("decoded_executable","wb")
+ for Byte in dataBytes:
+   b = Byte ^ 0xfc
+   writeFile.write(b.to_bytes(1,'big')) 
+ writeFile.close()
+{% endhighlight %}
+
+This rule can be used to detect the RTF file that can lead to that open/create the detected mutex or communicate with  the detected c2 server IP.
+
+>detect_evil_rtf
+{:.filename}
+{% highlight yara %}
+ import "vt"
+ import "cuckoo"
+ rule detect_evil_rtf {
+   meta:
+     description= "try to find the malicious  rtf that is executed"
+
+   strings:
+     $exploit_object="4571756174696F6E2E32" //Equation.2
+  
+   condition:
+       vt.metadata.file_type == vt.FileType.RTF and
+       $exploit_object and
+       (cuckoo.network.host(/45\.77\.19\.75/) or
+       (vt.behaviour.mutexes_opened == "8C9BB583-7C26-4990-AA73-E66F594A5AD5" or
+       vt.behaviour.mutexes_created == "8C9BB583-7C26-4990-AA73-E66F594A5AD5"))
+        }
+
+{% endhighlight %}
+
+
+
+
+
+This yara rule for detecting the common toolset used in building **ghb4nrwmp.wmf** and **backdoor.dll**.
+
+>python
+{:.filename}
+{% highlight yara %}
+ readFile = open("ghb4nrwmp.wmf","rb")
+ dataBytes = readFile.read()
+ readFile.close()
+ writeFile = open("decoded_executable","wb")
+ for Byte in dataBytes:
+  b = Byte ^ 0xfc
               writeFile.write(b.to_bytes(1,'big')) 
-            writeFile.close()
-            {% endhighlight %}
-
-- This rule can be used to detect the rtf file that can lead to that open/create the detected mutex or communicate with  the detected c2 server IP.
-
-- This yara rule for detecting the common toolset used in building **ghb4nrwmp.wmf** and **backdoor.dll**.
-
+ writeFile.close()
+{% endhighlight %}
 
 
