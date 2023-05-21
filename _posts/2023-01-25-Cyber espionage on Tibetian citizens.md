@@ -20,9 +20,9 @@ description: The post shows the details of a malware attack that was developed b
    
    - The malware is delivered as an RTF document, maybe through phishing mail, that contains an application form written in the chinese-tibetian language as it appears below.
   
-  ![img]({{ '/assets/images/espionage_tibet_image/lowzero_2.png' | relative_url }}){: .center-image }*(**RTF document page [1]**)*
+     ![img]({{ '/assets/images/espionage_tibet_image/lowzero_2.png' | relative_url }}){: .center-image }*(**RTF document page [1]**)*
  
-  ![img]({{ '/assets/images/espionage_tibet_image/lowzero_3.png' | relative_url }}){: .center-image }*(**RTF document page [2]**)*
+     ![img]({{ '/assets/images/espionage_tibet_image/lowzero_3.png' | relative_url }}){: .center-image }*(**RTF document page [2]**)*
 
    - This may indicate that this attack is targeting Tibetan people.
 
@@ -52,36 +52,38 @@ description: The post shows the details of a malware attack that was developed b
 
   ## RTF document
   
-  - The RTF document holds two embedded objects **ghb4nrwmp.wmf** and **Equation.2\x00\x124Vx\x90\x124VxvT2** as shown below.
+   - The RTF document holds two embedded objects **ghb4nrwmp.wmf** and **Equation.2\x00\x124Vx\x90\x124VxvT2** as shown below.
    
-  ![img]({{ '/assets/images/espionage_tibet_image/lowzero_4.png' | relative_url }}){: .center-image }*(**RTF document's embedded objects**)*
+    ![img]({{ '/assets/images/espionage_tibet_image/lowzero_4.png' | relative_url }}){: .center-image }*(**RTF document's embedded objects**)*
   
-  - Based on my search, the second object name is usually the name of the embedded exploit that targets the equation editor of Microsoft office to decode and execute the first object, **ghb4nrwmp.wmf** . 
+   - Based on my search, the second object name is usually the name of the embedded exploit that targets the equation editor of Microsoft office to decode and execute the first object, **ghb4nrwmp.wmf** . 
     
-  - This was confirmed by using any.run sandbox to check the effect of opening this document with word office. For example, the below screenshot shows that by opening the document, the equation editor **EQNEDT32.exe** got executed then **rundll32.exe** spawned from it.  
+   - This was confirmed by using any.run sandbox to check the effect of opening this document with word office. For example, the below screenshot shows that by opening the document, the equation editor **EQNEDT32.exe** got executed then **rundll32.exe** spawned from it.  
   
-  ![img]({{ '/assets/images/espionage_tibet_image/lowzero_5.png' | relative_url }}){: .center-image }*(**Equation editor spawning rundll32.exe**)*  
+    ![img]({{ '/assets/images/espionage_tibet_image/lowzero_5.png' | relative_url }}){: .center-image }*(**Equation editor spawning rundll32.exe**)*  
     
   ## The embedded Executable (ghb4nrwmp.wmf)
   
-  - Once the exploit gets triggered, it decodes and executes the **ghb4nrwmp.wmf** object.
+   - Once the exploit gets triggered, it decodes and executes the **ghb4nrwmp.wmf** object.
   
-  - Using **xorsearch** command I find this file is encrypted with xor and the key is 0xfc.
+   - Using **xorsearch** command I find this file is encrypted with xor and the key is 0xfc.
   
-  ![img]({{ '/assets/images/espionage_tibet_image/lowzero_6.png' | relative_url }}){: .center-image }*(**The Xorsearch command's output**)*  
+    ![img]({{ '/assets/images/espionage_tibet_image/lowzero_6.png' | relative_url }}){: .center-image }*(**The Xorsearch command's output**)*  
   
-  - Also, as appear below, many of the bytes in the hex editor show a lot of 0xfc which indicates that these original bytes are equal to zero(s) so with xoring with 0xfc they turn to become 0xfc.  
+   - Also, as appear below, many of the bytes in the hex editor show a lot of 0xfc which indicates that these original bytes are equal to zero(s) so with xoring with 0xfc they turn to become 0xfc.  
   
-  ![img]({{ '/assets/images/espionage_tibet_image/lowzero_7.png' | relative_url }}){: .center-image }*(**The Hex editor view of file**)* 
+    ![img]({{ '/assets/images/espionage_tibet_image/lowzero_7.png' | relative_url }}){: .center-image }*(**The Hex editor view of file**)* 
 
-  - After decoding the file, the e-magic replacing **MZ** to **NZ** was corrupted maybe to avoid detection or to thwart static analysis tools as the following.
+   - After decoding the file, the e-magic replacing **MZ** to **NZ** was corrupted maybe to avoid detection or to thwart static analysis tools as the following.
   
-  ![img]({{ '/assets/images/espionage_tibet_image/lowzero_8.png' | relative_url }}){: .center-image }*(**The corrupted magic value**)*
+    ![img]({{ '/assets/images/espionage_tibet_image/lowzero_8.png' | relative_url }}){: .center-image }*(**The corrupted magic value**)*
   
-  -   
+    
   ## Injected shellcode
-
+  - here
+  
+  
   ## Backdoor DLL file
-
+  - here
 
 
