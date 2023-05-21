@@ -163,7 +163,7 @@ description: The post shows the details of a malware attack that was developed b
 
   - Then it wait to receive a commands from C2 server to execute them, the commands are laid in the following structure.
    
-   ![img]({{ '/assets/images/espionage_tibet_image/lowzero_25.png' | relative_url }}){: .center-image }*(**the received command structure**)*
+      ![img]({{ '/assets/images/espionage_tibet_image/lowzero_25.png' | relative_url }}){: .center-image }*(**the received command structure**)*
 
 
   - The followings are the command ID(s) and their corresponding functionalities:
@@ -202,4 +202,18 @@ description: The post shows the details of a malware attack that was developed b
        - This command is responsible for getting the export function with an ordinal number equals to 3 from the last loaded module and executing it as appears below.   
        <p></p>
        ![img]({{ '/assets/images/espionage_tibet_image/lowzero_32.png' | relative_url }}){: .center-image }*(**Getting and executing the exported function with ordinal 3**)* 
+       
+  - In case of the command ID wasn't any of the pervious then:
+    
+    1. If the Command ID value is divided by 100 not equals to 30 and the variables that contain addresses of the exported functions of ordinal equal 1 and 2 (of the last loaded module) are not equal null, then it call the function with ordinal equal 1 as appear in the following screenshot.  
+       <p></p>
+       ![img]({{ '/assets/images/espionage_tibet_image/lowzero_33.png' | relative_url }}){: .center-image }*(**A call to exported function with ordinal 1**)* 
+    
+    2. If the command ID value is divided by 100 equals 30 and reminder equals 1, then the backdoor will set up a listener that receives a remote connection that will instruct the backdoor to connect to another host; in other words, it will act as a bridge or proxy, as appear below.
+       <p></p>
+       ![img]({{ '/assets/images/espionage_tibet_image/lowzero_34.png' | relative_url }}){: .center-image }*(**A listener setup**)* 
+    
+       ![img]({{ '/assets/images/espionage_tibet_image/lowzero_35.png' | relative_url }}){: .center-image }*(**Connecting to other host based on data received from remote connection**)*
+       
+       
        
