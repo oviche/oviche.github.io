@@ -211,7 +211,7 @@ description: The post shows the details of a malware attack that was developed b
     
     2. If the command ID value is divided by 100 equals 30 and reminder equals 1, then the backdoor will set up a listener that receives a remote connection that will instruct the backdoor to connect to another host; in other words, it will act as a bridge or proxy, as appear below.
        <p></p>
-       ![img]({{ '/assets/images/espionage_tibet_image/lowzero_34.png' | relative_url }}){: .center-image }*(**setup a listener**)* 
+       ![img]({{ '/assets/images/espionage_tibet_image/lowzero_34.png' | relative_url }}){: .center-image }*(**Setup a listener**)* 
     
        ![img]({{ '/assets/images/espionage_tibet_image/lowzero_35.png' | relative_url }}){: .center-image }*(**Connecting to other host based on data received from remote connection**)*
        
