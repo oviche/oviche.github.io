@@ -58,7 +58,33 @@ description: The post shows the details of the analysis of the RedLine Stealer t
 
 # Malware Configuration decryption
 
+- The below screenshot is for a class that represents the encrypted malware configuration. It consists of the following fields:
 
+  - **IP** that contains encrypted C2 IP(s)
+  - **ID**  that contains encrypted sample ID.
+  - **Message** represents a message to display however it's empty in our case.
+  - **Key** represents the decryption key.
+  - **Version** represents a version of the malware.
+
+   ![img]({{ '/assets/images/Redline/redline-7.png' | relative_url }}){: .center-image }*(**Checking whether the infected device is interesting target**)*
+
+
+- The decryption of both **IP** and **ID** fields is done by three simple operations.
+
+   1. Applying base64 decoding for the encrypted strings as appeared below.
+
+      ![img]({{ '/assets/images/Redline/redline-8.png' | relative_url }}){: .center-image }*(**Base-64 decoding for the encrypted strings**)*
+     
+   3. Then XORing the decoded string from the previous operation with the Key which in our case is **Detersions**    
+
+      ![img]({{ '/assets/images/Redline/redline-9.png' | relative_url }}){: .center-image }*(**XORing the decoded string with a key**)*
+       
+   5. Finally, apply the base64 decoding for the output of the last operation.
+
+- Below is the decoded configuration.
+
+  ![img]({{ '/assets/images/Redline/redline-10.png' | relative_url }}){: .center-image }*(**Decrypted RedLine configuration**)* 
+ 
 
       
 
