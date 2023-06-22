@@ -19,5 +19,7 @@ description: The post shows the details of the analysis of the RedLine Stealer t
 
   ## Delivery stage
   - The malware is distributed as a cheating module for the GTA game on some websites and delivered when it gets downloaded by gamers.
+
   - The below screenshot shows a text file that exists in the same folder with the infection first stage executable, trying to give the user confidence that it's a non-malicious cheating module by showing instructions and features.
-    ![img]({{ '/assets/images/Redline/redline-2.png' | relative_url }}){: .center-image }*(**Snippet for the instructions text file**)*
+
+     ![img]({{ '/assets/images/Redline/redline-2.png' | relative_url }}){: .center-image }*(**Snippet for the instructions text file**)*
