@@ -42,8 +42,17 @@ description: The post shows the details of the analysis of the RedLine Stealer t
   -  If the C2 server is up, then they both start communicating using SOAP messages over TCP protocol to make it harder for detection than the previous RedLine version that used the SOAP over HTTP protocol that is humanly readable and easily got detected.
 
 
+# Countries of interest
 
-# The decryption of configuration 
+- The countries that **are not** included in the below array are interesting targets for RedLine.
+
+![img]({{ '/assets/images/Redline/redline-5.png' | relative_url }}){: .center-image }*(**Protected list of countries**)*
+
+- The RedLine will start executing its functions if the infected device's local time-zone Id, current culture, and current UI culture aren't related to any of the previous countries list.
+
+![img]({{ '/assets/images/Redline/redline-6.png' | relative_url }}){: .center-image }*(**Checking the location for the infected device**)*
+
+# The decryption of the configuration 
 
 
 
