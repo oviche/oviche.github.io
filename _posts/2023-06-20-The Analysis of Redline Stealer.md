@@ -65,8 +65,8 @@ description: The post shows the details of the analysis of the RedLine Stealer t
   - **Message** represents a message to display however it's empty in our case.
   - **Key** represents the decryption key.
   - **Version** represents a version of the malware.
-
-   ![img]({{ '/assets/images/Redline/redline-7.png' | relative_url }}){: .center-image }*(**Checking whether the infected device is interesting target**)*
+  <p></p>
+  ![img]({{ '/assets/images/Redline/redline-7.png' | relative_url }}){: .center-image }*(**Checking whether the infected device is interesting target**)*
 
 
 - The decryption of both **IP** and **ID** fields is done by three simple operations.
