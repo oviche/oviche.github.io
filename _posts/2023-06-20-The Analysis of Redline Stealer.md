@@ -8,8 +8,10 @@ description: The post shows the details of the analysis of the RedLine Stealer t
 
 # Intro
 
-- In this post, I will cover the details of the analysis of info stealer malware called **RedLine stealer** which is currently one of the trends. In the case covered in this post, the malware masquerades as a cheating module for the GTA game.
+- In this post, I will cover the details of my analysis for info-stealer malware called **RedLine stealer** which is currently one of the trends. Regarding the case covered in this post, the malware masquerades as a cheating module for the GTA game.
 
 
 # The kill-chain
+
+- 
 
