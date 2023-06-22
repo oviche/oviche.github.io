@@ -39,7 +39,11 @@ description: The post shows the details of the analysis of the RedLine Stealer t
 
   - Once the RedLine is executed, it checks the status of the C2 server.
   
-  - If the C2 server is up, then they both start communicating using SOAP messages over TCP protocol to make it harder for detection.
+  -  If the C2 server is up, then they both start communicating using SOAP messages over TCP protocol to make it harder for detection than the previous RedLine version that used the SOAP over HTTP protocol that is humanly readable and easily got detected.
+
+
+
+# The decryption of configuration 
 
 
 
