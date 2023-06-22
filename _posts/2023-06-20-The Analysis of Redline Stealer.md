@@ -46,11 +46,11 @@ description: The post shows the details of the analysis of the RedLine Stealer t
 
 - The countries that **are not** included in the below array are interesting targets for RedLine.
 
-![img]({{ '/assets/images/Redline/redline-5.png' | relative_url }}){: .center-image }*(**Protected list of countries**)*
+  ![img]({{ '/assets/images/Redline/redline-5.png' | relative_url }}){: .center-image }*(**Protected list of countries**)*
 
 - The RedLine will start executing its functions if the infected device's local time-zone Id, current culture, and current UI culture aren't related to any of the previous countries list.
 
-![img]({{ '/assets/images/Redline/redline-6.png' | relative_url }}){: .center-image }*(**Checking the location for the infected device**)*
+  ![img]({{ '/assets/images/Redline/redline-6.png' | relative_url }}){: .center-image }*(**Checking the location of the infected device**)*
 
 # The decryption of the configuration 
 
