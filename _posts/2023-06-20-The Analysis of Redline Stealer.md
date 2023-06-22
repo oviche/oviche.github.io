@@ -18,8 +18,16 @@ description: The post shows the details of the analysis of the RedLine Stealer t
    ![img]({{ '/assets/images/Redline/redline-1.png' | relative_url }}){: .center-image }*(**The kill-chain Diagram**)*
 
   ## Delivery stage
-  - The malware is distributed as a cheating module for the GTA game on some websites and delivered when it gets downloaded by gamers.
+
+   - The malware is distributed as a cheating module for the GTA game on some websites and delivered when it gets downloaded by gamers.
 
   - The below screenshot shows a text file that exists in the same folder with the infection first stage executable, trying to give the user confidence that it's a non-malicious cheating module by showing instructions and features.
 
    ![img]({{ '/assets/images/Redline/redline-2.png' | relative_url }}){: .center-image }*(**Snippet for the instructions text file**)*
+
+  ## Installation stage
+
+  - Once the executable **GTA_hlMWYG.exe** is executed, a Dll file protected by **Enigma** gets loaded and its main function gets executed.
+  - The loaded Dll file then executes a process called AppLaunch.exe in suspend mode and then injects the RedLine PE file into the memory of the suspended process.
+
+
