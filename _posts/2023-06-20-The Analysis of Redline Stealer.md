@@ -13,5 +13,6 @@ description: The post shows the details of the analysis of the RedLine Stealer t
 
 # The kill-chain
 
-- 
+- The following diagram shows the flow of attack from the initial access to communication with the C2 server.
+  ![img]({{ '/assets/images/Redline/redline-1.png' | relative_url }}){: .center-image }**(**The kill-chain Diagram**)**
 
