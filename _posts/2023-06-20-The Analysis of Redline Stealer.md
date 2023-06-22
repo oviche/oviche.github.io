@@ -42,7 +42,7 @@ description: The post shows the details of the analysis of the RedLine Stealer t
   -  If the C2 server is up, then they both start communicating using SOAP messages over TCP protocol to make it harder for detection than the previous RedLine version that used the SOAP over HTTP protocol that is humanly readable and easily got detected.
 
 
-# Deobfuscating the string obfuscations
+# Deobfuscating the strings obfuscations
 
 - Before digging deeper into the malware functionalities, I deobfuscated the RedLine strings obfuscation using a [redline-deobfuscator](https://github.com/oviche/redline-deobfuscator) that I developed.
 
