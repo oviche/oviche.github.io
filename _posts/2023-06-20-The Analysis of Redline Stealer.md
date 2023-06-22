@@ -17,5 +17,5 @@ description: The post shows the details of the analysis of the RedLine Stealer t
 
    ![img]({{ '/assets/images/Redline/redline-1.png' | relative_url }}){: .center-image }*(**The kill-chain Diagram**)*
 
-## Delivery stage
+  ## Delivery stage
 
