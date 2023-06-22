@@ -36,8 +36,14 @@ description: The post shows the details of the analysis of the RedLine Stealer t
     ![img]({{ '/assets/images/Redline/redline-4.png' | relative_url }}){: .center-image }*(**Injecting RedLine inside AppLaunch process**)*
 
   ## The Command and Control stage
-  - ok
 
+  - Once the RedLine is executed, it checks the status of the C2 server.
+  
+  - If the C2 server is up, then they both start communicating using SOAP messages over TCP protocol to make it harder for detection.
+
+
+
+      
 
 
   
