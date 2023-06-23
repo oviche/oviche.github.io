@@ -95,7 +95,23 @@ description: The post shows the details of the analysis of the RedLine Stealer t
   ![img]({{ '/assets/images/Redline/redline-11.png' | relative_url }}){: .center-image }*(**Establishing a communication channel**)* 
   
 # Fetching the settings from C2
-- ok
 
+- After establishing the communication channel and ensuring that C2 is alive, the RedLine will start fetching the settings from the C2, as appears below.
+
+  ![img]({{ '/assets/images/Redline/redline-12.png' | relative_url }}){: .center-image }*(**Fetching the settings**)* 
+
+- The below screenshot is for the settings, and it consists of the following types of fields:
+   
+   1. Boolean fields that act as switches for whether do specific functionality or not.
+   
+   2. List of file patterns to exfiltrate.
+   
+   3. List of paths and profiles for browsers and applications, to steal important data from their files like cookies and login data.   
+
+   4. List of wallet information in which every object in the list contains wallet application name, paths, and patterns for the files to exfiltrate to the C2 server.
+ 
+  ![img]({{ '/assets/images/Redline/redline-13.png' | relative_url }}){: .center-image }*(**The fetched settings**)* 
+
+# name
 
 
