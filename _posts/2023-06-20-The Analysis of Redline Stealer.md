@@ -39,7 +39,7 @@ description: The post shows the details of the analysis of the RedLine Stealer t
 
   - Once the RedLine is executed, it checks the status of the C2 server.
   
-  -  If the C2 server is up, then they both start communicating using SOAP messages over TCP protocol to make it harder for detection than the previous RedLine version that used the SOAP over HTTP protocol that is humanly readable and easily got detected.
+  -  If the C2 server is up, they both start communicating using SOAP messages over TCP protocol to make it harder to detect than the previous RedLine version that used the SOAP over HTTP protocol that is humanly readable and easily detected.
 
 
 # Deobfuscating the strings obfuscations
@@ -62,14 +62,14 @@ description: The post shows the details of the analysis of the RedLine Stealer t
 
   - **IP** that contains encrypted C2 IP(s)
   - **ID**  that contains encrypted sample ID.
-  - **Message** represents a message to display however it's empty in our case.
+  - **Message** represents a message to display however it's empty in this case.
   - **Key** represents the decryption key.
   - **Version** represents a version of the malware.
   <p></p>
   ![img]({{ '/assets/images/Redline/redline-7.png' | relative_url }}){: .center-image }*(**Checking whether the infected device is interesting target**)*
 
 
-- The decryption of both **IP** and **ID** fields is done by three simple operations.
+- Three simple operations do the decryption of both **IP** and **ID** fields.
 
    1. Applying base64 decoding for the encrypted strings as appeared below.
 
@@ -86,7 +86,16 @@ description: The post shows the details of the analysis of the RedLine Stealer t
   ![img]({{ '/assets/images/Redline/redline-10.png' | relative_url }}){: .center-image }*(**Decrypted RedLine configuration**)* 
  
 
-      
+# Establishing a network connection
 
+- The malware will set a communication channel that uses SOAP over TCP which makes the SOAP messages sent in a binary-encoded format that is not easily get decoded.
 
+- Also, it does not validate a certificate as it sets certificate validation mode to **none**. Additionally, it provides an authorization value equal to **4e6fb2a9ee1dcdfaa807aab6c0f5a16d** to enable the sample access to a specific.
+
+  ![img]({{ '/assets/images/Redline/redline-11.png' | relative_url }}){: .center-image }*(**Establishing a communication channel**)* 
   
+# Fetching the settings from C2
+- ok
+
+
+
