@@ -1,4 +1,4 @@
-![image](https://github.com/oviche/oviche.github.io/assets/20806107/ce41bf3c-372b-400b-901d-65140a49a365)---
+---
 layout: post
 title: "The Analysis of RedLine Stealer"
 date: 2023-06-20
@@ -116,7 +116,7 @@ description: The post shows the details of the analysis of the RedLine Stealer t
 
 - For every infected device, the RedLine will try to fingerprint the infected machine by collecting the following information and sending them to the C2. 
 
-    - First, It will try to extract the public IPv4 if any of the C2 addresses has a port equals to 80 or 81. Otherwise it return string **unknown**.
+    - First, It will try to extract the public IPv4 if any of the C2 addresses has a port equal to 80 or 81. Otherwise, it returns string **unknown**.
 
       ![img]({{ '/assets/images/Redline/redline-14.png' | relative_url }}){: .center-image }*(**Extracting public IP for the infected machine**)*  
 
