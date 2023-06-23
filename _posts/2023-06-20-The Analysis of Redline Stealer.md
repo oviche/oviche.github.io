@@ -1,4 +1,4 @@
----
+![image](https://github.com/oviche/oviche.github.io/assets/20806107/ce41bf3c-372b-400b-901d-65140a49a365)---
 layout: post
 title: "The Analysis of RedLine Stealer"
 date: 2023-06-20
@@ -122,8 +122,11 @@ description: The post shows the details of the analysis of the RedLine Stealer t
 
       ![img]({{ '/assets/images/Redline/redline-15.png' | relative_url }}){: .center-image }*(**Saving the public IP to struct**)*  
  
-             
-   
+    - Also, it collects information about whether the machine is infected or not. If it finds a folder named **SystemCache** exists within the last 10 days, then it will return true, indicating that the machine is already infected.          
+
+      ![img]({{ '/assets/images/Redline/redline-16.png' | relative_url }}){: .center-image }*(**Extracting public IP for the infected machine**)*  
+
+      ![img]({{ '/assets/images/Redline/redline-17.png' | relative_url }}){: .center-image }*(**Saving the public IP to struct**)*
 
 
 
