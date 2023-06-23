@@ -116,21 +116,35 @@ description: The post shows the details of the analysis of the RedLine Stealer t
 
 - For every infected device, the RedLine will try to fingerprint the infected machine by collecting the following information and sending them to the C2. 
 
-    - First, It will try to extract the public IPv4 if any of the C2 addresses has a port equal to 80 or 81. Otherwise, it returns string **unknown**.
+    - First, It will try to extract the public IPv4 if any of the C2 addresses has a port equal to 80 or 81. Otherwise, it returns the string **unknown**.
 
       ![img]({{ '/assets/images/Redline/redline-14.png' | relative_url }}){: .center-image }*(**Extracting public IP for the infected machine**)*  
 
       ![img]({{ '/assets/images/Redline/redline-15.png' | relative_url }}){: .center-image }*(**Saving the public IP to struct**)*  
  
-    - Also, it collects information about whether the machine is infected or not. If it finds a folder named **SystemCache** exists within the last 10 days, then it will return true, indicating that the machine is already infected.          
+    - Also, it collects information about whether the machine is pre-infected or not. If it finds a folder named **SystemCache** exists within the last 10 days, then it will return true, indicating that the machine is already infected.          
 
-      ![img]({{ '/assets/images/Redline/redline-16.png' | relative_url }}){: .center-image }*(**Extracting public IP for the infected machine**)*  
+      ![img]({{ '/assets/images/Redline/redline-16.png' | relative_url }}){: .center-image }*(**Checking if machine is pre-infected**)*  
 
-      ![img]({{ '/assets/images/Redline/redline-17.png' | relative_url }}){: .center-image }*(**Saving the public IP to struct**)*
-
-
+      ![img]({{ '/assets/images/Redline/redline-17.png' | relative_url }}){: .center-image }*(**Saving boolean value for pre-infection status to struct**)*
 
 
+    - Finally, it gathers the following listed information and then sends all of the collected information to the C2, As appears in the next screenshot.
+
+       1. The `Username` for the current thread.
+
+       2. The `Display size` of the machine.
+       
+       3. The `Current input language` that is used at the moment.
+       
+       4. The `Windows version`, which is a string that concatenates the operating system bitness(32/64 bit) and value of the **ProductName** at the registry path **HKEY_LOCAL_MACHINE\\SOFTWARE\\Microsoft\\Windows NT\\CurrentVersion**
+
+       5. The `Disk location` of the executing RedLine sample.
+       
+       6. The `Device signature` is estimated by estimating the **MD5** hash of the concatenation of **Username**, **UserDomainName**, and a **Disk drive's serial number**.
+
+      ![img]({{ '/assets/images/Redline/redline-18.png' | relative_url }}){: .center-image }*(**Collecting and sending device information to C2**)*
 
 
+# name
 
