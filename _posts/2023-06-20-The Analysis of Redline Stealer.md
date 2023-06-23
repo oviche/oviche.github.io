@@ -112,6 +112,22 @@ description: The post shows the details of the analysis of the RedLine Stealer t
  
   ![img]({{ '/assets/images/Redline/redline-13.png' | relative_url }}){: .center-image }*(**The fetched settings**)* 
 
-# name
+# Fingerprinting the infected machine
+
+- For every infected device, the RedLine will try to fingerprint the infected machine by collecting the following information and sending them to the C2. 
+
+    - First, It will try to extract the public IPv4 if any of the C2 addresses has a port equals to 80 or 81. Otherwise it return string **unknown**.
+
+      ![img]({{ '/assets/images/Redline/redline-14.png' | relative_url }}){: .center-image }*(**Extracting public IP for the infected machine**)*  
+
+      ![img]({{ '/assets/images/Redline/redline-15.png' | relative_url }}){: .center-image }*(**Saving the public IP to struct**)*  
+ 
+             
+   
+
+
+
+
+
 
 
