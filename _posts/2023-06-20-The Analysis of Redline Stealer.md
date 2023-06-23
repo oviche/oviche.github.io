@@ -129,19 +129,19 @@ description: The post shows the details of the analysis of the RedLine Stealer t
       ![img]({{ '/assets/images/Redline/redline-17.png' | relative_url }}){: .center-image }*(**Saving boolean value for pre-infection status to struct**)*
 
 
-    - Finally, it gathers the following listed information and then sends all of the collected information to the C2, As appears in the next screenshot.
+    - Finally, it gathers the following listed information and then sends all of them to the C2, as appears in the below screenshot.
 
        1. The `Username` for the current thread.
 
-       2. The `Display size` of the machine.
+       2. The `Virtual display size`.
        
        3. The `Current input language` that is used at the moment.
        
-       4. The `Windows version`, which is a string that concatenates the operating system bitness(32/64 bit) and value of the **ProductName** at the registry path **HKEY_LOCAL_MACHINE\\SOFTWARE\\Microsoft\\Windows NT\\CurrentVersion**
+       4. The Windows version, represented by a string that concatenates the operating system bitness (32/64 bit) and value of the **ProductName** at the registry path **HKEY_LOCAL_MACHINE\\SOFTWARE\\Microsoft\\Windows NT\\CurrentVersion**.
 
        5. The `Disk location` of the executing RedLine sample.
        
-       6. The `Device signature` is estimated by estimating the **MD5** hash of the concatenation of **Username**, **UserDomainName**, and a **Disk drive's serial number**.
+       6. The `Device signature` is estimated by the computation of the **MD5** hash for the concatenation of **Username**, **UserDomainName**, and a **Disk drive's serial number**.
 
       ![img]({{ '/assets/images/Redline/redline-18.png' | relative_url }}){: .center-image }*(**Collecting and sending device information to C2**)*
 
