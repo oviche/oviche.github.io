@@ -143,7 +143,7 @@ description: The post shows the details of the analysis of the RedLine Stealer t
        
        6. The `Device signature` is estimated by the computation of the **MD5** hash for the concatenation of **Username**, **UserDomainName**, and a **Disk drive's serial number**.
 
-     ![img]({{ '/assets/images/Redline/redline-18.png' | relative_url }}){: .center-image }*(**Collecting and sending device information to C2**)*
+      ![img]({{ '/assets/images/Redline/redline-18.png' | relative_url }}){: .center-image }*(**Collecting and sending device information to C2**)*
 
 
 # name
