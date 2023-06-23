@@ -137,7 +137,7 @@ description: The post shows the details of the analysis of the RedLine Stealer t
        
        3. The `Current input language` that is used at the moment.
        
-       4. The Windows version, represented by a string that concatenates the operating system bitness (32/64 bit) and value of the **ProductName** at the registry path **HKEY_LOCAL_MACHINE\\SOFTWARE\\Microsoft\\Windows NT\\CurrentVersion**.
+       4. The `Windows version`, represented by a string that concatenates the operating system bitness (32/64 bit) and value of the **ProductName** at the registry path **HKEY_LOCAL_MACHINE\\SOFTWARE\\Microsoft\\Windows NT\\CurrentVersion**.
 
        5. The `Disk location` of the executing RedLine sample.
        
