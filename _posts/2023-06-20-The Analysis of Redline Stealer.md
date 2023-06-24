@@ -151,18 +151,22 @@ description: The post shows the details of the analysis of the RedLine Stealer t
 - RedLine collects and sends the following hardware specifications to C2:
 
   1. The installed **Processor(s)** names and their number of cores.
+
      ![img]({{ '/assets/images/Redline/redline-19.png' | relative_url }}){: .center-image }*(**Collecting Processors specifications**)*
 
-  2. The installed **Graphics card(s)** names and their adapter RAM sizes.
+  3. The installed **Graphics card(s)** names and their adapter RAM sizes.
+
      ![img]({{ '/assets/images/Redline/redline-20.png' | relative_url }}){: .center-image }*(**Collecting Graphics cards specifications**)*
 
-  3. The installed **RAM** size is in bytes and megabytes units
+  4. The installed **RAM** size is in bytes and megabytes units
+
      ![img]({{ '/assets/images/Redline/redline-21.png' | relative_url }}){: .center-image }*(**Collecting RAM size**)*
      
 
 # Collecting installed browsers' information
 
 - RedLine retrieves information like names, paths, and versions for the installed browsers and sends them to the C2 server.
+
   ![img]({{ '/assets/images/Redline/redline-22.png' | relative_url }}){: .center-image }*(**Retrieving the installed browsers' information**)*
 
 
@@ -170,6 +174,7 @@ description: The post shows the details of the analysis of the RedLine Stealer t
 # Listing the installed programs
 
 - RedLine lists all the installed programs' names and versions and then sends the list to the C2 server.
+
   ![img]({{ '/assets/images/Redline/redline-23.png' | relative_url }}){: .center-image }*(**Listing the installed programs**)*
 
 
