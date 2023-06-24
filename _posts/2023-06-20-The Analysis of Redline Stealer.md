@@ -152,20 +152,20 @@ description: The post shows the details of the analysis of the RedLine Stealer t
 
   1. The installed **Processor(s)** names and their number of cores.
 
-      ![img]({{ '/assets/images/Redline/redline-19.png' | relative_url }}){: .center-image }*(**Collecting Processors specifications**)*
+  ![img]({{ '/assets/images/Redline/redline-19.png' | relative_url }}){: .center-image }*(**Collecting Processors specifications**)*
 
   2. The installed **Graphics card(s)** names and their adapter RAM sizes.
 
-      ![img]({{ '/assets/images/Redline/redline-20.png' | relative_url }}){: .center-image }*(**Collecting Graphics cards specifications**)*
+  ![img]({{ '/assets/images/Redline/redline-20.png' | relative_url }}){: .center-image }*(**Collecting Graphics cards specifications**)*
 
   3. The installed **RAM** size in bytes and megabytes.
 
-      ![img]({{ '/assets/images/Redline/redline-21.png' | relative_url }}){: .center-image }*(**Collecting RAM size**)*
+  ![img]({{ '/assets/images/Redline/redline-21.png' | relative_url }}){: .center-image }*(**Collecting RAM size**)*
      
 
 # Collecting installed browsers' information
 
 - Also, RedLine retrieves information like names, paths, and versions for the installed browsers and sends them to the C2 server.
 
-     ![img]({{ '/assets/images/Redline/redline-22.png' | relative_url }}){: .center-image }*(**Retrieving the installed browsers' information**)*
+ ![img]({{ '/assets/images/Redline/redline-22.png' | relative_url }}){: .center-image }*(**Retrieving the installed browsers' information**)*
 
