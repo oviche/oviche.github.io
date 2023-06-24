@@ -165,7 +165,16 @@ description: The post shows the details of the analysis of the RedLine Stealer t
 
 # Collecting installed browsers' information
 
-- Also, RedLine retrieves information like names, paths, and versions for the installed browsers and sends them to the C2 server.
+- RedLine retrieves information like names, paths, and versions for the installed browsers and sends them to the C2 server.
 
-  ![img]({{ '/assets/images/Redline/redline-22.png' | relative_url }}){: .center-image }*(**Retrieving the installed browsers' information**)*
+![img]({{ '/assets/images/Redline/redline-22.png' | relative_url }}){: .center-image }*(**Retrieving the installed browsers' information**)*
+
+
+
+# Listing the installed programs
+
+- RedLine lists all the installed programs' names and versions and then sends the list to the C2 server.
+
+![img]({{ '/assets/images/Redline/redline-23.png' | relative_url }}){: .center-image }*(**Listing the installed programs**)*
+
 
