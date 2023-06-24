@@ -178,3 +178,15 @@ description: The post shows the details of the analysis of the RedLine Stealer t
   ![img]({{ '/assets/images/Redline/redline-23.png' | relative_url }}){: .center-image }*(**Listing the installed programs**)*
 
 
+# Finding the installed security products
+
+- RedLine collects the names of the installed Antivirus, AntiSpyWare, and Firewall products and sends these names to the C2 server.
+
+  ![img]({{ '/assets/images/Redline/redline-24.png' | relative_url }}){: .center-image }*(**Collecting the installed security products names**)*
+
+
+
+
+
+
+
