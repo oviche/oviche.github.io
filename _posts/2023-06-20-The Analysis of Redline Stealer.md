@@ -148,7 +148,7 @@ description: The post shows the details of the analysis of the RedLine Stealer t
 
 # Collecting Hardware information
 
-- The RedLine collects and sends the following hardware specifications to C2:
+- RedLine collects and sends the following hardware specifications to C2:
 
   1. The installed **Processor(s)** names and their number of cores.
 
@@ -163,5 +163,9 @@ description: The post shows the details of the analysis of the RedLine Stealer t
       ![img]({{ '/assets/images/Redline/redline-21.png' | relative_url }}){: .center-image }*(**Collecting RAM size**)*
      
 
+# Collecting installed browsers' information
 
+- Also, RedLine retrieves information like names, paths, and versions for the installed browsers and sends them to the C2 server.
+
+     ![img]({{ '/assets/images/Redline/redline-22.png' | relative_url }}){: .center-image }*(**Retrieving the installed browsers' information**)*
 
