@@ -191,5 +191,11 @@ description: The post shows the details of the analysis of the RedLine Stealer t
 
   ![img]({{ '/assets/images/Redline/redline-25.png' | relative_url }}){: .center-image }*(**Retrieving the running processes information**)*
 
+# Listing the available languages
 
+ - RedLine collects all available input languages and then exfiltrates them to the C2 server.
+
+   ![img]({{ '/assets/images/Redline/redline-26.png' | relative_url }}){: .center-image }*(**Retrieving the available languages**)*
+
+# Telegram
 
