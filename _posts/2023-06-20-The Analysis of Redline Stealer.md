@@ -235,7 +235,7 @@ description: The post shows the details of the analysis of the RedLine Stealer t
     ![img]({{ '/assets/images/Redline/redline-33.png' | relative_url }}){: .center-image }*(**Extracting credit cards records**)*
 
 
-
+- Also, it
 
    
 
