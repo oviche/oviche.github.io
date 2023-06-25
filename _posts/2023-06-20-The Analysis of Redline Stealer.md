@@ -235,9 +235,13 @@ description: The post shows the details of the analysis of the RedLine Stealer t
     ![img]({{ '/assets/images/Redline/redline-33.png' | relative_url }}){: .center-image }*(**Extracting credit cards records**)*
 
 
-- Also, it
+- Also, it tries to steal cookies from Firefox-based browsers by searching for a database called **cookies.sqlite**.
 
+  ![img]({{ '/assets/images/Redline/redline-34.png' | relative_url }}){: .center-image }*(**Stealing Firefox-based browsers cookies**)*
    
+- If it finds the **cookies.sqlite** database, Then, it extracts the cookies records from the table named **moz_cookies**.
 
+  ![img]({{ '/assets/images/Redline/redline-35.png' | relative_url }}){: .center-image }*(**Extracting cookies from moz_cookies table**)*
 
+- here  
   
