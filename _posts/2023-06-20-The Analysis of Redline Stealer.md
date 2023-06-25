@@ -245,12 +245,8 @@ description: The post shows the details of the analysis of the RedLine Stealer t
 
 - Below is the list of browsers and applications whose data are stolen.
   <details> <summary>Targetted browsers and applications</summary><br>
-  <b>Battle.net</b> - <b>Chromium</b> - <b>Chrome</b> - <b>Opera Software</b> - <b>ChromePlus</b> - <b>Iridium</b> - <b>7Star</b> - <b>CentBrowser</b> - <b>Chedot</b> 
-  <b>Vivaldi</b> - <b>Kometa</b> - <b>Elements Browser</b> - <b>Epic Privacy Browser</b> - <b>Uran</b> - <b>Sleipnir5</b> - <b>Citrio</b> - <b>Coowon</b> - <b>liebao</b>   
-  <b>Orbitum</b> - <b>Comodo Dragon</b> - <b>Amigo</b> - <b>Torch</b> - <b>Yandex</b> - <b>360Browser</b> - <b>Maxthon3</b> - <b>K-Melon</b> - <b>Sputnik</b>
-  <b>Nichrome</b> - <b>CocCoc</b> - <b>Chromodo</b> - <b>Mail.Ru Atom</b> - <b>Brave-Browser</b> - <b>Microsoft Edge</b>
-  <b>NVIDIA GeForce Experience</b> - <b>Steam</b> - <b>CryptoTab Browser</b> - <b>Mozilla Firefox</b> - <b>Waterfox</b> - <b>K-Meleon</b>
-  <b>Thunderbird</b> - <b>Comodo IceDragon</b> - <b>Cyberfox</b> - <b>BlackHaw</b> - <b>Pale Moon</b> - <b>QIP Surf</b>
+  <b>Battle.net</b> - <b>Chromium</b> - <b>Chrome</b> - <b>Opera Software</b> - <b>ChromePlus</b> - <b>Iridium</b> - <b>7Star</b> - <b>CentBrowser</b> <b>Chedot</b> - <b>Vivaldi</b> - <b>Kometa</b> - <b>Elements Browser</b> - <b>Epic Privacy Browser</b> - <b>Uran</b> - <b>Sleipnir5</b> - <b>Citrio</b> <b>Coowon</b> - <b>liebao</b> - <b>Orbitum</b> - <b>Comodo Dragon</b> - <b>Amigo</b> - <b>Torch</b> - <b>Yandex</b> - <b>360Browser</b> - <b>Maxthon3</b>  <b>K-Melon</b> - <b>Sputnik</b> - <b>Nichrome</b> - <b>CocCoc</b> - <b>Chromodo</b> - <b>Mail.Ru Atom</b> - <b>Brave-Browser</b> - <b>Microsoft Edge</b>
+<b>NVIDIA GeForce Experience</b> - <b>Steam</b> - <b>CryptoTab Browser</b> - <b>Mozilla Firefox</b> -<br> <b>Waterfox</b> - <b>K-Meleon</b> - <b>Thunderbird</b> - <b>Comodo IceDragon</b> - <b>Cyberfox</b> - <b>BlackHaw</b> - <b>Pale Moon</b> - <b>QIP Surf</b>
   </details>
 
 
