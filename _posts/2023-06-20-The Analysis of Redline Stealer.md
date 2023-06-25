@@ -207,7 +207,7 @@ description: The post shows the details of the analysis of the RedLine Stealer t
 
   ![img]({{ '/assets/images/Redline/redline-28.png' | relative_url }}){: .center-image }*(**Stealing files under Telegram application data directory**)* 
 
-# Stealing data from browsers
+# Stealing data from browsers and applications
 
 - RedLine searches a list of profile paths received within the settings, to locate the browsers' databases to steal data records like cookies, saved login, auto-fills, and credit cards as appeared below.
 
@@ -243,5 +243,51 @@ description: The post shows the details of the analysis of the RedLine Stealer t
 
   ![img]({{ '/assets/images/Redline/redline-35.png' | relative_url }}){: .center-image }*(**Extracting cookies from moz_cookies table**)*
 
-- here  
-  
+- Below is the list of browsers and applications whose data are stolen.
+  <details> <summary>Targetted browsers and applications</summary><br>
+  Battle.net
+  Chromium
+  Chrome
+  Opera Software
+  ChromePlus
+  Iridium
+  7Star
+  CentBrowser
+  Chedot
+  Vivaldi
+  Kometa
+  Elements Browser
+  Epic Privacy Browser
+  Uran
+  Sleipnir5
+  Citrio
+  Coowon
+  liebao
+  Orbitum
+  Comodo Dragon
+  Amigo
+  Torch
+  Yandex
+  360Browser
+  Maxthon3
+  K-Melon
+  Sputnik
+  Nichrome
+  CocCoc
+  Chromodo
+  Mail.Ru Atom
+  Brave-Browser
+  Microsoft Edge
+  NVIDIA GeForce Experience
+  Steam
+  CryptoTab Browser
+  Mozilla Firefox
+  Waterfox
+  K-Meleon
+  Thunderbird
+  Comodo IceDragon   
+  Cyberfox
+  BlackHaw
+  Pale Moon
+  QIP Surf   
+  </details>
