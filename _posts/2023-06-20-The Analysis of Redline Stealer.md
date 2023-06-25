@@ -245,49 +245,31 @@ description: The post shows the details of the analysis of the RedLine Stealer t
 
 - Below is the list of browsers and applications whose data are stolen.
   <details> <summary>Targetted browsers and applications</summary><br>
-  Battle.net
-  Chromium
-  Chrome
-  Opera Software
-  ChromePlus
-  Iridium
-  7Star
-  CentBrowser
-  Chedot
-  Vivaldi
-  Kometa
-  Elements Browser
-  Epic Privacy Browser
-  Uran
-  Sleipnir5
-  Citrio
-  Coowon
-  liebao
-  Orbitum
-  Comodo Dragon
-  Amigo
-  Torch
-  Yandex
-  360Browser
-  Maxthon3
-  K-Melon
-  Sputnik
-  Nichrome
-  CocCoc
-  Chromodo
-  Mail.Ru Atom
-  Brave-Browser
-  Microsoft Edge
-  NVIDIA GeForce Experience
-  Steam
-  CryptoTab Browser
-  Mozilla Firefox
-  Waterfox
-  K-Meleon
-  Thunderbird
-  Comodo IceDragon   
-  Cyberfox
-  BlackHaw
-  Pale Moon
-  QIP Surf   
+  Battle.net - Chromium - Chrome - Opera Software - ChromePlus - Iridium - 7Star - CentBrowser - Chedot - Vivaldi - Kometa - Elements Browser - Epic Privacy Browser - Uran - Sleipnir5 - Citrio - Coowon - liebao - Orbitum - Comodo Dragon - Amigo - Torch - Yandex - 360Browser - Maxthon3 - K-Melon - Sputnik - Nichrome - CocCoc - Chromodo - Mail.Ru Atom - Brave-Browser - Microsoft Edge - NVIDIA GeForce Experience - Steam - CryptoTab Browser - Mozilla Firefox - Waterfox - K-Meleon - Thunderbird - Comodo IceDragon - Cyberfox - BlackHaw - Pale Moon - QIP Surf   
   </details>
+
+
+
+# Collecting FileZilla Credentials
+
+- RedLine searches for the **FileZilla** XML files like **recentservers.xml** and  **sitemanager.xml** which contain login credentials for FTP servers.
+
+   ![img]({{ '/assets/images/Redline/redline-36.png' | relative_url }}){: .center-image }*(**Looking for FileZilla credentials files**)*   
+
+- Once it finds them it extracts all host's URLs, username,s and passwords and send them to the C2 server.
+
+   ![img]({{ '/assets/images/Redline/redline-37.png' | relative_url }}){: .center-image }*(**Extracts stored FTP servers' credentials**)*   
+
+
+# Taking a screenshot
+
+- RedLine copies the screen and converts it to bytes in order to send it to the C2 server.
+
+  ![img]({{ '/assets/images/Redline/redline-38.png' | relative_url }}){: .center-image }*(**Taking a screenshot**)*
+
+
+
+
+
+
+  
