@@ -207,7 +207,37 @@ description: The post shows the details of the analysis of the RedLine Stealer t
 
   ![img]({{ '/assets/images/Redline/redline-28.png' | relative_url }}){: .center-image }*(**Stealing files under Telegram application data directory**)* 
 
-# Stealing Browsers' data
+# Stealing data from browsers
 
-- hello
+- RedLine searches a list of profile paths received within the settings, to locate the browsers' databases to steal data records like cookies, saved login, auto-fills, and credit cards as appeared below.
 
+  ![img]({{ '/assets/images/Redline/redline-29.png' | relative_url }}){: .center-image }*(**Stealing a browsers' data**)*
+
+
+- These previously mentioned databases are:
+
+  - `Cookies`, to extract records of the **cookies** table.
+
+  - `Extension Cookies`, to extract records of the **cookies** table.
+
+  - `Network\\Cookies`, to extract records of **cookies** table
+
+    ![img]({{ '/assets/images/Redline/redline-30.png' | relative_url }}){: .center-image }*(**Extracting cookies records**)*
+
+  - `Login Data`, to extract records of the **logins** table which contains saved logins.
+
+    ![img]({{ '/assets/images/Redline/redline-31.png' | relative_url }}){: .center-image }*(**Extracting login data records**)*
+
+  - `Web Data`, to extract records for tables like **autofill** containing auto-fill data and **credit_cards** holding saved credit cards' data.
+
+    ![img]({{ '/assets/images/Redline/redline-32.png' | relative_url }}){: .center-image }*(**Extracting auto-fill records**)*
+
+    ![img]({{ '/assets/images/Redline/redline-33.png' | relative_url }}){: .center-image }*(**Extracting credit cards records**)*
+
+
+
+
+   
+
+
+  
