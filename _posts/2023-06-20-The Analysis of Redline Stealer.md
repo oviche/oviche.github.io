@@ -197,5 +197,17 @@ description: The post shows the details of the analysis of the RedLine Stealer t
 
    ![img]({{ '/assets/images/Redline/redline-26.png' | relative_url }}){: .center-image }*(**Retrieving the available languages**)*
 
-# Telegram
+# Stealing Telegram application files
+
+- RedLine searches for the Telegram application directory called **tdata** where application data like session data, messages, and images are stored. Also, it looks for other **tdata** sub-directories whose names are 16 characters long.
+  
+  ![img]({{ '/assets/images/Redline/redline-27.png' | relative_url }}){: .center-image }*(**Searching for Telegram application data directory**)*  
+
+- Then, it steals all the files under the previously mentioned directories and exfiltrates them to the C2 server.
+
+  ![img]({{ '/assets/images/Redline/redline-28.png' | relative_url }}){: .center-image }*(**Stealing files under Telegram application data directory**)* 
+
+# Stealing Browsers' data
+
+- hello
 
