@@ -245,7 +245,12 @@ description: The post shows the details of the analysis of the RedLine Stealer t
 
 - Below is the list of browsers and applications whose data are stolen.
   <details> <summary>Targetted browsers and applications</summary><br>
-  Battle.net - Chromium - Chrome - Opera Software - ChromePlus - Iridium - 7Star - CentBrowser - Chedot - Vivaldi - Kometa - Elements Browser - Epic Privacy Browser - Uran - Sleipnir5 - Citrio - Coowon - liebao - Orbitum - Comodo Dragon - Amigo - Torch - Yandex - 360Browser - Maxthon3 - K-Melon - Sputnik - Nichrome - CocCoc - Chromodo - Mail.Ru Atom - Brave-Browser - Microsoft Edge - NVIDIA GeForce Experience - Steam - CryptoTab Browser - Mozilla Firefox - Waterfox - K-Meleon - Thunderbird - Comodo IceDragon - Cyberfox - BlackHaw - Pale Moon - QIP Surf   
+  **Battle.net** - Chromium - Chrome - Opera Software - ChromePlus - Iridium - 7Star - CentBrowser - Chedot <br> 
+  **Vivaldi** - Kometa - Elements Browser - Epic Privacy Browser - Uran - Sleipnir5 - Citrio - Coowon - liebao <br>   
+  **Orbitum** - Comodo Dragon - Amigo - Torch - Yandex - 360Browser - Maxthon3 - K-Melon - Sputnik  <br>
+  **Nichrome** - CocCoc - Chromodo - Mail.Ru Atom - Brave-Browser - Microsoft Edge <br>
+  **NVIDIA GeForce Experience** - Steam - CryptoTab Browser - Mozilla Firefox - Waterfox - K-Meleon<br>
+  **Thunderbird** - Comodo IceDragon - Cyberfox - BlackHaw - Pale Moon - QIP Surf   
   </details>
 
 
