@@ -244,13 +244,13 @@ description: The post shows the details of the analysis of the RedLine Stealer t
   ![img]({{ '/assets/images/Redline/redline-35.png' | relative_url }}){: .center-image }*(**Extracting cookies from moz_cookies table**)*
 
 - Below is the list of browsers and applications whose data are stolen.
-  <details> <summary>Targetted browsers and applications</summary><br>
-  **Battle.net** - Chromium - Chrome - Opera Software - ChromePlus - Iridium - 7Star - CentBrowser - Chedot <br> 
-  **Vivaldi** - Kometa - Elements Browser - Epic Privacy Browser - Uran - Sleipnir5 - Citrio - Coowon - liebao <br>   
-  **Orbitum** - Comodo Dragon - Amigo - Torch - Yandex - 360Browser - Maxthon3 - K-Melon - Sputnik  <br>
-  **Nichrome** - CocCoc - Chromodo - Mail.Ru Atom - Brave-Browser - Microsoft Edge <br>
-  **NVIDIA GeForce Experience** - Steam - CryptoTab Browser - Mozilla Firefox - Waterfox - K-Meleon<br>
-  **Thunderbird** - Comodo IceDragon - Cyberfox - BlackHaw - Pale Moon - QIP Surf   
+  <details> <summary>Targetted browsers and applications</summary><be>
+  <b>Battle.net</b> - <b>Chromium</b> - <b>Chrome</b> - <b>Opera Software</b> - <b>ChromePlus</b> - <b>Iridium</b> - <b>7Star</b> - <b>CentBrowser</b> - <b>Chedot</b> <br> 
+  <b>Vivaldi</b> - <b>Kometa</b> - <b>Elements Browser</b> - <b>Epic Privacy Browser</b> - <b>Uran</b> - <b>Sleipnir5</b> - <b>Citrio</b> - <b>Coowon</b> - <b>liebao <br>   
+  <b>Orbitum</b> - <b>Comodo Dragon</b> - <b>Amigo</b> - <b>Torch</b> - <b>Yandex</b> - <b>360Browser</b> - <b>Maxthon3</b> - <b>K-Melon</b> - <b>Sputnik</b>  <br>
+  <b>Nichrome</b> - <b>CocCoc</b> - <b>Chromodo</b> - <b>Mail.Ru Atom</b> - <b>Brave-Browser</b> - <b>Microsoft Edge</b> <br>
+  <b>NVIDIA GeForce Experience</b> - <b>Steam</b> - <b>CryptoTab Browser</b> - <b>Mozilla Firefox</b> - <b>Waterfox</b> - <b>K-Meleon</b> <br>
+  <b>Thunderbird</b> - <b>Comodo IceDragon</b> - <b>Cyberfox</b> - <b>BlackHaw</b> - <b>Pale Moon</b> - <b>QIP Surf</b>   
   </details>
 
 
