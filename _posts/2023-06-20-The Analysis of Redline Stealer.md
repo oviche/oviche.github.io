@@ -298,76 +298,78 @@ description: The post shows the details of the analysis of the RedLine Stealer t
 
   ![img]({{ '/assets/images/Redline/redline-41.png' | relative_url }}){: .center-image }*(**Looking for wallet files**)*
 
-- Additionally, it searches for the following folders of crypto extensions inside the browsers paths.
-  <details> <summary>Targetted crypto wallets extensions</summary><br>
-            Folder               | Wallet name<br>
-ffnbelfdoeiohenkjibnmadjiehjhajb | YoroiWallet<br>
-ibnejdfjmmkpcnlpebklmnkoeoihofec | Tronlink<br>
-jbdaocneiiinmjbjlgalhcelgbejmnid | NiftyWallet<br>
-nkbihfbeogaeaoehlefnkodbefgpgknn | Metamask<br>
-afbcbjpbpfadlkmhmclhkeeodmamcflc | MathWallet<br>
-hnfanknocfeofbddgcijnmhnfnkdnaad | Coinbase<br>
-fhbohimaelbohpjbbldcngcnapndodjp | BinanceChain<br>
-odbfpeeihdkbihmopkbjmoonfanlbfcl | BraveWallet<br>
-hpglfhgfnhbgpjdenjgmdgoeiappafln | GuardaWallet<br>
-blnieiiffboillknjnepogjhkgnoapac | EqualWallet<br>
-cjelfplplebdjjenllpjcblmjkfcffne | JaxxxLiberty<br>
-fihkakfobkmkjojpchpfgcmhfjnmnfpi | BitAppWallet<br>
-kncchdigobghenbbaddojjnnaogfppfj | iWallet<br>
-amkmjjmmflddogmhpjloimipbofnfjih | Wombat<br>
-fhilaheimglignddkjgofkcbgekhenbh | AtomicWallet<br>
-nlbmnnijcnlegkjjpcfjclmcfggfefdm | MewCx<br>
-nanjmdknhkinifnkgdcggcfnhdaammmj | GuildWallet<br>
-nkddgncdjgjfcddamfgcmfnlhccnimig | SaturnWallet<br>
-fnjhmkhhmkbjkkabndcnnogagogbneec | RoninWallet<br>
-aiifbnbfobpmeekipheeijimdpnlpgpp | TerraStation<br>
-fnnegphlobjdpkhecapkijjdkgcjhkib | HarmonyWallet<br>
-aeachknmefphepccionboohckonoeemg | Coin98Wallet<br>
-cgeeodpfagjceefieflmdfphplkenlfk | TonCrystal<br>
-pdadjkfkgcafgbceimcpbkalnfnepbnk | KardiaChain<br>
-bfnaelmomeimhlpmgjnjophhpkkoljpa | Phantom<br>
-fhilaheimglignddkjgofkcbgekhenbh | Oxygen<br>
-mgffkfbidihjpoaomajlbgchddlicgpn | PaliWallet<br>
-aodkkagnadcbobfpggfnjeongemjbjca | BoltX<br>
-kpfopkelmapcoipemfendmdcghnegimn | LiqualityWallet<br>
-hmeobnfnfcmdkdcmlblgagmfpfboieaf | XdefiWallet<br>
-lpfcbjknijpeeillifnkikgncikgfhdo | NamiWallet<br>
-dngmlblcodfobpdpecaadgfbcggfjfnm | MaiarDeFiWallet<br>
-ffnbelfdoeiohenkjibnmadjiehjhajb | YoroiWallet<br>
-ibnejdfjmmkpcnlpebklmnkoeoihofec | Tronlink<br>
-jbdaocneiiinmjbjlgalhcelgbejmnid | NiftyWallet<br>
-nkbihfbeogaeaoehlefnkodbefgpgknn | Metamask<br>
-afbcbjpbpfadlkmhmclhkeeodmamcflc | MathWallet<br>
-hnfanknocfeofbddgcijnmhnfnkdnaad | Coinbase<br>
-fhbohimaelbohpjbbldcngcnapndodjp | BinanceChain<br>
-odbfpeeihdkbihmopkbjmoonfanlbfcl | BraveWallet<br>
-hpglfhgfnhbgpjdenjgmdgoeiappafln | GuardaWallet<br>
-blnieiiffboillknjnepogjhkgnoapac | EqualWallet<br>
-cjelfplplebdjjenllpjcblmjkfcffne | JaxxxLiberty<br>
-fihkakfobkmkjojpchpfgcmhfjnmnfpi | BitAppWallet<br>
-kncchdigobghenbbaddojjnnaogfppfj | iWallet<br>
-amkmjjmmflddogmhpjloimipbofnfjih | Wombat<br>
-fhilaheimglignddkjgofkcbgekhenbh | AtomicWallet<br>
-nlbmnnijcnlegkjjpcfjclmcfggfefdm | MewCx<br>
-nanjmdknhkinifnkgdcggcfnhdaammmj | GuildWallet<br>
-nkddgncdjgjfcddamfgcmfnlhccnimig | SaturnWallet<br>
-fnjhmkhhmkbjkkabndcnnogagogbneec | RoninWallet<br>
-aiifbnbfobpmeekipheeijimdpnlpgpp | TerraStation<br>
-fnnegphlobjdpkhecapkijjdkgcjhkib | HarmonyWallet<br>
-aeachknmefphepccionboohckonoeemg | Coin98Wallet<br>
-cgeeodpfagjceefieflmdfphplkenlfk | TonCrystal<br>
-pdadjkfkgcafgbceimcpbkalnfnepbnk | KardiaChain<br>
-bfnaelmomeimhlpmgjnjophhpkkoljpa | Phantom<br>
-fhilaheimglignddkjgofkcbgekhenbh | Oxygen<br>
-mgffkfbidihjpoaomajlbgchddlicgpn | PaliWallet<br>
-aodkkagnadcbobfpggfnjeongemjbjca | BoltX<br>
-kpfopkelmapcoipemfendmdcghnegimn | LiqualityWallet<br>
-hmeobnfnfcmdkdcmlblgagmfpfboieaf | XdefiWallet<br>
-lpfcbjknijpeeillifnkikgncikgfhdo | NamiWallet<br>
-dngmlblcodfobpdpecaadgfbcggfjfnm | MaiarDeFiWallet<br>
-bhghoamapcdpbohphigoooaddinpkbai | Authenticator<br>
-ookjlbkiijinhpmnjffcofjonbfbgaoc | TempleWallet<br>
-  </details>
+- Additionally, it searches for the following folders of crypto extensions inside the browsers paths. When it finds these folders then it will exfiltrate all of their files as regex **\*** is specified.
 
+  <details> <summary>Targetted crypto wallets extensions</summary><br>
+&nbsp&nbsp&nbspFolder<key>&nbsp&nbsp&nbsp|&nbsp Wallet name<value><br>
+ffnbelfdoeiohenkjibnmadjiehjhajb &nbsp|&nbsp YoroiWallet<br>
+ibnejdfjmmkpcnlpebklmnkoeoihofec &nbsp|&nbsp Tronlink<br>
+jbdaocneiiinmjbjlgalhcelgbejmnid &nbsp|&nbsp NiftyWallet<br>
+nkbihfbeogaeaoehlefnkodbefgpgknn &nbsp|&nbsp Metamask<br>
+afbcbjpbpfadlkmhmclhkeeodmamcflc &nbsp|&nbsp MathWallet<br>
+hnfanknocfeofbddgcijnmhnfnkdnaad &nbsp|&nbsp Coinbase<br>
+fhbohimaelbohpjbbldcngcnapndodjp &nbsp|&nbsp BinanceChain<br>
+odbfpeeihdkbihmopkbjmoonfanlbfcl &nbsp|&nbsp BraveWallet<br>
+hpglfhgfnhbgpjdenjgmdgoeiappafln &nbsp|&nbsp GuardaWallet<br>
+blnieiiffboillknjnepogjhkgnoapac &nbsp|&nbsp EqualWallet<br>
+cjelfplplebdjjenllpjcblmjkfcffne &nbsp|&nbsp JaxxxLiberty<br>
+fihkakfobkmkjojpchpfgcmhfjnmnfpi &nbsp|&nbsp BitAppWallet<br>
+kncchdigobghenbbaddojjnnaogfppfj &nbsp|&nbsp iWallet<br>
+amkmjjmmflddogmhpjloimipbofnfjih &nbsp|&nbsp Wombat<br>
+fhilaheimglignddkjgofkcbgekhenbh &nbsp|&nbsp AtomicWallet<br>
+nlbmnnijcnlegkjjpcfjclmcfggfefdm &nbsp|&nbsp MewCx<br>
+nanjmdknhkinifnkgdcggcfnhdaammmj &nbsp|&nbsp GuildWallet<br>
+nkddgncdjgjfcddamfgcmfnlhccnimig &nbsp|&nbsp SaturnWallet<br>
+fnjhmkhhmkbjkkabndcnnogagogbneec &nbsp|&nbsp RoninWallet<br>
+aiifbnbfobpmeekipheeijimdpnlpgpp &nbsp|&nbsp TerraStation<br>
+fnnegphlobjdpkhecapkijjdkgcjhkib &nbsp|&nbsp HarmonyWallet<br>
+aeachknmefphepccionboohckonoeemg &nbsp|&nbsp Coin98Wallet<br>
+cgeeodpfagjceefieflmdfphplkenlfk &nbsp|&nbsp TonCrystal<br>
+pdadjkfkgcafgbceimcpbkalnfnepbnk &nbsp|&nbsp KardiaChain<br>
+bfnaelmomeimhlpmgjnjophhpkkoljpa &nbsp|&nbsp Phantom<br>
+fhilaheimglignddkjgofkcbgekhenbh &nbsp|&nbsp Oxygen<br>
+mgffkfbidihjpoaomajlbgchddlicgpn &nbsp|&nbsp PaliWallet<br>
+aodkkagnadcbobfpggfnjeongemjbjca &nbsp|&nbsp BoltX<br>
+kpfopkelmapcoipemfendmdcghnegimn &nbsp|&nbsp LiqualityWallet<br>
+hmeobnfnfcmdkdcmlblgagmfpfboieaf &nbsp|&nbsp XdefiWallet<br>
+lpfcbjknijpeeillifnkikgncikgfhdo &nbsp|&nbsp NamiWallet<br>
+dngmlblcodfobpdpecaadgfbcggfjfnm &nbsp|&nbsp MaiarDeFiWallet<br>
+ffnbelfdoeiohenkjibnmadjiehjhajb &nbsp|&nbsp YoroiWallet<br>
+ibnejdfjmmkpcnlpebklmnkoeoihofec &nbsp|&nbsp Tronlink<br>
+jbdaocneiiinmjbjlgalhcelgbejmnid &nbsp|&nbsp NiftyWallet<br>
+nkbihfbeogaeaoehlefnkodbefgpgknn &nbsp|&nbsp Metamask<br>
+afbcbjpbpfadlkmhmclhkeeodmamcflc &nbsp|&nbsp MathWallet<br>
+hnfanknocfeofbddgcijnmhnfnkdnaad &nbsp|&nbsp Coinbase<br>
+fhbohimaelbohpjbbldcngcnapndodjp &nbsp|&nbsp BinanceChain<br>
+odbfpeeihdkbihmopkbjmoonfanlbfcl &nbsp|&nbsp BraveWallet<br>
+hpglfhgfnhbgpjdenjgmdgoeiappafln &nbsp|&nbsp GuardaWallet<br>
+blnieiiffboillknjnepogjhkgnoapac &nbsp|&nbsp EqualWallet<br>
+cjelfplplebdjjenllpjcblmjkfcffne &nbsp|&nbsp JaxxxLiberty<br>
+fihkakfobkmkjojpchpfgcmhfjnmnfpi &nbsp|&nbsp BitAppWallet<br>
+kncchdigobghenbbaddojjnnaogfppfj &nbsp|&nbsp iWallet<br>
+amkmjjmmflddogmhpjloimipbofnfjih &nbsp|&nbsp Wombat<br>
+fhilaheimglignddkjgofkcbgekhenbh &nbsp|&nbsp AtomicWallet<br>
+nlbmnnijcnlegkjjpcfjclmcfggfefdm &nbsp|&nbsp MewCx<br>
+nanjmdknhkinifnkgdcggcfnhdaammmj &nbsp|&nbsp GuildWallet<br>
+nkddgncdjgjfcddamfgcmfnlhccnimig &nbsp|&nbsp SaturnWallet<br>
+fnjhmkhhmkbjkkabndcnnogagogbneec &nbsp|&nbsp RoninWallet<br>
+aiifbnbfobpmeekipheeijimdpnlpgpp &nbsp|&nbsp TerraStation<br>
+fnnegphlobjdpkhecapkijjdkgcjhkib &nbsp|&nbsp HarmonyWallet<br>
+aeachknmefphepccionboohckonoeemg &nbsp|&nbsp Coin98Wallet<br>
+cgeeodpfagjceefieflmdfphplkenlfk &nbsp|&nbsp TonCrystal<br>
+pdadjkfkgcafgbceimcpbkalnfnepbnk &nbsp|&nbsp KardiaChain<br>
+bfnaelmomeimhlpmgjnjophhpkkoljpa &nbsp|&nbsp Phantom<br>
+fhilaheimglignddkjgofkcbgekhenbh &nbsp|&nbsp Oxygen<br>
+mgffkfbidihjpoaomajlbgchddlicgpn &nbsp|&nbsp PaliWallet<br>
+aodkkagnadcbobfpggfnjeongemjbjca &nbsp|&nbsp BoltX<br>
+kpfopkelmapcoipemfendmdcghnegimn &nbsp|&nbsp LiqualityWallet<br>
+hmeobnfnfcmdkdcmlblgagmfpfboieaf &nbsp|&nbsp XdefiWallet<br>
+lpfcbjknijpeeillifnkikgncikgfhdo &nbsp|&nbsp NamiWallet<br>
+dngmlblcodfobpdpecaadgfbcggfjfnm &nbsp|&nbsp MaiarDeFiWallet<br>
+bhghoamapcdpbohphigoooaddinpkbai &nbsp|&nbsp Authenticator<br>
+ookjlbkiijinhpmnjffcofjonbfbgaoc &nbsp|&nbsp TempleWallet<br>
+</details>
+
+  ![img]({{ '/assets/images/Redline/redline-42.png' | relative_url }}){: .center-image }*(**Stealing files of Crypto wallets browser extensions**)*
 
 
