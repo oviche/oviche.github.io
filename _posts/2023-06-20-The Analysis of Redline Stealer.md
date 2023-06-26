@@ -353,14 +353,18 @@ description: The post shows the details of the analysis of the RedLine Stealer t
    |                   |  %localappdata%\Coinomi\Coinomi\wallets        |\* |  
    | Electrum          |  %appdata%\Electrum\wallets                    |\* |  
    | Ethereum          |  %localappdata%\Ethereum\wallets               |\* |
-   | Exodus            |  Exodus\exodus.wallet                          |\* |
-   |                   |  Exodus\exodus                                 |\*.json |
+   | Exodus            |  %appdata%\Exodus\exodus.wallet                |\* |
+   |                   |  %appdata%\Exodus\exodus                       |\*.json |
    | Guarda            |  %appdata%\Guarda                              |\* |
    | Jaxx              |  %appdata%\com.liberty.jaxx                    |\* |
    | Monero            |  %userprofile%\Documents\Monero\wallets        |\* |
    {:.inner-borders}
 
 
-
+|First Header | Second Header|
+|------------ | -------------|
+|Content from cell 1 | Content from cell 2|
+|Content in the first column | Content in the second column|
+{:.inner-borders}
 
   
