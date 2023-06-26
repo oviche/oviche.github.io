@@ -352,9 +352,9 @@ table.wide {
 
 table.inner-borders {
   border-collapse: collapse;
-  border-style: hidden;
+  border-style: solid;
   td {
-    border: 1px solid #5e5e5e;
+    border: 2px solid #5e5e5e;
   }
 }
 
