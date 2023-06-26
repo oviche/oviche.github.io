@@ -270,7 +270,24 @@ description: The post shows the details of the analysis of the RedLine Stealer t
 
 
 
+# Exfilterating files matching received patterns
 
+- RedLine exfiltrates the files that match any of the patterns that exist in the received settings. Every pattern string has the format **Disk path | regex1, regex2,regex3, ... | search-option constant value**. The below are received patterns from C2.
 
+    - **%userprofile%\Desktop|*.txt,*.rtf,*.doc*,*key*,*wallet*,*seed*,*.jpg,*.jpeg,*.png,*.pdf|0**
+    - **%userprofile%\Documents|*.txt,*.rtf,*.doc*,*key*,*wallet*,*seed*,*.jpg,*.jpeg,*.png,*.pdf|0**
+    - **%userprofile%\Downloads|*.txt,*.rtf,*.doc*,*key*,*wallet*,*seed*,*.jpg,*.jpeg,*.png,*.pdf|0**
 
+- If the disk path field equals **%DSK_23%**, then it will search all logical drives to find and exfiltrate the matched files.
+
+  ![img]({{ '/assets/images/Redline/redline-39.png' | relative_url }}){: .center-image }*(**Searching all logical drives for matched files**)*
+  
+
+- In case of the disk path does not equal **%DSK_23%**, then it will search inside that path based on the search option value, to find matched files. 
+
+  ![img]({{ '/assets/images/Redline/redline-40.png' | relative_url }}){: .center-image }*(**Searching inside a specific path for matched files**)* 
+
+- Also, be noted that, in all cases, the exfiltrated file mustn't be more than **3097152** bytes and the summation of exfiltrated files' sizes mustn't be more than **52428800** bytes.
+
+ 
   
