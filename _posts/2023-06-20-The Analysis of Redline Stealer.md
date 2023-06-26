@@ -294,11 +294,11 @@ description: The post shows the details of the analysis of the RedLine Stealer t
   
 # Stealing Crypto wallets files
 
-- RedLine looks for the directories that contain any of the files named **wallet.dat** or **wallet** and then exfiltrates all the files in these directories that match the regex pattern **\*wallet\***.
+- RedLine looks for the directories that contain any of the files named **wallet.dat** or **wallet** and then exfiltrates all the files in these directories that match the regex pattern **"\*wallet\*"**.
 
   ![img]({{ '/assets/images/Redline/redline-41.png' | relative_url }}){: .center-image }*(**Looking for wallet files**)*
 
-- Additionally, it searches for the following folders of crypto extensions inside the browsers paths. When it finds these folders, it will exfiltrate all their files as regex **\*** is specified.
+- Additionally, it searches for the following folders of crypto extensions inside the browsers paths. When it finds these folders, it will exfiltrate all their files as regex **"\*"** is specified.
 
    ![img]({{ '/assets/images/Redline/redline-42.png' | relative_url }}){: .center-image }*(**Stealing files of Crypto wallets browser extensions**)*
 
