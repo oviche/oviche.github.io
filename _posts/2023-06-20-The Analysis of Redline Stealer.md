@@ -288,7 +288,7 @@ description: The post shows the details of the analysis of the RedLine Stealer t
 
   ![img]({{ '/assets/images/Redline/redline-40.png' | relative_url }}){: .center-image }*(**Searching inside a specific path for matched files**)* 
 
-- Also, be noted that, in all cases, the exfiltrated file mustn't be more than **3097152** bytes and the summation of exfiltrated files' sizes mustn't be more than **52428800** bytes.
+- Also, note that in all cases, the exfiltrated file mustn't be more than **3097152** bytes and the summation of exfiltrated files' sizes mustn't be more than **52428800** bytes.
 
  
   
@@ -341,10 +341,10 @@ description: The post shows the details of the analysis of the RedLine Stealer t
 
 <p></p>
 
-- Finally, It steals files from the list of crypto wallets in the received settings. The following table contains the name of the targetted crypto wallet applications, directories to search and file matching patterns for every directory to exfiltrate to C2.
+- Finally, It steals files from the list of crypto wallets in the received settings. The following table contains the name of the targetted crypto wallet applications, directories to search, and file matching patterns for every directory to exfiltrate to C2.
 
    | Wallet name       | Directory path                                 | Patterns 
-   | :---------------- | :--------------------------------------------: | ----: |
+   | :---------------- | :--------------------------------------------: | ------: |
    | Armory            |  %appdata%\Armory                              | \*.wallet |    
    | Atomic            |  %appdata%\atomic                              | \* |
    | Binance           |  %appdata%\Binance                             | \*app-store\* |   
@@ -358,7 +358,7 @@ description: The post shows the details of the analysis of the RedLine Stealer t
    | Guarda            |  %appdata%\Guarda                              |  \* |
    | Jaxx              |  %appdata%\com.liberty.jaxx                    |  \* |
    | Monero            |  %userprofile%\Documents\Monero\wallets        |  \* |
-   {:.wide}
+   {:.inner-borders}
 
 
 
