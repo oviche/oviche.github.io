@@ -325,7 +325,7 @@ nav.shrink {
 //********************************************************
 
 .post-content > table {
-  background-color: #39393a;
+  background-color: #262324;
   margin: 0 auto 10px;
   border-top-left-radius: 5px;
   border-top-right-radius: 5px;
@@ -352,6 +352,7 @@ table.wide {
 
 table.inner-borders {
   border-collapse: collapse;
+  background-color:#262324;
   border-style: hidden;
   td {
     border: 3px solid #5e5e5e;
