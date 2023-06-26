@@ -345,19 +345,19 @@ description: The post shows the details of the analysis of the RedLine Stealer t
 
    | Wallet name       | Directory path                                 | Patterns 
    | :---------------- | :--------------------------------------------: | ------: |
-   | Armory            |  %appdata%\Armory                              | \*.wallet |    
-   | Atomic            |  %appdata%\atomic                              | \* |
-   | Binance           |  %appdata%\Binance                             | \*app-store\* |   
-   | Coinomi           |  %localappdata%\Coinomi\Coinomi\Cache          |  \* |  
-   |                   |  %localappdata%\Coinomi\Coinomi\db             |  \* |  
-   |                   |  %localappdata%\Coinomi\Coinomi\wallets        |  \* |  
-   | Electrum          |  %appdata%\Electrum\wallets                    |  \* |  
-   | Ethereum          |  %localappdata%\Ethereum\wallets               |  \* |
-   | Exodus            |  Exodus\exodus.wallet                          |  \* |
-   |                   |  Exodus\exodus                                 |  \*.json |
-   | Guarda            |  %appdata%\Guarda                              |  \* |
-   | Jaxx              |  %appdata%\com.liberty.jaxx                    |  \* |
-   | Monero            |  %userprofile%\Documents\Monero\wallets        |  \* |
+   | Armory            |  %appdata%\Armory                              |\*.wallet |    
+   | Atomic            |  %appdata%\atomic                              |\* |
+   | Binance           |  %appdata%\Binance                             |\*app-store\* |   
+   | Coinomi           |  %localappdata%\Coinomi\Coinomi\Cache          |\* |  
+   |                   |  %localappdata%\Coinomi\Coinomi\db             |\* |  
+   |                   |  %localappdata%\Coinomi\Coinomi\wallets        |\* |  
+   | Electrum          |  %appdata%\Electrum\wallets                    |\* |  
+   | Ethereum          |  %localappdata%\Ethereum\wallets               |\* |
+   | Exodus            |  Exodus\exodus.wallet                          |\* |
+   |                   |  Exodus\exodus                                 |\*.json |
+   | Guarda            |  %appdata%\Guarda                              |\* |
+   | Jaxx              |  %appdata%\com.liberty.jaxx                    |\* |
+   | Monero            |  %userprofile%\Documents\Monero\wallets        |\* |
    {:.inner-borders}
 
 
