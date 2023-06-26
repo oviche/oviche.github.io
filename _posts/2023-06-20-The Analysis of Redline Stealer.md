@@ -302,42 +302,42 @@ description: The post shows the details of the analysis of the RedLine Stealer t
 
    ![img]({{ '/assets/images/Redline/redline-42.png' | relative_url }}){: .center-image }*(**Stealing files of Crypto wallets browser extensions**)*
 
-<details> <summary>Targetted crypto wallets extensions</summary><br>
-<b>Folder \<Key\></b> | <b>Wallet \<Value\></b> <br>
-<b>ffnbelfdoeiohenkjibnmadjiehjhajb</b> | <b>YoroiWallet</b><br>
-<b>ibnejdfjmmkpcnlpebklmnkoeoihofec</b> | <b>Tronlink</b><br>
-<b>jbdaocneiiinmjbjlgalhcelgbejmnid</b> | <b>NiftyWallet</b><br>
-<b>nkbihfbeogaeaoehlefnkodbefgpgknn</b> | <b>Metamask</b><br>
-<b>afbcbjpbpfadlkmhmclhkeeodmamcflc</b> | <b>MathWallet</b><br>
-<b>hnfanknocfeofbddgcijnmhnfnkdnaad</b> | <b>Coinbase</b><br>
-<b>fhbohimaelbohpjbbldcngcnapndodjp</b> | <b>BinanceChain</b><br>
-<b>odbfpeeihdkbihmopkbjmoonfanlbfcl</b> | <b>BraveWallet</b><br>
-<b>hpglfhgfnhbgpjdenjgmdgoeiappafln</b> | <b>GuardaWallet</b><br>
-<b>blnieiiffboillknjnepogjhkgnoapac</b> | <b>EqualWallet</b><br>
-<b>cjelfplplebdjjenllpjcblmjkfcffne</b> | <b>JaxxxLiberty</b><br>
-<b>fihkakfobkmkjojpchpfgcmhfjnmnfpi</b> | <b>BitAppWallet</b><br>
-<b>kncchdigobghenbbaddojjnnaogfppfj</b> | <b>iWallet</b><br>
-<b>amkmjjmmflddogmhpjloimipbofnfjih</b> | <b>Wombat</b><br>
-<b>fhilaheimglignddkjgofkcbgekhenbh</b> | <b>AtomicWallet</b><br>
-<b>nlbmnnijcnlegkjjpcfjclmcfggfefdm</b> | <b>MewCx</b><br>
-<b>nanjmdknhkinifnkgdcggcfnhdaammmj</b> | <b>GuildWallet</b><br>
-<b>nkddgncdjgjfcddamfgcmfnlhccnimig</b> | <b>SaturnWallet</b><br>
-<b>fnjhmkhhmkbjkkabndcnnogagogbneec</b> | <b>RoninWallet</b><br>
-<b>aiifbnbfobpmeekipheeijimdpnlpgpp</b> | <b>TerraStation</b><br>
-<b>fnnegphlobjdpkhecapkijjdkgcjhkib</b> | <b>HarmonyWallet</b><br>
-<b>aeachknmefphepccionboohckonoeemg</b> | <b>Coin98Wallet</b><br>
-<b>cgeeodpfagjceefieflmdfphplkenlfk</b> | <b>TonCrystal</b><br>
-<b>pdadjkfkgcafgbceimcpbkalnfnepbnk</b> | <b>KardiaChain</b><br>
-<b>bfnaelmomeimhlpmgjnjophhpkkoljpa</b> | <b>Phantom</b><br>
-<b>mgffkfbidihjpoaomajlbgchddlicgpn</b> | <b>PaliWallet</b><br>
-<b>aodkkagnadcbobfpggfnjeongemjbjca</b> | <b>BoltX</b><br>
-<b>kpfopkelmapcoipemfendmdcghnegimn</b> | <b>LiqualityWallet</b><br>
-<b>hmeobnfnfcmdkdcmlblgagmfpfboieaf</b> | <b>XdefiWallet</b><br>
-<b>lpfcbjknijpeeillifnkikgncikgfhdo</b> | <b>NamiWallet</b><br>
-<b>dngmlblcodfobpdpecaadgfbcggfjfnm</b> | <b>MaiarDeFiWallet</b><br>
-<b>bhghoamapcdpbohphigoooaddinpkbai</b> | <b>Authenticator</b><br>
-<b>ookjlbkiijinhpmnjffcofjonbfbgaoc</b> | <b>TempleWallet</b>
-</details>
+   <details> <summary><b>Targetted crypto wallets extensions</b>b</summary><be>
+   <b>Folder</b> | <b>Wallet</b> <br>
+   <b>ffnbelfdoeiohenkjibnmadjiehjhajb</b> | <b>YoroiWallet</b><br>
+   <b>ibnejdfjmmkpcnlpebklmnkoeoihofec</b> | <b>Tronlink</b><br>
+   <b>jbdaocneiiinmjbjlgalhcelgbejmnid</b> | <b>NiftyWallet</b><br>
+   <b>nkbihfbeogaeaoehlefnkodbefgpgknn</b> | <b>Metamask</b><br>
+   <b>afbcbjpbpfadlkmhmclhkeeodmamcflc</b> | <b>MathWallet</b><br>
+   <b>hnfanknocfeofbddgcijnmhnfnkdnaad</b> | <b>Coinbase</b><br>
+   <b>fhbohimaelbohpjbbldcngcnapndodjp</b> | <b>BinanceChain</b><br>
+   <b>odbfpeeihdkbihmopkbjmoonfanlbfcl</b> | <b>BraveWallet</b><br>
+   <b>hpglfhgfnhbgpjdenjgmdgoeiappafln</b> | <b>GuardaWallet</b><br>
+   <b>blnieiiffboillknjnepogjhkgnoapac</b> | <b>EqualWallet</b><br>
+   <b>cjelfplplebdjjenllpjcblmjkfcffne</b> | <b>JaxxxLiberty</b><br>
+   <b>fihkakfobkmkjojpchpfgcmhfjnmnfpi</b> | <b>BitAppWallet</b><br>
+   <b>kncchdigobghenbbaddojjnnaogfppfj</b> | <b>iWallet</b><br>
+   <b>amkmjjmmflddogmhpjloimipbofnfjih</b> | <b>Wombat</b><br>
+   <b>fhilaheimglignddkjgofkcbgekhenbh</b> | <b>AtomicWallet</b><br>
+   <b>nlbmnnijcnlegkjjpcfjclmcfggfefdm</b> | <b>MewCx</b><br>
+   <b>nanjmdknhkinifnkgdcggcfnhdaammmj</b> | <b>GuildWallet</b><br>
+   <b>nkddgncdjgjfcddamfgcmfnlhccnimig</b> | <b>SaturnWallet</b><br>
+   <b>fnjhmkhhmkbjkkabndcnnogagogbneec</b> | <b>RoninWallet</b><br>
+   <b>aiifbnbfobpmeekipheeijimdpnlpgpp</b> | <b>TerraStation</b><br>
+   <b>fnnegphlobjdpkhecapkijjdkgcjhkib</b> | <b>HarmonyWallet</b><br>
+   <b>aeachknmefphepccionboohckonoeemg</b> | <b>Coin98Wallet</b><br>
+   <b>cgeeodpfagjceefieflmdfphplkenlfk</b> | <b>TonCrystal</b><br>
+   <b>pdadjkfkgcafgbceimcpbkalnfnepbnk</b> | <b>KardiaChain</b><br>
+   <b>bfnaelmomeimhlpmgjnjophhpkkoljpa</b> | <b>Phantom</b><br>
+   <b>mgffkfbidihjpoaomajlbgchddlicgpn</b> | <b>PaliWallet</b><br>
+   <b>aodkkagnadcbobfpggfnjeongemjbjca</b> | <b>BoltX</b><br>
+   <b>kpfopkelmapcoipemfendmdcghnegimn</b> | <b>LiqualityWallet</b><br>
+   <b>hmeobnfnfcmdkdcmlblgagmfpfboieaf</b> | <b>XdefiWallet</b><br>
+   <b>lpfcbjknijpeeillifnkikgncikgfhdo</b> | <b>NamiWallet</b><br>
+   <b>dngmlblcodfobpdpecaadgfbcggfjfnm</b> | <b>MaiarDeFiWallet</b><br>
+   <b>bhghoamapcdpbohphigoooaddinpkbai</b> | <b>Authenticator</b><br>
+   <b>ookjlbkiijinhpmnjffcofjonbfbgaoc</b> | <b>TempleWallet</b>
+   </details>
 
 - hello world
 
