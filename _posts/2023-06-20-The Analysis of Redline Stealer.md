@@ -300,8 +300,10 @@ description: The post shows the details of the analysis of the RedLine Stealer t
 
 - Additionally, it searches for the following folders of crypto extensions inside the browsers paths. When it finds these folders then it will exfiltrate all of their files as regex **\*** is specified.
 
+   ![img]({{ '/assets/images/Redline/redline-42.png' | relative_url }}){: .center-image }*(**Stealing files of Crypto wallets browser extensions**)*
+
 <details> <summary>Targetted crypto wallets extensions</summary><br>
-<b>Folder <Key> </b> | <b>Wallet <Value></b> <br>
+<b>Folder \<Key\></b> | <b>Wallet \<Value\></b> <br>
 <b>ffnbelfdoeiohenkjibnmadjiehjhajb</b> | <b>YoroiWallet</b><br>
 <b>ibnejdfjmmkpcnlpebklmnkoeoihofec</b> | <b>Tronlink</b><br>
 <b>jbdaocneiiinmjbjlgalhcelgbejmnid</b> | <b>NiftyWallet</b><br>
@@ -337,6 +339,7 @@ description: The post shows the details of the analysis of the RedLine Stealer t
 <b>ookjlbkiijinhpmnjffcofjonbfbgaoc</b> | <b>TempleWallet</b>
 </details>
 
-![img]({{ '/assets/images/Redline/redline-42.png' | relative_url }}){: .center-image }*(**Stealing files of Crypto wallets browser extensions**)*
+- hello world
+
 
 
