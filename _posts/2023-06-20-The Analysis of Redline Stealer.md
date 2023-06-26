@@ -294,6 +294,80 @@ description: The post shows the details of the analysis of the RedLine Stealer t
   
 # Stealing Crypto wallets files
 
-- here
+- RedLine looks for the directories that contain any of the files named **wallet.dat** or **wallet** and then exfiltrates all the files in these directories that match the regex pattern **\*wallet\***.
+
+  ![img]({{ '/assets/images/Redline/redline-41.png' | relative_url }}){: .center-image }*(**Looking for wallet files**)*
+
+- Additionally, it searches for the following folders of crypto extensions inside the browsers paths.
+  <details> <summary>Targetted crypto wallets extensions</summary><br>
+            Folder               | Wallet name<br>
+ffnbelfdoeiohenkjibnmadjiehjhajb | YoroiWallet<br>
+ibnejdfjmmkpcnlpebklmnkoeoihofec | Tronlink<br>
+jbdaocneiiinmjbjlgalhcelgbejmnid | NiftyWallet<br>
+nkbihfbeogaeaoehlefnkodbefgpgknn | Metamask<br>
+afbcbjpbpfadlkmhmclhkeeodmamcflc | MathWallet<br>
+hnfanknocfeofbddgcijnmhnfnkdnaad | Coinbase<br>
+fhbohimaelbohpjbbldcngcnapndodjp | BinanceChain<br>
+odbfpeeihdkbihmopkbjmoonfanlbfcl | BraveWallet<br>
+hpglfhgfnhbgpjdenjgmdgoeiappafln | GuardaWallet<br>
+blnieiiffboillknjnepogjhkgnoapac | EqualWallet<br>
+cjelfplplebdjjenllpjcblmjkfcffne | JaxxxLiberty<br>
+fihkakfobkmkjojpchpfgcmhfjnmnfpi | BitAppWallet<br>
+kncchdigobghenbbaddojjnnaogfppfj | iWallet<br>
+amkmjjmmflddogmhpjloimipbofnfjih | Wombat<br>
+fhilaheimglignddkjgofkcbgekhenbh | AtomicWallet<br>
+nlbmnnijcnlegkjjpcfjclmcfggfefdm | MewCx<br>
+nanjmdknhkinifnkgdcggcfnhdaammmj | GuildWallet<br>
+nkddgncdjgjfcddamfgcmfnlhccnimig | SaturnWallet<br>
+fnjhmkhhmkbjkkabndcnnogagogbneec | RoninWallet<br>
+aiifbnbfobpmeekipheeijimdpnlpgpp | TerraStation<br>
+fnnegphlobjdpkhecapkijjdkgcjhkib | HarmonyWallet<br>
+aeachknmefphepccionboohckonoeemg | Coin98Wallet<br>
+cgeeodpfagjceefieflmdfphplkenlfk | TonCrystal<br>
+pdadjkfkgcafgbceimcpbkalnfnepbnk | KardiaChain<br>
+bfnaelmomeimhlpmgjnjophhpkkoljpa | Phantom<br>
+fhilaheimglignddkjgofkcbgekhenbh | Oxygen<br>
+mgffkfbidihjpoaomajlbgchddlicgpn | PaliWallet<br>
+aodkkagnadcbobfpggfnjeongemjbjca | BoltX<br>
+kpfopkelmapcoipemfendmdcghnegimn | LiqualityWallet<br>
+hmeobnfnfcmdkdcmlblgagmfpfboieaf | XdefiWallet<br>
+lpfcbjknijpeeillifnkikgncikgfhdo | NamiWallet<br>
+dngmlblcodfobpdpecaadgfbcggfjfnm | MaiarDeFiWallet<br>
+ffnbelfdoeiohenkjibnmadjiehjhajb | YoroiWallet<br>
+ibnejdfjmmkpcnlpebklmnkoeoihofec | Tronlink<br>
+jbdaocneiiinmjbjlgalhcelgbejmnid | NiftyWallet<br>
+nkbihfbeogaeaoehlefnkodbefgpgknn | Metamask<br>
+afbcbjpbpfadlkmhmclhkeeodmamcflc | MathWallet<br>
+hnfanknocfeofbddgcijnmhnfnkdnaad | Coinbase<br>
+fhbohimaelbohpjbbldcngcnapndodjp | BinanceChain<br>
+odbfpeeihdkbihmopkbjmoonfanlbfcl | BraveWallet<br>
+hpglfhgfnhbgpjdenjgmdgoeiappafln | GuardaWallet<br>
+blnieiiffboillknjnepogjhkgnoapac | EqualWallet<br>
+cjelfplplebdjjenllpjcblmjkfcffne | JaxxxLiberty<br>
+fihkakfobkmkjojpchpfgcmhfjnmnfpi | BitAppWallet<br>
+kncchdigobghenbbaddojjnnaogfppfj | iWallet<br>
+amkmjjmmflddogmhpjloimipbofnfjih | Wombat<br>
+fhilaheimglignddkjgofkcbgekhenbh | AtomicWallet<br>
+nlbmnnijcnlegkjjpcfjclmcfggfefdm | MewCx<br>
+nanjmdknhkinifnkgdcggcfnhdaammmj | GuildWallet<br>
+nkddgncdjgjfcddamfgcmfnlhccnimig | SaturnWallet<br>
+fnjhmkhhmkbjkkabndcnnogagogbneec | RoninWallet<br>
+aiifbnbfobpmeekipheeijimdpnlpgpp | TerraStation<br>
+fnnegphlobjdpkhecapkijjdkgcjhkib | HarmonyWallet<br>
+aeachknmefphepccionboohckonoeemg | Coin98Wallet<br>
+cgeeodpfagjceefieflmdfphplkenlfk | TonCrystal<br>
+pdadjkfkgcafgbceimcpbkalnfnepbnk | KardiaChain<br>
+bfnaelmomeimhlpmgjnjophhpkkoljpa | Phantom<br>
+fhilaheimglignddkjgofkcbgekhenbh | Oxygen<br>
+mgffkfbidihjpoaomajlbgchddlicgpn | PaliWallet<br>
+aodkkagnadcbobfpggfnjeongemjbjca | BoltX<br>
+kpfopkelmapcoipemfendmdcghnegimn | LiqualityWallet<br>
+hmeobnfnfcmdkdcmlblgagmfpfboieaf | XdefiWallet<br>
+lpfcbjknijpeeillifnkikgncikgfhdo | NamiWallet<br>
+dngmlblcodfobpdpecaadgfbcggfjfnm | MaiarDeFiWallet<br>
+bhghoamapcdpbohphigoooaddinpkbai | Authenticator<br>
+ookjlbkiijinhpmnjffcofjonbfbgaoc | TempleWallet<br>
+  </details>
+
 
 
