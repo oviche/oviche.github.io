@@ -343,28 +343,22 @@ description: The post shows the details of the analysis of the RedLine Stealer t
 
 - Finally, It steals files from the list of crypto wallets in the received settings. The following table contains the name of the targetted crypto wallet applications, directories to search, and file matching patterns for every directory to exfiltrate to C2.
    
-   | Wallet name       | Directory path                                 | Patterns 
-   |-------------------|----------------------------------------------- |--------- |
-   | Armory|%appdata%\Armory|\*.wallet|    
-   | Atomic|%appdata%\atomic|\*|
-   | Binance|%appdata%\Binance|\*app-store\*|   
-   | Coinomi|%localappdata%\Coinomi\Coinomi\Cache|\*|  
-   ||%localappdata%\Coinomi\Coinomi\db|\*|  
-   ||%localappdata%\Coinomi\Coinomi\wallets|\*|  
-   |Electrum|%appdata%\Electrum\wallets|\*|  
-   |Ethereum|%localappdata%\Ethereum\wallets|\*|
-   |Exodus|%appdata%\Exodus\exodus.wallet|\*|
-   ||%appdata%\Exodus\exodus|\*.json|
-   |Guarda|%appdata%\Guarda|\*|
-   |Jaxx|%appdata%\com.liberty.jaxx|\* |
-   |Monero|%userprofile%\Documents\Monero\wallets|\*|
-   {:.inner-borders}
 
 
-|First Header | Second Header|
-|------------ | -------------|
-|Content from cell 1 | %Content% from cell 2|
-|Content in %the%first column | %Content%in the second column|
+| Wallet name       | Directory path                                 | Patterns 
+|-------------------|----------------------------------------------- |--------- |
+| Armory | %appdata%\Armory|\*.wallet|    
+| Atomic | %appdata%\atomic|\*|
+| Binance | %appdata%\Binance|\*app-store\*|   
+| Coinomi | %localappdata%\Coinomi\Coinomi\Cache |\*|  
+|         | %localappdata%\Coinomi\Coinomi\db |\*|  
+|         |%localappdata%\Coinomi\Coinomi\wallets |\*|  
+|Electrum | %appdata%\Electrum\wallets           |\*|  
+|Ethereum| %localappdata%\Ethereum\wallets       |\*|
+|Exodus| %appdata%\Exodus\exodus.wallet          |\*|
+|        | %appdata%\Exodus\exodus               |\*.json|
+| Guarda | %appdata%\Guarda                      |\*|
+| Jaxx    | %appdata%\com.liberty.jaxx           |\* |
+| Monero | %userprofile%\Documents\Monero\wallets  |\*|
 {:.inner-borders}
-
   
