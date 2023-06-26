@@ -298,7 +298,7 @@ description: The post shows the details of the analysis of the RedLine Stealer t
 
   ![img]({{ '/assets/images/Redline/redline-41.png' | relative_url }}){: .center-image }*(**Looking for wallet files**)*
 
-- Additionally, it searches for the following folders of crypto extensions inside the browsers paths. When it finds these folders then it will exfiltrate all of their files as regex **\*** is specified.
+- Additionally, it searches for the following folders of crypto extensions inside the browsers paths. When it finds these folders, it will exfiltrate all their files as regex **\*** is specified.
 
    ![img]({{ '/assets/images/Redline/redline-42.png' | relative_url }}){: .center-image }*(**Stealing files of Crypto wallets browser extensions**)*
 
@@ -341,7 +341,26 @@ description: The post shows the details of the analysis of the RedLine Stealer t
 
 <p></p>
 
-- Finally, 
+- Finally, It steals files from the list of crypto wallets in the received settings. The following table contains the name of the targetted crypto wallet applications, directories to search and file matching patterns for every directory to exfiltrate to C2.
+
+   | Wallet name       | Directory path                                 | Patterns 
+   | :---------------- | :--------------------------------------------: | ----: |
+   | Armory            |  %appdata%\Armory                              | \*.wallet |    
+   | Atomic            |  %appdata%\atomic                              | \* |
+   | Binance           |  %appdata%\Binance                             | \*app-store\* |   
+   | Coinomi           |  %localappdata%\Coinomi\Coinomi\Cache          |  \* |  
+   |                   |  %localappdata%\Coinomi\Coinomi\db             |  \* |  
+   |                   |  %localappdata%\Coinomi\Coinomi\wallets        |  \* |  
+   | Electrum          |  %appdata%\Electrum\wallets                    |  \* |  
+   | Ethereum          |  %localappdata%\Ethereum\wallets               |  \* |
+   | Exodus            |  Exodus\exodus.wallet                          |  \* |
+   |                   |  Exodus\exodus                                 |  \*.json |
+   | Guarda            |  %appdata%\Guarda                              |  \* |
+   | Jaxx              |  %appdata%\com.liberty.jaxx                    |  \* |
+   | Monero            |  %userprofile%\Documents\Monero\wallets        |  \* |
 
 
 
+
+
+  
