@@ -358,7 +358,7 @@ description: The post shows the details of the analysis of the RedLine Stealer t
    | Guarda            |  %appdata%\Guarda                              |  \* |
    | Jaxx              |  %appdata%\com.liberty.jaxx                    |  \* |
    | Monero            |  %userprofile%\Documents\Monero\wallets        |  \* |
-
+   {:.inner-borders}
 
 
 
