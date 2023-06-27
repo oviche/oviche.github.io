@@ -298,7 +298,7 @@ description: The post shows the details of the analysis of the RedLine Stealer t
 
   ![img]({{ '/assets/images/Redline/redline-41.png' | relative_url }}){: .center-image }*(**Looking for wallet files**)*
 
-- Additionally, it searches for the following folders of crypto extensions inside the browsers paths. When it finds these folders, it will exfiltrate all their files as regex **"\*"** is specified.
+- Additionally, it searches for the following folders of crypto and authenticator extensions inside the browsers paths. When it finds these folders, it will exfiltrate all their files as regex **"\*"** is specified.
 
    ![img]({{ '/assets/images/Redline/redline-42.png' | relative_url }}){: .center-image }*(**Stealing files of Crypto wallets browser extensions**)*
  
