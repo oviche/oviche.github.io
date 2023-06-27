@@ -303,7 +303,7 @@ description: The post shows the details of the analysis of the RedLine Stealer t
    ![img]({{ '/assets/images/Redline/redline-42.png' | relative_url }}){: .center-image }*(**Stealing files of Crypto wallets browser extensions**)*
 
    <details> <summary><b>Targetted crypto wallets extensions</b></summary><br>
-   <b>Folder</b>&nbsp;|&nbsp;<b>Wallet</b> <br>
+   <b>Folder</b>|<b>Wallet</b> <br>
    <b>ffnbelfdoeiohenkjibnmadjiehjhajb</b> | <b>YoroiWallet</b><br>
    <b>ibnejdfjmmkpcnlpebklmnkoeoihofec</b> | <b>Tronlink</b><br>
    <b>jbdaocneiiinmjbjlgalhcelgbejmnid</b> | <b>NiftyWallet</b><br>
@@ -340,6 +340,43 @@ description: The post shows the details of the analysis of the RedLine Stealer t
 
    </details>
 
+| Folder <Key>       | Wallet extension name|
+|-------------------|-----------------------|
+| ffnbelfdoeiohenkjibnmadjiehjhajb | YoroiWallet|  
+| ibnejdfjmmkpcnlpebklmnkoeoihofec | Tronlink|
+| jbdaocneiiinmjbjlgalhcelgbejmnid | NiftyWallet|   
+| nkbihfbeogaeaoehlefnkodbefgpgknn | Metamask|  
+| afbcbjpbpfadlkmhmclhkeeodmamcflc|MathWallet|  
+|hnfanknocfeofbddgcijnmhnfnkdnaad|Coinbase|  
+|fhbohimaelbohpjbbldcngcnapndodjp |BinanceChain|  
+|odbfpeeihdkbihmopkbjmoonfanlbfcl| BraveWallet|
+|hpglfhgfnhbgpjdenjgmdgoeiappafln| GuardaWallet|
+|blnieiiffboillknjnepogjhkgnoapac| EqualWallet|
+| cjelfplplebdjjenllpjcblmjkfcffne | JaxxxLiberty|
+| fihkakfobkmkjojpchpfgcmhfjnmnfpi |BitAppWallet|
+| kncchdigobghenbbaddojjnnaogfppfj | iWallet|
+| amkmjjmmflddogmhpjloimipbofnfjih | Wombat|
+| fhilaheimglignddkjgofkcbgekhenbh | AtomicWallet|
+| nlbmnnijcnlegkjjpcfjclmcfggfefdm | MewCx|
+| nanjmdknhkinifnkgdcggcfnhdaammmj | GuildWallet|
+| nkddgncdjgjfcddamfgcmfnlhccnimig | iWallet|
+| kncchdigobghenbbaddojjnnaogfppfj | SaturnWallet|
+| fnjhmkhhmkbjkkabndcnnogagogbneec | RoninWallet|
+| aiifbnbfobpmeekipheeijimdpnlpgpp | TerraStation|
+| fnnegphlobjdpkhecapkijjdkgcjhkib | HarmonyWallet|
+| aeachknmefphepccionboohckonoeemg | Coin98Wallet|
+| cgeeodpfagjceefieflmdfphplkenlfk | TonCrystal|
+| pdadjkfkgcafgbceimcpbkalnfnepbnk | KardiaChain|
+| bfnaelmomeimhlpmgjnjophhpkkoljpa | Phantom|
+| mgffkfbidihjpoaomajlbgchddlicgpn | PaliWallet|
+| aodkkagnadcbobfpggfnjeongemjbjca | BoltX|
+| kpfopkelmapcoipemfendmdcghnegimn | LiqualityWallet|
+| hmeobnfnfcmdkdcmlblgagmfpfboieaf | XdefiWallet|
+| lpfcbjknijpeeillifnkikgncikgfhdo | NamiWallet|
+| dngmlblcodfobpdpecaadgfbcggfjfnm | MaiarDeFiWallet|
+| bhghoamapcdpbohphigoooaddinpkbai | Authenticator|
+| ookjlbkiijinhpmnjffcofjonbfbgaoc | TempleWallet|
+{:.inner-borders}
 
 <p></p>
 
