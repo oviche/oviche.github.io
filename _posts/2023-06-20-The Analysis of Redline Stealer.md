@@ -303,7 +303,7 @@ description: The post shows the details of the analysis of the RedLine Stealer t
    ![img]({{ '/assets/images/Redline/redline-42.png' | relative_url }}){: .center-image }*(**Stealing files of Crypto wallets browser extensions**)*
 
    <details> <summary><b>Targetted crypto wallets extensions</b></summary><br>
-   <b>Folder</b> | <b>Wallet</b> <br>
+   <b>Folder</b>&nbsp;|&nbsp;<b>Wallet</b> <br>
    <b>ffnbelfdoeiohenkjibnmadjiehjhajb</b> | <b>YoroiWallet</b><br>
    <b>ibnejdfjmmkpcnlpebklmnkoeoihofec</b> | <b>Tronlink</b><br>
    <b>jbdaocneiiinmjbjlgalhcelgbejmnid</b> | <b>NiftyWallet</b><br>
@@ -338,14 +338,7 @@ description: The post shows the details of the analysis of the RedLine Stealer t
    <b>bhghoamapcdpbohphigoooaddinpkbai</b> | <b>Authenticator</b><br>
    <b>ookjlbkiijinhpmnjffcofjonbfbgaoc</b> | <b>TempleWallet</b>
 
-|First Header | Second Header|
-|------------ | -------------|
-|Content from cell 1 | Content from cell 2|
-|Content in the first column | Content in the second column|
-{:.inner-borders} 
-
-
-  </details>
+   </details>
 
 
 <p></p>
