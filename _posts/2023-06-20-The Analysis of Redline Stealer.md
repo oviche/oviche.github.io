@@ -302,7 +302,7 @@ description: The post shows the details of the analysis of the RedLine Stealer t
 
    ![img]({{ '/assets/images/Redline/redline-42.png' | relative_url }}){: .center-image }*(**Stealing files of Crypto wallets browser extensions**)*
  
-| Folder <Key>       | Wallet extension name|
+| Folder \<Key\>    | Wallet \<Value\>|
 |-------------------|-----------------------|
 | ffnbelfdoeiohenkjibnmadjiehjhajb | YoroiWallet|  
 | ibnejdfjmmkpcnlpebklmnkoeoihofec | Tronlink|
