@@ -382,14 +382,19 @@ description: The post shows the details of the analysis of the RedLine Stealer t
 
 
 
-# Steam
+# Collecting Steam files
+
+- Redline searches the installation path for [Steam](https://en.wikipedia.org/wiki/Steam_(service)) to steal the files with the following patterns:
+
+  -  **\*ssfn\***, the files that match this pattern can be used to do auto-login.
+  -  **\*.vdf**, the files that match this pattern contain usernames that are logged in and configurations.
+
+  ![img]({{ '/assets/images/Redline/redline-46.png' | relative_url }}){: .center-image }*(**Stealing Steam application files**)*
 
 
+# Stealing VPN files
 
-
-
-
-
+- here
 
 
 
