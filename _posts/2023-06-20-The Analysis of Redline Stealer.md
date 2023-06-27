@@ -2,7 +2,7 @@
 layout: post
 title: "The Analysis of RedLine Stealer"
 date: 2023-06-20
-tags: [.Net, Malware Analysis] 
+tags: [C#.NET, Malware Analysis] 
 description: The post shows the details of the analysis of the RedLine Stealer that acts as a GTA cheating module. 
 ---
 
