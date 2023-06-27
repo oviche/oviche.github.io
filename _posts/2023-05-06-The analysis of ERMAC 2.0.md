@@ -2,7 +2,7 @@
 layout: post
 title: "The Analysis of ERMAC 2.0"
 date: 2023-05-06
-tags: Android Malware
+tags: [Android, Malware Analysis]
 description: The post shows the details about the capabilities of ERMAC android bank trojan version 2.0
 ---
 
