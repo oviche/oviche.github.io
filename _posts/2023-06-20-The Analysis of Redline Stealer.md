@@ -365,4 +365,33 @@ description: The post shows the details of the analysis of the RedLine Stealer t
 
 # Stealing Discord tokens
 
-- here
+- RedLine searches the directory with path **\%appdata\%\\discord\\Local Storage\\leveldb**, to look for the files matching any of the following regex patterns:
+
+  - **"\.log**  
+  - ***\.ldb**
+
+  ![img]({{ '/assets/images/Redline/redline-43.png' | relative_url }}){: .center-image }*(**Searching for discord files**)*
+
+- After that, it looks into the matched files to find the tokens using the regex **[A-Za-z\\\d]{24}\\\.[\\\w-]{6}\\\.[\\\w-]{27}**.
+
+  ![img]({{ '/assets/images/Redline/redline-44.png' | relative_url }}){: .center-image }*(**Finding the discord tokens**)*
+
+- Finally, it saves these tokens under a text file called **Tokens.txt** and uploads it to the C2 server. 
+
+  ![img]({{ '/assets/images/Redline/redline-45.png' | relative_url }}){: .center-image }*(**Saving the tokens into a text file**)*
+
+
+
+# Steam
+
+
+
+
+
+
+
+
+
+
+
+
