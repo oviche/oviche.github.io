@@ -2,7 +2,7 @@
 layout: post
 title: "Cyber Espionage on Tibetian Citizens"
 date: 2023-01-25
-tags: x86 Malware 
+tags: [x86, Malware Analysis] 
 description: The post shows the details of a malware attack that was developed by a Chinese state-sponsored group to spy on Tibetian citizens. 
 ---
 
