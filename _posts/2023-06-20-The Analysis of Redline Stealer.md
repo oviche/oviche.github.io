@@ -337,7 +337,16 @@ description: The post shows the details of the analysis of the RedLine Stealer t
    <b>dngmlblcodfobpdpecaadgfbcggfjfnm</b> | <b>MaiarDeFiWallet</b><br>
    <b>bhghoamapcdpbohphigoooaddinpkbai</b> | <b>Authenticator</b><br>
    <b>ookjlbkiijinhpmnjffcofjonbfbgaoc</b> | <b>TempleWallet</b>
-   </details>
+
+|First Header | Second Header|
+|------------ | -------------|
+|Content from cell 1 | Content from cell 2|
+|Content in the first column | Content in the second column|
+{:.inner-borders} 
+
+
+  </details>
+
 
 <p></p>
 
