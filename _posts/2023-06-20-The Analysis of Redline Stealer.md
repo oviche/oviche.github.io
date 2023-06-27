@@ -343,8 +343,6 @@ description: The post shows the details of the analysis of the RedLine Stealer t
 <p></p>
 
 - Finally, It steals files from the list of crypto wallets in the received settings. The following table contains the name of the targetted crypto wallet applications, directories to search, and file matching patterns for every directory to exfiltrate to C2.
-   
-
 
 | Wallet name       | Directory path                                 | Patterns 
 |-------------------|----------------------------------------------- |--------- |
@@ -363,3 +361,8 @@ description: The post shows the details of the analysis of the RedLine Stealer t
 | Monero | %userprofile%\Documents\Monero\wallets  |\*|
 {:.inner-borders}
   
+
+
+# Stealing Discord tokens
+
+- here
