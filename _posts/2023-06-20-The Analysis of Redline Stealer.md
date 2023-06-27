@@ -369,7 +369,7 @@ description: The post shows the details of the analysis of the RedLine Stealer t
 
   - **"\.log**  
   - ***\.ldb**
-
+  <p></p>
   ![img]({{ '/assets/images/Redline/redline-43.png' | relative_url }}){: .center-image }*(**Searching for discord files**)*
 
 - After that, it looks into the matched files to find the tokens using the regex **[A-Za-z\\\d]{24}\\\.[\\\w-]{6}\\\.[\\\w-]{27}**.
