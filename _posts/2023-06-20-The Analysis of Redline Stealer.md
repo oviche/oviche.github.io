@@ -394,8 +394,18 @@ description: The post shows the details of the analysis of the RedLine Stealer t
 
 # Stealing VPN files
 
-- here
+- RedLine targets the VPN applications' files, for example, it looks for the files that match the **\*ovpn** pattern inside application data folders for **OpenVPN** and **ProtonVPN**. 
 
+  ![img]({{ '/assets/images/Redline/redline-47.png' | relative_url }}){: .center-image }*(**Stealing ovpn files for OpenVPN**)*
+
+  ![img]({{ '/assets/images/Redline/redline-48.png' | relative_url }}){: .center-image }*(**Stealing ovpn files for ProtonVPN**)*
+
+- Also, it looks for XML files with the name **user.config** inside the application data folder for the **NordVPN**, to steal the saved usernames and passwords.
+
+  ![img]({{ '/assets/images/Redline/redline-49.png' | relative_url }}){: .center-image }*(**Stealing NordVPN Credentials**)*
+
+
+# Indicators of compromise (IOCs)
 
 
 
