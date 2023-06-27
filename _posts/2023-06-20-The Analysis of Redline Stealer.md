@@ -2,7 +2,7 @@
 layout: post
 title: "The Analysis of RedLine Stealer"
 date: 2023-06-20
-tags: .Net Malware 
+tags: .Net "Malware Analysis" 
 description: The post shows the details of the analysis of the RedLine Stealer that acts as a GTA cheating module. 
 ---
 
@@ -414,6 +414,6 @@ description: The post shows the details of the analysis of the RedLine Stealer t
 | e3a3e1968e2ba0871b65da21f0808c2e676202cb3b0fed4cec7672ad5a99b0b1 | SHA256 of second stage DLL (Injector.dll)|   
 | 0b2a29c761d03e5a4aed4f7cd175fa016ccdf431cfec45de04379965f3ae7564 | SHA256 of the dumped RedLine executable file|  
 | %LOCALAPPDATA%\SystemCache |Folder name that indicate that device is infected by RedLine|  
-
+{:.inner-borders}
 
 
