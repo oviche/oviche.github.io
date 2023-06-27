@@ -388,7 +388,7 @@ description: The post shows the details of the analysis of the RedLine Stealer t
 
   -  **\*ssfn\***, the files that match this pattern can be used to do auto-login.
   -  **\*.vdf**, the files that match this pattern contain usernames that are logged in and configurations.
-
+<p></p>
   ![img]({{ '/assets/images/Redline/redline-46.png' | relative_url }}){: .center-image }*(**Stealing Steam application files**)*
 
 
@@ -407,6 +407,13 @@ description: The post shows the details of the analysis of the RedLine Stealer t
 
 # Indicators of compromise (IOCs)
 
+| IOC| Description|
+|--------------------|-------------------------------|
+| 135.181.49.38:36303 | C2 server IP|  
+| 5b61b470d1dbecb7ba63e13ffb7306521b039e7fee38e49697faa4ea968e1070 | SHA256 of first stage executable|
+| e3a3e1968e2ba0871b65da21f0808c2e676202cb3b0fed4cec7672ad5a99b0b1 | SHA256 of second stage DLL (Injector.dll)|   
+| 0b2a29c761d03e5a4aed4f7cd175fa016ccdf431cfec45de04379965f3ae7564 | SHA256 of the dumped RedLine executable file|  
+| %LOCALAPPDATA%\SystemCache |Folder name that indicate that device is infected by RedLine|  
 
 
 
