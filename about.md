@@ -4,5 +4,5 @@ title: About
 
 ---
 
-# Some info 
+# Some info here
 ...about how cool you are ;)
