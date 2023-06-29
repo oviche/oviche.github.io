@@ -367,8 +367,8 @@ description: The post shows the details of the analysis of the RedLine Stealer t
 
 - RedLine searches the directory with path **\%appdata\%\\discord\\Local Storage\\leveldb**, to look for the files matching any of the following regex patterns:
 
-  - **"\.log**  
-  - ***\.ldb**
+  - **\*.log**  
+  - **\*.ldb**
   <p></p>
   ![img]({{ '/assets/images/Redline/redline-43.png' | relative_url }}){: .center-image }*(**Searching for discord files**)*
 
