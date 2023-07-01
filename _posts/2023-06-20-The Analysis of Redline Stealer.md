@@ -405,6 +405,43 @@ description: The post shows the details of the analysis of the RedLine Stealer t
   ![img]({{ '/assets/images/Redline/redline-49.png' | relative_url }}){: .center-image }*(**Stealing NordVPN Credentials**)*
 
 
+# The YARA rule
+
+- The below is YARA rule for detecting or tracking RedLine stealer.
+
+>RedLine YARA rule
+{:.filename}
+{% highlight ruby %}
+import "pe"
+rule RedLine_Rule{
+  meta:
+   author = "Oviche"
+   description = "Yara rule for Redline stealer"
+  
+  strings:
+   $s1 = "%DSK_23%" wide
+   $s2 = "api.ip.sb/ip" wide
+   $s3 = "SystemCache" wide
+   $s4 = "autofill" wide
+   $s5 = "Total of RAM" wide	
+   $s6 = "Local State" wide	
+   $s7 = "logins" wide
+   $s8 = "SerialNumber" wide
+   $s9 = "AdapterRAM" wide
+   $s10 = "ProcessId" wide
+   $s11 = "recentservers.xml" wide
+   $s12 = "sitemanager.xml" wide
+
+  condition:  
+   uint16(0) == 0x5A4D and
+   pe.imports("mscoree.dll", "_CorExeMain") and
+   pe.imphash() == "f34d5f2d4577ed6d9ceec516c1f5a744" and
+   all of ($s*)
+}
+{% endhighlight %}
+
+
+
 # Indicators of compromise (IOCs)
 
 | IOC| Description|
