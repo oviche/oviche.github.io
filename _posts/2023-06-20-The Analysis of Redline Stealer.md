@@ -405,15 +405,17 @@ description: The post shows the details of the analysis of the RedLine Stealer t
   ![img]({{ '/assets/images/Redline/redline-49.png' | relative_url }}){: .center-image }*(**Stealing NordVPN Credentials**)*
 
 
-# The YARA rule
+# The detection and tracking of RedLine  
 
-- The below is YARA rule for detecting or tracking RedLine stealer.
+The below is YARA rule for detecting and tracking RedLine stealer.
 
 >RedLine YARA rule
 {:.filename}
 {% highlight ruby %}
 import "pe"
+
 rule RedLine_Rule{
+
   meta:
    author = "Oviche"
    description = "Yara rule for Redline stealer"
