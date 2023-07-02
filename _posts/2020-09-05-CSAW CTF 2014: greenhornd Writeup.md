@@ -23,19 +23,19 @@ AppJailLauncher.exe /network /key:key /port:9998 /timeout:30 greenhornd.exe
 
 First of All, I executed the greenhornd exe, and the following text got printed to the screen which asks you to find the secret key and it suggested that you can look at strings within the binary using strings utility or IDA disassembler (sorry I will use R2 cutter xD ).
 
-![img]({{'/assets/images/greenhornd/pwn1.png' | relative_url }}){: .center-image }*(**Figure[1]**)*
+ ![img]({{'/assets/images/greenhornd/pwn1.PNG' | relative_url }}){: .center-image }*(**Figure[1]**)*
 
 So, I started to check the strings using Cutter and find the secret password which is **GreenhornSecretPassword!!!** as appear in **Figure[2]**.
 
-![img]({{'/assets/images/greenhornd/pwn2.png' | relative_url }}){: .center-image }*(**Figure[2]**)*
+![img]({{'/assets/images/greenhornd/pwn2.PNG' | relative_url }}){: .center-image }*(**Figure[2]**)*
 
 After inputting the secret password, a menu with the following options printed to the screen as appear in **Figure[3]**.
 
-![img]({{'/assets/images/greenhornd/pwn3.png' | relative_url }}){: .center-image }*(**Figure[3]**)*
+![img]({{'/assets/images/greenhornd/pwn3.PNG' | relative_url }}){: .center-image }*(**Figure[3]**)*
 
 As appear in **Figure[4]**, These options are represented in the disassembly by switch table for achieving the jump to certain function based on your choice. However, I'm just interested in only two options which are **(A)SLR** and **(V)ulnerability**.
 
-![img]({{'/assets/images/greenhornd/pwn4.png' | relative_url }}){: .center-image }*(**Figure[4]**)*
+![img]({{'/assets/images/greenhornd/pwn4.PNG' | relative_url }}){: .center-image }*(**Figure[4]**)*
 
 
 Let's start with the (A)SLR option, It prints text about Address Layout Randomization in windows beside give us two anonymous addresses as appear in the next figure.
@@ -44,17 +44,17 @@ Let's start with the (A)SLR option, It prints text about Address Layout Randomiz
 
 So let us back to the disassembler to figure out what these two addresses. As you see inside the red-colored rectangle block within **Figure[6]**, The function **A_SLR** gets the module handle of the current process through WinApi **GetModuleHandle** which is the same as the ImageBase address of exe in memory then save ImageBase subtracted by value **0x400000** in the variable on the stack. Afterward, It sends the **ImageBase-0x400000** and the address holding it to the function **WriteAddressesToStdout** to print them respectively as appear in a blue-colored rectangle block.
 
-![img]({{'/assets/images/greenhornd/pwn6.png' | relative_url }}){: .center-image }*(**Figure[6]**)*
+![img]({{'/assets/images/greenhornd/pwn6.PNG' | relative_url }}){: .center-image }*(**Figure[6]**)*
 
 Now we are done with **(A)SLR**, So let us start checking the **(V)urlnerability** option. As you see in the following screenshot, there is a text that asks you to input 1024 characters with some constraints in the input string.
 
-![img]({{'/assets/images/greenhornd/pwn7.png' | relative_url }}){: .center-image }*(**Figure[7]**)*
+![img]({{'/assets/images/greenhornd/pwn7.PNG' | relative_url }}){: .center-image }*(**Figure[7]**)*
 
 Let's jump to the **Vulnerable_Function** to analyze it and check what the type of vulnerability it contains. The instructions within the red-colored block in **Figure[8]** holds responsibility for reading a string from stdin to the buffer at stack address equal to **(ebp-400h)** with a max length of **2048** characters. Therefore, The classic buffer overflow vulnerability exists as the max size of the string exceeds the size of the buffer specified for the input string which is **1024** characters. 
 
 However, The function can exit without returning which will prevent the execution of overwritten saved return address if the string does not achieve a certain constraint. As appear in the blue-colored block which is responsible for the last-mentioned constraint, The instructions check if the **1st character** equal to **'C'** or **2nd character** equal to **'S'** or **3rd character** is equal to '**A'** or **4th character** equal to **'W'** to return otherwise the function exit without returning.
 
-![img]({{'/assets/images/greenhornd/pwn8.png' | relative_url }}){: .center-image }*(**Figure[8]**)*
+![img]({{'/assets/images/greenhornd/pwn8.PNG' | relative_url }}){: .center-image }*(**Figure[8]**)*
 
 
 # Exploiting the vulnerable function
