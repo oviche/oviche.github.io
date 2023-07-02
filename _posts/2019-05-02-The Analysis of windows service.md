@@ -53,7 +53,7 @@ a callback function that is expected to handle service **STOP**, **PAUSE**, **CO
 
 > Executing the service
 {:.filename}
-{% highlight%}
+{% highlight bash%}
 sc create "ServiceName" binPath= C:\service.exe
 sc start "ServiceName"
 {% endhighlight %}
