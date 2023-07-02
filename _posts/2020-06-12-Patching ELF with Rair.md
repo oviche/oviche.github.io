@@ -102,7 +102,7 @@ One cool feature of Rair,  It can allow you to open many files and work on them 
 
 ![img]({{'/assets/images/rair/rair3.PNG' | relative_url }}){: .center-image }*(**Dumping the ELF executable header**)*
 
-Right now, we need to know offsets of OS/ABI, Machine, and Start of program headers inside the ELF executable headers so let's check the Elf64_Ehdr struct to know the offsets.
+Right now, we need to know offsets of **OS/ABI**, **Machine**, and **Start of program headers** inside the ELF executable headers so let's check the **Elf64_Ehdr** struct to know the offsets.
 
 > Elf64_Ehdr struct
 {:.filename}
@@ -168,7 +168,7 @@ $ ./lvl3
 3a5c381e40d2fffd95ba4452a0fb4a40  ./lvl3
 {% endhighlight %}
 
-I used ltrace to know about that hash. I find out the binary calculates a hash for its file image. so I just feed that hash to oracle and successfully level 3 is done.
+I used **ltrace** to know about that hash. I find out the binary calculates a hash for its file image. so I just feed that hash to oracle and successfully level 3 is done.
 
 > CommandLine
 {:.filename}
