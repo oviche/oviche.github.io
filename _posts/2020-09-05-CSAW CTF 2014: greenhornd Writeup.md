@@ -40,7 +40,7 @@ As appear in **Figure[4]**, These options are represented in the disassembly by 
 
 Let's start with the (A)SLR option, It prints text about Address Layout Randomization in windows beside give us two anonymous addresses as appear in the next figure.
 
-![img]({{'/assets/images/greenhornd/pwn5.png' | relative_url }}){: .center-image }*(**Figure[5]**)*
+![img]({{'/assets/images/greenhornd/pwn5.PNG' | relative_url }}){: .center-image }*(**Figure[5]**)*
 
 So let us back to the disassembler to figure out what these two addresses. As you see inside the red-colored rectangle block within **Figure[6]**, The function **A_SLR** gets the module handle of the current process through WinApi **GetModuleHandle** which is the same as the ImageBase address of exe in memory then save ImageBase subtracted by value **0x400000** in the variable on the stack. Afterward, It sends the **ImageBase-0x400000** and the address holding it to the function **WriteAddressesToStdout** to print them respectively as appear in a blue-colored rectangle block.
 
