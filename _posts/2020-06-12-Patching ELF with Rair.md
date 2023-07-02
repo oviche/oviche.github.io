@@ -126,11 +126,15 @@ uint16_t e_shstrndx; /* Section header string table index */
 } Elf64_Ehdr;
 {% endhighlight %}
 
-In the last snippet, we can get that offset of **OS/ABI =7** with **size =1** byte, **Machine =18** with **size =2** bytes, and **offset the start of the program header =32** with **size =4** bytes.  let's seek the offsets and overwrite them with the right values which are **OS/ABI =0x0 (UNIX-System V)**, **Machine =0x3e00 (Advanced Micro Devices X86-64)** and finally, the **start of program headers =0x40000000** (64 in little-endian) using the **wx** command.
+In the last snippet, we can get that offset of **OS/ABI =7** with **size =1** byte, **Machine =18** with **size =2** bytes, and **offset the start of the program header =32** with **size =4** bytes. 
+
+let's seek the offsets and overwrite them with the right values which are **OS/ABI =0x0 (UNIX-System V)**, **Machine =0x3e00 (Advanced Micro Devices X86-64)** and finally, the **start of program headers =0x40000000** (64 in little-endian) using the **wx** command.
 
 ![img]({{'/assets/images/rair/rair4.PNG' | relative_url }}){: .center-image }*(**Fixing ELF executable header**)*
 
-Now we have done with ELF executable header. It's time for fixing .text section type in the ELF section headers. The **start of .text section header** **= Start_of_section_headers +** **(Size of section headers \*  index_of_text_section) = 4480 + (64\*14) =5376**. All numbers in the equation are extracted from **readelf** command results from previous snippets. Now, we need to define the offset of section type from the start of the **.text** section header by looking into **Elf64_Shdr** struct.
+Now we have done with ELF executable header. It's time for fixing .text section type in the ELF section headers. The **start of .text section header** **= Start_of_section_headers +** **(Size of section headers \*  index_of_text_section) = 4480 + (64\*14) =5376**. 
+
+All numbers in the equation are extracted from **readelf** command results from previous snippets. Now, we need to define the offset of section type from the start of the **.text** section header by looking into **Elf64_Shdr** struct.
 
 > Elf64_Shdr struct
 {:.filename}
