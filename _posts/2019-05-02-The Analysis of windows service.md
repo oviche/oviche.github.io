@@ -66,8 +66,7 @@ I started my analysis by checking the resources of executable then I found three
 ![img]({{'/assets/images/shamoon3/winserv2.PNG' | relative_url }}){: .center-image }*(**Fig[1]**)*
 
 Although it's a service if it runs as a normal process it contains code that responsible to setup itself as service. so I decided to start debugging it like any normal process to spotlight on how it's going to set up and run itself as service.
-In **Fig[2]** it calls a **CreateService** function to create a service then specify service name and the path of service program file with command argument **LocalService** to run with. Also, set its start type as **AUTO_START** for persistence to run
-automatically during startup.
+In **Fig[2]** it calls a **CreateService** function to create a service then specify service name and the path of service program file with command argument **LocalService** to run with. Also, set its start type as **AUTO_START** for persistence to run automatically during startup.
 
 ![img]({{'/assets/images/shamoon3/winserv3.PNG' | relative_url }}){: .center-image }*(**Fig[2]**)*
 
@@ -79,7 +78,7 @@ Also, it sets a service description by using **ChangeServiceConfig2W** in **Fig[
 
 Then it starts itself as service using **StartService** function in **Fig[4]**.
 
-![img]({{'/assets/images/shamoon3/winserv5.PNG' | relative_url }}){: .center-image }*(**Fig[3]**)*
+![img]({{'/assets/images/shamoon3/winserv5.PNG' | relative_url }}){: .center-image }*(**Fig[4]**)*
 
 
 Here comes the tricky part which is how to debug the service starting from the very beginning so that we won't miss anything. The first step is to replace two bytes from entry point function with jump self instruction that correspond to opcode **EB FE**. In **Fig[5]** we will replace **push 14h** with **jump self instruction** as in **Fig[6]**.
