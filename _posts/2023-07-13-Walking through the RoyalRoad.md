@@ -39,13 +39,11 @@ This can be achieved by taking advantage of the [**Image File Execution Options 
 
 My approach for identifying the targetted **CVE** will depend on the vulnerable function address and the RTF structure field that contains the exploit bytes, as explained below.
 
- ## Finding the vulnerable function
-
- heloo 
+  ## Finding the vulnerable function
+   heloo 
  
- ## Locating the exploit within RTF structure 
- 
- hello
+  ## Locating the exploit within RTF structure 
+   hello
  
 Conclusion,  
 
