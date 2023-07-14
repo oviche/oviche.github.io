@@ -56,4 +56,24 @@ My approach for identifying the targetted **CVE** will depend on the vulnerable 
 
   In the below screenshot, the address **0058b63a** is the start of the shellcode and is located on the heap memory.
 
-   ![img]({{ '/assets/images/RoyalRoad/rtf5.png' | relative_url }}){: .center-image }*(**Starting address of the shellcode**)*
+   ![img]({{ '/assets/images/RoyalRoad/rtf5.png' | relative_url }}){: .center-image }*(**The starting address of the shellcode**)*
+
+ Note that the **EBP** register holds a garbage value which indicates the occurrence of stack overflow that corrupts the saved frame pointer of the caller function.
+
+   ![img]({{ '/assets/images/RoyalRoad/rtf6.png' | relative_url }}){: .center-image }*(**The corrupted EBP register**)*
+
+So by looking at the stack, we can see the exploit bytes that are used to overflow the stack and control the return address. 
+
+Also, because the return address of the vulnerable function is overwritten, the only thing that can be found on the stack is the return address for the caller function of the vulnerable function as appear below. 
+
+   ![img]({{ '/assets/images/RoyalRoad/rtf7.png' | relative_url }}){: .center-image }*(**The construction of the stack after the overflow**)*
+
+
+
+
+ 
+  
+  
+
+
+
