@@ -35,7 +35,7 @@ This can be achieved by taking advantage of the [**Image File Execution Options 
 
 ![img]({{ '/assets/images/RoyalRoad/rtf3.png' | relative_url }}){: .center-image }*(**Creating key for EQNEDT32 process under IFEO in registry**)*
 
-# Determining the common vulnerabilities and exposures (CVE)
+# Determining the targetted CVE
 
 My approach for identifying the targetted **CVE** will depend on the vulnerable function address and the RTF structure field that contains the exploit bytes, as explained below.
 
