@@ -23,7 +23,7 @@ When the file is opened, the process **EQNEDT32.exe** gets executed and spawns a
 
 ![img]({{ '/assets/images/RoyalRoad/rtf2.png' | relative_url }}){: .center-image }*(**The process tree when opening the RTF file**)*
 
-The previous process tree can indicate that the file contains an exploit that targets the **EQNEDT32.exe**. This executable represents the equation editor of **Microsoft Office** that is responsible for interpreting the embedded equations inside the document files.
+The previous process tree can indicate that the file contains an exploit that targets the **EQNEDT32.exe**. This executable represents the **equation editor** of **Microsoft Office** that is responsible for interpreting the embedded equations inside the document files.
 
 Probably the exploit will be embedded in the equation object which is called **Equation.2\x00\x124Vx\x90\x124VxvT2**.
 
@@ -35,8 +35,17 @@ This can be achieved by taking advantage of the [**Image File Execution Options 
 
 ![img]({{ '/assets/images/RoyalRoad/rtf3.png' | relative_url }}){: .center-image }*(**Creating key for EQNEDT32 process under IFEO in registry**)*
 
-# Identifying the vulnerable function
+# Determining the targetted common vulnerabilities and exposures (CVE)
 
+My approach for identifying the **CVE** will depend on the vulnerable function address and the RTF structure field that contains the exploit bytes, as explained below.
+
+ ## Finding the vulnerable function
+ heloo 
+ 
+ ## Locating the exploit within RTF structure 
+ hello
+ 
+Conclusion,  
 
 
 
