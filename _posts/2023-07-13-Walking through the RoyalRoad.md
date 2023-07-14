@@ -21,7 +21,7 @@ The first view of the RTF file shows the following two embedded objects:
 
 When the file is opened, the process **EQNEDT32.exe** gets executed and spawns another **EQNEDT32.exe** process. Then, the child **EQNEDT32.exe** process launches a subprocess **rundll32.exe**.
 
-![img]({{ '/assets/images/RoyalRoad/rtf2.png' | relative_url }}){: .center-image }*(**The process Tree when opening the RTF file**)*
+![img]({{ '/assets/images/RoyalRoad/rtf2.png' | relative_url }}){: .center-image }*(**The process tree when opening the RTF file**)*
 
 The previous process tree can indicate that the file contains an exploit that targets the **EQNEDT32.exe**. This executable represents the equation editor of Microsoft Office that is responsible to interpret the embedded equations inside the document files.
 
