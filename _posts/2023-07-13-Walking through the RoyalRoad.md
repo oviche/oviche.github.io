@@ -37,7 +37,7 @@ This can be achieved by taking advantage of the [**Image File Execution Options 
 
 # Determining the common vulnerabilities and exposures (CVE)
 
-My approach for identifying the **CVE** will depend on the vulnerable function address and the RTF structure field that contains the exploit bytes, as explained below.
+My approach for identifying the targetted **CVE** will depend on the vulnerable function address and the RTF structure field that contains the exploit bytes, as explained below.
 
  ## Finding the vulnerable function
 
