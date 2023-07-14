@@ -1,4 +1,4 @@
-![image](https://github.com/oviche/oviche.github.io/assets/20806107/a8198cf5-6f21-4260-9ce8-86cb3e1cb0b2)---
+---
 layout: post
 title: "Walking through the Royal Road"
 date: 2023-07-13
