@@ -25,7 +25,31 @@ When the file is opened, the process **EQNEDT32.exe** gets executed and spawns a
 
 The previous process tree can indicate that the file contains an exploit that targets the **EQNEDT32.exe**. This executable represents the equation editor of Microsoft Office that is responsible to interpret the embedded equations inside the document files.
 
+Probably the exploit will be embedded in the equation object which is called **Equation.2\x00\x124Vx\x90\x124VxvT2**.
+
+# Setup a debugging environment
+
+Debugging the **EQNEDT32.exe** process, will help us later to identify the **common vulnerabilities and exposures (CVE)** that the exploit is targetting and its contents' bytes.
+
+This can be achieved by taking advantage of the [**Image File Execution Options (IFEO)**](https://www.malwarebytes.com/blog/news/2015/12/an-introduction-to-image-file-execution-options) feature will allow the debugger to attach the process **EQNEDT32.exe** as soon as it starts.
+
+![img]({{ '/assets/images/RoyalRoad/rtf3.png' | relative_url }}){: .center-image }*(**Creating key for EQNEDT32 process under IFEO in registry**)*
+
 # Identifying the vulnerable function
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
