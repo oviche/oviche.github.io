@@ -66,9 +66,11 @@ So by looking at the stack, we can see the exploit bytes that are used to overfl
 
 Also, because the return address of the vulnerable function is overwritten, the only thing that can be found on the stack is the return address for the caller function of the vulnerable function as appear below. 
 
-   ![img]({{ '/assets/images/RoyalRoad/rtf7.png' | relative_url }}){: .center-image }*(**The construction of the stack after the overflow**)*
+   ![img]({{ '/assets/images/RoyalRoad/rtf7.png' | relative_url }}){: .center-image }*(**The state of the stack after the overflow**)*
 
+By following the return address for the caller function of the vulnerable function in the disassembly, we can find the function at address **43a78f** is the caller of the vulnerable function.
 
+  ![img]({{ '/assets/images/RoyalRoad/rtf8.png' | relative_url }}){: .center-image }*(**Finding the caller of the vulnerable function**)*
 
 
  
