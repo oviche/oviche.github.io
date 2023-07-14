@@ -39,16 +39,16 @@ This can be achieved by taking advantage of the [**Image File Execution Options 
 
 My approach for identifying the targetted **CVE** will depend on the vulnerable function address and the RTF structure field that contains the exploit bytes, as explained below.
 
-  ## Finding the vulnerable function
+## Finding the vulnerable function
   
   Usually, there are the following two main ways in which the exploits use to execute unintended code after hijacking the execution:    
   
-   - Using **NX memory** regions to execute shellcode which works when **Data Execution Prevention (DEP)** mitigation is off.
-   - Using **Return oriented programming (ROP)** to bypass DEP mitigation by executing hosen machine instruction sequences from executable memory sections.
+    - Using **NX memory** regions to execute shellcode which works when **Data Execution Prevention (DEP)** mitigation is off.
+    - Using **Return oriented programming (ROP)** to bypass DEP mitigation by executing hosen machine instruction sequences from executable memory sections.
 
   Firstly, I assumed that the first technique that executes the shellcode in NX memory regions is used. Therefore, to identify the start address of the shellcode, I will enforce DEP mitigation for all Windows processes that will cause an exception when NX memory gets executed. 
 
-  ![img]({{ '/assets/images/RoyalRoad/rtf4.png' | relative_url }}){: .center-image }*(**Turning on DEP mitigation for all Windows processes**)*
+   ![img]({{ '/assets/images/RoyalRoad/rtf4.png' | relative_url }}){: .center-image }*(**Turning on DEP mitigation for all Windows processes**)*
 
   
 
