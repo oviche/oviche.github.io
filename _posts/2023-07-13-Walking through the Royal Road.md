@@ -82,4 +82,20 @@ Therefore function at address **443e34** is the vulnerable one.
   
 ##  Locating the exploit within RTF structure
 
+Now it's time to locate the field within the OLE object that contains the exploit. As mentioned previously, the exploit has the following bytes.
 
+ ![img]({{ '/assets/images/RoyalRoad/rtf10.png' | relative_url }}){: .center-image }*(**The bytes of exploit on the stack**)*
+
+Before beginning to search the RTF file for the exploit content, The deobfuscated content of the embedded object named **Equation.2\x00\x124Vx\x90\x124VxvT2** should be extracted. This is achieved by setting a breakpoint at`OleConvertOLESTREAMToIStorage` API and then dumping the deobfuscated object pointed by the first parameter `lpolestream`. The [**mandiant**](https://www.mandiant.com/resources/blog/how-rtf-malware-evad) blog post explains this trick in detail.  
+
+
+Finally, The following screenshot shows a snippet of the [**Object Linking and Embedding (OLE)**](https://learn.microsoft.com/en-us/openspecs/windows_protocols/ms-oleds/3395d95d-97f0-49ff-b792-28d331f254f1) object that contains the [**MathType (MTEF)**](https://rtf2latex2e.sourceforge.net/MTEF3.html) object. This MTEF object has the bytes of an exploit inside the content of the **Matrix** tag.
+
+![img]({{ '/assets/images/RoyalRoad/rtf11.png' | relative_url }}){: .center-image }*(**The location of exploit within the embedded OLE object**)*
+
+
+
+
+ 
+
+ 
