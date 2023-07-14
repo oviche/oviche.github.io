@@ -1,4 +1,4 @@
----
+![image](https://github.com/oviche/oviche.github.io/assets/20806107/a8198cf5-6f21-4260-9ce8-86cb3e1cb0b2)---
 layout: post
 title: "Walking through the Royal Road"
 date: 2023-07-13
@@ -50,18 +50,9 @@ My approach for identifying the targetted **CVE** will depend on the vulnerable 
 
    ![img]({{ '/assets/images/RoyalRoad/rtf4.png' | relative_url }}){: .center-image }*(**Turning on DEP mitigation for all Windows processes**)*
 
-  
 
+  Now by opening the RTF file, the debugger gets attached to the **EQNEDT32.exe** and then continues the execution till an exception is triggered. The address that causes the exception is pointing to the start of the shellcode.
 
+  In the below screenshot, the address **0058b63a** is the start of the shellcode and is located on the heap memory.
 
-
-
-
-
-
-
-
-
-
-
-
+   ![img]({{ '/assets/images/RoyalRoad/rtf5.png' | relative_url }}){: .center-image }*(**Starting address of the shellcode**)*
