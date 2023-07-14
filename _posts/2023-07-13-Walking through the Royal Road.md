@@ -38,7 +38,7 @@ This can be achieved by taking advantage of the [**Image File Execution Options 
 
 # Determining the targetted CVE
 
-My approach for identifying the targetted **CVE** will depend on the vulnerable function address and the RTF structure field that contains the exploit bytes, as explained below.
+My approach for identifying the targetted **CVE** will depend on the vulnerable function address and field of [**Object Linking and Embedding (OLE)**](https://learn.microsoft.com/en-us/openspecs/windows_protocols/ms-oleds/3395d95d-97f0-49ff-b792-28d331f254f1) object that contains the exploit bytes, as explained below.
 
 ## Finding the vulnerable function
   
@@ -89,9 +89,16 @@ Now it's time to locate the field within the OLE object that contains the exploi
 Before beginning to search the RTF file for the exploit content, The deobfuscated content of the embedded object named **Equation.2\x00\x124Vx\x90\x124VxvT2** should be extracted. This is achieved by setting a breakpoint at`OleConvertOLESTREAMToIStorage` API and then dumping the deobfuscated object pointed by the first parameter `lpolestream`. The [**mandiant**](https://www.mandiant.com/resources/blog/how-rtf-malware-evad) blog post explains this trick in detail.  
 
 
-Finally, The following screenshot shows a snippet of the [**Object Linking and Embedding (OLE)**](https://learn.microsoft.com/en-us/openspecs/windows_protocols/ms-oleds/3395d95d-97f0-49ff-b792-28d331f254f1) object that contains the [**MathType (MTEF)**](https://rtf2latex2e.sourceforge.net/MTEF3.html) object. This MTEF object has the bytes of an exploit inside the content of the **Matrix** tag.
+Finally, The following screenshot shows a snippet of the **OLE** object that contains the [**MathType (MTEF)**](https://rtf2latex2e.sourceforge.net/MTEF3.html) object. This MTEF object has the bytes of an exploit inside the content of the **Matrix** tag.
 
 ![img]({{ '/assets/images/RoyalRoad/rtf11.png' | relative_url }}){: .center-image }*(**The location of exploit within the embedded OLE object**)*
+
+> **Note** that the **Matrix** tag value in the above screenshot is not equal to 5 as in the [**MTEF documentation**](https://rtf2latex2e.sourceforge.net/MTEF3.html). The reason behind that exists in this [**blog post**](https://www.anquanke.com/post/id/94841) which explains that the function at address **43A720** in **EQNEDT32.exe** maps the tag value to one of the standard values in the documentation before processing its content.
+
+Briefly, the exploit target a stack overflow vulnerability in the function at the address **443e34**, and the exploit is found in the **matrix** tag of the **MTEF** object. 
+
+This concludes that this exploit targets **CVE-2018-0798** as the [analysis of this vulnerability](https://www.freebuf.com/vuls/210945.html) matches our case.
+
 
 
 
