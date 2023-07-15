@@ -107,19 +107,25 @@ This section will shed light on what the shellcode is trying to achieve and the 
 
 The shellcode will go through the `InInitializationOrderModuleList` that points to the doubly-linked list of `LDR_DATA_TABLE_ENTRY` nodes in which every node represents a loaded DLL, to retrieve the base address of the following DLL(s).  
 
- - MSVCRT.dll
+ - **MSVCRT.dll**
 
    ![img]({{ '/assets/images/RoyalRoad/rtf12.png' | relative_url }}){: .center-image }*(**Retrieving MSVCRT.dll base address**)*
   
-
- - KERNEL32.dll
+ - **KERNEL32.dll**
 
    ![img]({{ '/assets/images/RoyalRoad/rtf13.png' | relative_url }}){: .center-image }*(**Retrieving KERNEL32.dll base address**)*
 
 
+## Fetching the addresses of needed API functions
+
+The way used to retrieve the needed API functions is tricky as the shellcode iterates through the **Import Address Table (IAT)** of **MSVCRT.dll** rather than looking for them in the loaded DLLs export table. That is an anti-analysis trick that loads API(s) from a not automatically loaded library, making it harder to dynamically analyze the shellcode out of the **EQNEDT32** process.
+
+When the function in **Import Table name (INT)** has a hash equal to one of the needed API functions, it immediately returns the **function address + 5**. The reason for that will be explained in the next section.
+
+![img]({{ '/assets/images/RoyalRoad/rtf14.png' | relative_url }}){: .center-image }*(**Fetching API(s) From the IAT of MSVCRT.dll**)*
 
 
-
+## Calling the API Functions indirectly 
 
 
 
