@@ -99,6 +99,33 @@ Briefly, the exploit target a stack overflow vulnerability in the function at th
 
 This concludes that this exploit targets **CVE-2018-0798** as the [analysis of this vulnerability](https://www.freebuf.com/vuls/210945.html) matches our case.
 
+# The shellcode Analysis
+
+This section will shed light on what the shellcode is trying to achieve and the anti-analysis tricks that are used.
+
+## Retrieving the base addresses of the needed DLL(s)
+
+The shellcode will go through the `InInitializationOrderModuleList` that points to the doubly-linked list of `LDR_DATA_TABLE_ENTRY` nodes in which every node represents a loaded DLL, to retrieve the base address of the following DLL(s).  
+
+ - MSVCRT.dll
+
+   ![img]({{ '/assets/images/RoyalRoad/rtf12.png' | relative_url }}){: .center-image }*(**Retrieving MSVCRT.dll base address**)*
+  
+
+ - KERNEL32.dll
+
+   ![img]({{ '/assets/images/RoyalRoad/rtf13.png' | relative_url }}){: .center-image }*(**Retrieving KERNEL32.dll base address**)*
+
+
+
+
+
+
+
+
+
+
+
 
 
 
