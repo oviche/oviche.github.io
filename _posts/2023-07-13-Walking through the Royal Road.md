@@ -127,12 +127,19 @@ When the function in **Import Table name (INT)** has a hash equal to one of the 
 
 ## Calling the API Functions indirectly 
 
+Here is another trick employed in the shellcode that makes any API function gets called from inside the `clearerr` API (after its address gets resolved). That is achieved by replacing the content of the `clearerr` API with the below instructions.  
 
+![img]({{ '/assets/images/RoyalRoad/rtf15.png' | relative_url }}){: .center-image }*(**The instructions that replace content of clearerr API**)*
 
+The obvious goal of the above instructions is to push the parameters on the stack and call the API; however, the interesting part lies in the **Call_API** function. 
 
+As shown in the screenshot below, the **Call_API** function checks the first 5 bytes (prologue) of the API function that will get called. If these bytes map to asm instructions `jmp`, then it will escape executing the API prologue. Calling the API functions in this way means defeating **inline-hooking** in case it's used in the analysis.
 
+![img]({{ '/assets/images/RoyalRoad/rtf16.png' | relative_url }}){: .center-image }*(**Evading inline hooking technique**)*
 
+Additionally, I think this technique won't only evade the inline hooking but also give false results. For example, if any API function gets called, the result of the hooking will show as if it's a call to `clearerr` API.
 
+## The shellcode in nutshell
 
 
 
