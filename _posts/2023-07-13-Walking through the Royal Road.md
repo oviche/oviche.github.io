@@ -141,6 +141,31 @@ Additionally, I think this technique won't only evade the inline hooking but als
 
 ## The shellcode in nutshell
 
+I don't want to make the post longer as I feel the next part won't have any interesting tricks. So briefly, the following API functions get resolved.
+  
+  - `virtualAlloc`
+  - `ReadFile`
+  - `CloseHandleA`
+  - `CreateProcessA`
+  - `GetModuleFileNameA`
+  - `ResumeThread`
+  - `TerminateProcess`
+  - `GetThreadContext`
+  - `ReadProcessMemory`
+  - `VirtualQueryEx`
+  - `VirtualAllocEx`
+  - `GetModuleHandleA`
+  - `WriteProcessMemory`
+  - `SetThreadContext`
+  - `GetTempPathA`
+
+The resolved API functions will be used to read the file **ghb4nrwmp.wmf** from the **%temp%** folder and then decrypt it. After that, the shellcode creates another **EQNEDT32.exe** process in suspended mode and performs process injection into its memory space to execute the decrypted executable.
+
+
+
+
+
+
 
 
  
