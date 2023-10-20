@@ -45,7 +45,7 @@ permalink: /:year/:month/:title/
 
 # Enable for using pages, more details are here: http://jekyllrb.com/docs/pagination/
 paginate_path: "/page:num"
-paginate: 4
+paginate: 10
 
 #highlighter: rouge
 
