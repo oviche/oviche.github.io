@@ -1,7 +1,7 @@
 ---
 layout: post
 title: "The Analysis of windows service"
-date: 2019-05-02
+date: 2018-12-20
 tags: [x86, Malware Analysis] 
 description: The post explains the structure of the windows service executable by analyzing Shamoon 3.0 dropper. 
 ---
