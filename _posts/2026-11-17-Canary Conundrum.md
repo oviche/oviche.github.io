@@ -1,7 +1,7 @@
 ---
 layout: post
 title: "Writeup: Canary Conundrum"
-date: 2026-02-06
+date: 2026-11-17
 tags: [Pwn] 
 description: This post discuss the solution Canary Conundrum (Hard) from pwn.college
 ---
