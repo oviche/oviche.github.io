@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "Writeup: Canary Conundrum"
+title: "pwn.college: Canary Conundrum (Hard) – Write-up"
 date: 2026-11-15
 tags: [Pwn] 
 description: This post discuss the solution Canary Conundrum (Hard) from pwn.college
@@ -20,10 +20,16 @@ By executing the binary, I found that it prints out a hexadecimal number represe
 > CommandLine 
 {:.filename}
 {% highlight CMD %}
-$ ./challenge
-Welcome.
-Leak: 0x7f318f02c010
-Length of your message: 5
-Enter your message: aaaaa
-aaaa
+$ /challenge/canary-conundrum-hard 
+###
+### Welcome to /challenge/canary-conundrum-hard!
+###
+
+Payload size: 12
+Send your payload (up to 12 bytes)!
+hshahdhhdh
+You said: hshahdhhdh
+
+Goodbye!
+### Goodbye!
 {% endhighlight %}
