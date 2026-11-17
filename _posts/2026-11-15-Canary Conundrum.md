@@ -1,4 +1,4 @@
-<img width="1102" height="270" alt="image" src="https://github.com/user-attachments/assets/94c8aae6-ec92-40a3-8584-5ce8da1358a7" />---
+---
 layout: post
 title: "pwn.college: Canary Conundrum (Hard) – Write-up"
 date: 2026-11-15
