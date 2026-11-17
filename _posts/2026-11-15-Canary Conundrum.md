@@ -40,15 +40,15 @@ Goodbye!
 
 As demonstrated earlier, the binary prints our input, which is stored on the stack at `RBP-0x98`, while the stack canary is located at `RBP-0x10`.
 
-![img]({{'/assets/images/PwnableXYZ-Welcome/image3.png' | relative_url }}){: .center-image }*(**Canary vs input stack locations**)*
+![img]({{'/assets/images/Canary_Conundrum/image3.png' | relative_url }}){: .center-image }*(**Canary vs input stack locations**)*
 
 Therefore, by filling the buffer with 137 bytes of garbage, we should be able to reach and leak the canary value, as appears below.
 
-![img]({{'/assets/images/PwnableXYZ-Welcome/img4.png' | relative_url }}){: .center-image }*(**Canary leak**)*
+![img]({{'/assets/images/Canary_Conundrum/img4.png' | relative_url }}){: .center-image }*(**Canary leak**)*
 
 Additionally, the binary checks our input for the string **"REPEAT"**. If the string is found, it recursively calls itself, reusing the same canary value that we previously leaked.
 
-![img]({{'/assets/images/PwnableXYZ-Welcome/img5.png' | relative_url }}){: .center-image }*(**Recursive call**)*
+![img]({{'/assets/images/Canary_Conundrum/img5.png' | relative_url }}){: .center-image }*(**Recursive call**)*
 
 
 # Exploiting the vulnerability
@@ -137,7 +137,7 @@ targetProcess.interactive()
 
 The flag is then successfully captured, as shown below.
 
-![img]({{'/assets/images/PwnableXYZ-Welcome/img6.png' | relative_url }}){: .center-image }*(**The flag**)*
+![img]({{'/assets/images/Canary_Conundrum/img6.png' | relative_url }}){: .center-image }*(**The flag**)*
 
 
 
