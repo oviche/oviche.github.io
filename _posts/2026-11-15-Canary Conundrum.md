@@ -15,7 +15,7 @@ The first step I usually do, is to check the mitigations of the binary using the
 
 ![img]({{'/assets/images/Canary_Conundrum/img1.png' | relative_url }}){: .center-image }*(**The mitigations status**)*
 
-By executing the binary, I found that it prints out a hexadecimal number representing a memory address leak and receives two inputs, which are the message's length and the message itself, as shown below.
+After executing the binary, I observed that it prompts the user for input and then prints the provided input to the screen.
 
 > CommandLine 
 {:.filename}
@@ -33,3 +33,5 @@ You said: hshahdhhdh
 Goodbye!
 ### Goodbye!
 {% endhighlight %}
+
+
