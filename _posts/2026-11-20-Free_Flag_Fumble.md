@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "pwn.college – Free Flag Fumble (Hard): Exploiting Use-After-Free"
+title: "Free Flag Fumble: UAF Exploitation"
 date: 2026-11-18
 tags: [Pwn] 
 description: This post discuss the solution for Free Flag Fumble (Hard) challenge from pwn.college
