@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "pwn.college: Free Flag Fumble (Hard) – Write-up"
+title: "pwn.college – Free Flag Fumble (Hard): Exploiting Use-After-Free"
 date: 2026-11-18
 tags: [Pwn] 
 description: This post discuss the solution for Free Flag Fumble (Hard) challenge from pwn.college
@@ -13,7 +13,7 @@ This blog post is a write-up of the **Free Flag Fumble (Hard)** challenge from [
 
 The first step I usually do, is to check the mitigations of the binary using the `checksec` command in pwndbg. The command's output shows that all the mitigations are turned on.
 
-![img]({{'/assets/images/Canary_Conundrum/img1.png' | relative_url }}){: .center-image }*(**The mitigations status**)*
+![img]({{'/assets/images/Canary_Conundrum/imgx.png' | relative_url }}){: .center-image }*(**The mitigations status**)*
 
 After executing the binary, the user is prompted to select one of the following options: malloc, free, puts, read_flag, or quit.
 
@@ -46,8 +46,10 @@ Let analyze what every option do.
 
 # Exploiting the vulnerability
 
+The `read_flag` option allocates two memory chunks, each with a size of 368 bytes, and writes the flag into the second allocated chunk. Therefore, we can use the `malloc` option to allocate two chunks of the same size and then free them. This allows the `read_flag` option to reuse the freed chunks from the `tcache`, since the dynamic memory allocator can retrieve a freed chunk of the required size from the cache more efficiently than allocating a new one from scratch. Finally, we can leverage the dangling pointers in the pointer tables to access and print the flag using the `puts` option.
 
 
-The flag is then successfully captured, as shown below.
 
-![img]({{'/assets/images/Canary_Conundrum/img6.png' | relative_url }}){: .center-image }*(**The flag**)*
+
+
+
