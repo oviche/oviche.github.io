@@ -33,25 +33,25 @@ $ /challenge/canary-conundrum-hard
 
 Let analyze what every option do.
 
-- `malloc`: As the name suggests, this option allocates memory using the malloc function. As shown in the code snippet below, the user is prompted to specify an index in the pointer table and the size of the memory to allocate. The pointer returned by malloc is then stored at the specified index in the pointer table.  
+`malloc`: As the name suggests, this option allocates memory using the malloc function. As shown in the code snippet below, the user is prompted to specify an index in the pointer table and the size of the memory to allocate. The pointer returned by malloc is then stored at the specified index in the pointer table.  
 
 ![img]({{'/assets/images/Free_Flag_Fumble/img2.png' | relative_url }}){: .center-image }*(**Malloc option**)*
 
 
-- `free`: This option frees the memory associated with the user-specified index in the pointer table. However, notice that although the allocated memory is freed, the corresponding pointer remains in the table, potentially resulting in a dangling pointer.
+`free`: This option frees the memory associated with the user-specified index in the pointer table. However, notice that although the allocated memory is freed, the corresponding pointer remains in the table, potentially resulting in a dangling pointer.
 
 ![img]({{'/assets/images/Free_Flag_Fumble/img3.png' | relative_url }}){: .center-image }*(**The mitigations status**)*
 
 
-- `puts`: This option prints the string pointed to by the pointer stored at the user-specified index in the pointer table.
+`puts`: This option prints the string pointed to by the pointer stored at the user-specified index in the pointer table.
 
 ![img]({{'/assets/images/Free_Flag_Fumble/img4.png' | relative_url }}){: .center-image }*(**The mitigations status**)*
 
-- `read_flag`: read_flag: This option performs two heap allocations using malloc, each with a size of 368 bytes. It then reads the flag and writes its contents into the second allocated memory block.
+`read_flag`: read_flag: This option performs two heap allocations using malloc, each with a size of 368 bytes. It then reads the flag and writes its contents into the second allocated memory block.
 
 ![img]({{'/assets/images/Free_Flag_Fumble/img5.png' | relative_url }}){: .center-image }*(**The mitigations status**)*
 
-- `quit`: This option exit the program.
+`quit`: This option exit the program.
 
 
 # Exploiting the vulnerability
